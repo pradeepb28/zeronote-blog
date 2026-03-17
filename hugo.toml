@@ -1,0 +1,6 @@
+baseURL = "https://blog.zeronote.app"
+title = "Zero Note"
+theme = "PaperMod"
+
+[params]
+  defaultTheme = "auto"
