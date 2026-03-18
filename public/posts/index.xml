@@ -6,20 +6,63 @@
     <description>Recent content in Posts on Zero Note</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Why Zero Note Exists</title>
-      <link>http://localhost:1313/posts/first-note/</link>
+      <title>How to Send Temporary Instructions Securely</title>
+      <link>http://localhost:1313/posts/send-temporary-instructions/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/send-temporary-instructions/</guid>
+      <description>A simple way to share temporary instructions without leaving them sitting in chat history or email forever.</description>
+    </item>
+    <item>
+      <title>How to Share a Password Securely</title>
+      <link>http://localhost:1313/posts/share-password-securely/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/share-password-securely/</guid>
+      <description>A simple way to share a password without leaving it sitting in chat history or email forever.</description>
+    </item>
+    <item>
+      <title>How to Share API Keys Securely</title>
+      <link>http://localhost:1313/posts/share-apikeys-securely/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/share-apikeys-securely/</guid>
+      <description>A safer way to share API keys without leaving them in Slack, email, or source code.</description>
+    </item>
+    <item>
+      <title>How to Share Private Information Securely</title>
+      <link>http://localhost:1313/posts/share-private-info-securely/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/share-private-info-securely/</guid>
+      <description>A simple way to share private information without leaving it sitting in chat history or email forever.</description>
+    </item>
+    <item>
+      <title>How to Share Sensitive Information Without Chat</title>
+      <link>http://localhost:1313/posts/share-sensitive-info-without-chat/</link>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/share-sensitive-info-without-chat/</guid>
+      <description>A safer way to share sensitive information without leaving it sitting in chat history.</description>
+    </item>
+    <item>
+      <title>How to Send a Note That Can Only Be Opened Once</title>
+      <link>http://localhost:1313/posts/note-open-once/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/first-note/</guid>
-      <description>&lt;p&gt;We don’t need another notes app.&lt;/p&gt;
-&lt;p&gt;We need a way to send thoughts without friction.&lt;/p&gt;
-&lt;p&gt;That’s what Zero Note is.&lt;/p&gt;
-&lt;p&gt;You don’t organize.
-You don’t format.
-You just send.&lt;/p&gt;
-&lt;p&gt;And it disappears into the right place.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/note-open-once/</guid>
+      <description>A simple way to share information that should only be opened once.</description>
+    </item>
+    <item>
+      <title>How to Send a Self-Destructing Note That Actually Disappears</title>
+      <link>http://localhost:1313/posts/self-destructing-note/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/self-destructing-note/</guid>
+      <description>A simple way to share a note that disappears after it has done its job.</description>
+    </item>
+    <item>
+      <title>How to Share a Note Securely(Without Leaving a Trace)</title>
+      <link>http://localhost:1313/posts/share-note-securely/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/share-note-securely/</guid>
+      <description>A simpler way to share sensitive information without leaving it sitting in chat history or email forever.</description>
     </item>
   </channel>
 </rss>

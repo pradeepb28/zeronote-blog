@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>How to Share a Password Securely | Zero Note</title>
+<meta name="keywords" content="Security, Passwords, Privacy, Use Cases">
+<meta name="description" content="A simple way to share a password without leaving it sitting in chat history or email forever.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/share-password-securely/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5cc022105da85116a2ea6bc1cd8e1da3545fef03fa3a631bb3529220ed5bf50.css" integrity="sha256-pcwCIQXahRFqLqa8HNjh2jVF/vA/o6YxuzUpIg7Vv1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/share-password-securely/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Zero Note (Alt + H)">Zero Note</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  
+  <header class="post-header">
+    <h1 class="post-title">How to Share a Password Securely</h1>
+
+    
+      <p class="post-description">A simple way to share a password without leaving it sitting in chat history or email forever.</p>
+    
+
+    <div class="post-meta">
+      Mar 18, 2026
+    </div>
+  </header>
+
+  <div class="post-entry">
+    <p>Sharing a password sounds like a small thing until you think about where it ends up.</p>
+<p>A password sent in chat can stay in the thread. A password sent by email can stay searchable for years. And once it has been forwarded, copied, or saved somewhere else, it is no longer really under your control.</p>
+<p>That is why the problem is not just sending the password.</p>
+<p>It is what happens after.</p>
+<hr>
+<h2 id="why-passwords-are-different">Why passwords are different</h2>
+<p>Some information can safely sit in a message history.</p>
+<p>Passwords usually should not.</p>
+<p>A password gives access to something else, which means leaving it around creates more risk than leaving around an ordinary message.</p>
+<p>That is why secure password sharing is really about reducing exposure.</p>
+<p>You want the password to be available long enough to be used, and not much longer than that.</p>
+<hr>
+<h2 id="common-ways-people-share-passwords">Common ways people share passwords</h2>
+<p>Most people use whatever is easiest in the moment.</p>
+<ul>
+<li>
+<p><strong>Chat apps</strong><br>
+Fast, but the password often stays in the conversation history.</p>
+</li>
+<li>
+<p><strong>Email</strong><br>
+Convenient, but easy to search, forward, and archive later.</p>
+</li>
+<li>
+<p><strong>Notes apps</strong><br>
+Better for drafting, but not a good place to leave a shared password sitting around.</p>
+</li>
+</ul>
+<p>These options all help with delivery.</p>
+<p>They do not do much to limit what happens after delivery.</p>
+<hr>
+<h2 id="what-more-secure-password-sharing-looks-like">What more secure password sharing looks like</h2>
+<p>A safer way to share a password usually includes a few basic ideas:</p>
+<ul>
+<li>only share it when necessary</li>
+<li>keep access as limited as possible</li>
+<li>avoid leaving it in long-term message history</li>
+<li>remove or rotate it once it has been used</li>
+</ul>
+<p>Security guidance also commonly recommends using purpose-built password managers when possible, sharing only the minimum needed access, and revoking or changing credentials when they are no longer needed.</p>
+<p>If you are sharing something highly sensitive, splitting information across channels or using a temporary method can also reduce risk, since sending everything through one permanent channel creates a larger blast radius if that channel is compromised.</p>
+<hr>
+<h2 id="when-a-temporary-note-makes-sense">When a temporary note makes sense</h2>
+<p>A password manager is often the best option when both people already use one.</p>
+<p>But sometimes you just need to send a password quickly, without leaving it in Slack, email, or a chat thread forever.</p>
+<p>That is where a temporary note can help.</p>
+<p>Instead of dropping the password into a permanent conversation, you share it in a note with a shorter lifetime.</p>
+<p>That way, the password can do its job without continuing to sit around afterward.</p>
+<hr>
+<h2 id="a-better-way-zero-note">A better way: Zero Note</h2>
+<p>Zero Note is built for this kind of sharing.</p>
+<p>Instead of sending a password into a thread or inbox, you create a note and decide how it should behave.</p>
+<p>That can include controls around:</p>
+<ul>
+<li>when the note expires</li>
+<li>how it is accessed</li>
+<li>where it can be opened</li>
+</ul>
+<p>So the password is not just sent.</p>
+<p>It is shared with limits.</p>
+<p>That can be a better fit when the goal is to reduce how long the password remains available after it has been seen.</p>
+<hr>
+<h2 id="a-few-practical-habits-that-help">A few practical habits that help</h2>
+<p>Even when you use a temporary note, a few habits still matter:</p>
+<ul>
+<li>Share only the password you actually need to share, not a bigger bundle of credentials.</li>
+<li>Rotate the password afterward if the account is important or shared temporarily.</li>
+<li>Avoid reusing the same password across services, since one exposed password can create wider damage.</li>
+<li>Assume anything visible on screen can still be copied or screenshotted, so temporary access reduces risk but does not make sharing magic.</li>
+</ul>
+<hr>
+<h2 id="final-thought">Final thought</h2>
+<p>The safest password is one that is not shared at all.</p>
+<p>But when you do need to share one, it helps to avoid leaving it in places designed to keep history forever.</p>
+<p>A temporary, controlled note is often better than a permanent message.</p>
+<p>If that is the kind of sharing you want, try Zero Note.</p>
+<p>Related:</p>
+<ul>
+<li><a href="/posts/share-private-info-securely/">How to Share Private Information Securely</a></li>
+<li><a href="/posts/share-apikeys-securely/">How to Share API Keys Securely</a></li>
+<li><a href="/posts/share-sensitive-info-without-chat/">How to Share Sensitive Information Without Chat</a></li>
+</ul>
+
+  </div>
+
+</article>
+
+<div id="cta-box">
+  <p><strong>Try Zero Note</strong></p>
+  <p class="cta-sub">Scan to share a self-destructing note.</p>
+  <img src="/qr.png" alt="Download Zero Note" />
+  <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+    <img src="/appstore-badge-dark.svg" class="badge-dark" />
+    <img src="/appstore-badge-light.svg" class="badge-light" />
+  </a>
+</div>
+
+<div id="mobile-cta">
+  <div style="display:flex; justify-content:center; align-items:center;">
+    <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+      <img src="/appstore-badge-dark.svg" class="badge-dark" />
+      <img src="/appstore-badge-light.svg" class="badge-light" />
+    </a>
+  </div>
+</div>
+
+<script>
+  const isMobile = window.innerWidth <= 768;
+  const cta = document.getElementById("cta-box");
+
+  if (cta && !isMobile) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      cta.style.display = scrollPercent > 0.05 ? "block" : "none";
+    });
+  }
+
+  const mobileCTA = document.getElementById("mobile-cta");
+
+  if (mobileCTA) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      if (scrollPercent > 0.1) {
+        mobileCTA.style.display = "block";
+      } else {
+        mobileCTA.style.display = "none";
+      }
+    });
+  }
+</script>
+
+
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Zero Note</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

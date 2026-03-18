@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>How to Send a Note That Can Only Be Opened Once | Zero Note</title>
+<meta name="keywords" content="Use Cases, Security, Privacy">
+<meta name="description" content="A simple way to share information that should only be opened once.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/note-open-once/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a5cc022105da85116a2ea6bc1cd8e1da3545fef03fa3a631bb3529220ed5bf50.css" integrity="sha256-pcwCIQXahRFqLqa8HNjh2jVF/vA/o6YxuzUpIg7Vv1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/note-open-once/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Zero Note (Alt + H)">Zero Note</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  
+  <header class="post-header">
+    <h1 class="post-title">How to Send a Note That Can Only Be Opened Once</h1>
+
+    
+      <p class="post-description">A simple way to share information that should only be opened once.</p>
+    
+
+    <div class="post-meta">
+      Mar 17, 2026
+    </div>
+  </header>
+
+  <div class="post-entry">
+    <p>Sometimes you do not want to send a message that stays available.</p>
+<p>You want someone to open it once, read it, and be done.</p>
+<p>No thread to return to. No inbox copy. No second view later.</p>
+<p>That sounds simple, but most tools are not built for it.</p>
+<hr>
+<h2 id="most-messages-are-made-to-persist">Most messages are made to persist</h2>
+<p>Chat apps, email, and regular notes are all designed to keep information around.</p>
+<p>That is usually useful.</p>
+<p>But it is the opposite of what you want when a note should only be seen once.</p>
+<p>Even disappearing messages do not quite solve this.</p>
+<p>They may hide messages later, but they are still part of a conversation and not really built around one-time access.</p>
+<hr>
+<h2 id="what-open-once-actually-means">What “open once” actually means</h2>
+<p>An open-once note is not just a note that expires eventually.</p>
+<p>It is a note with a very specific rule:</p>
+<p>it works the first time it is opened, and not after that.</p>
+<p>That is the whole point.</p>
+<p>You are not only deciding what to share.</p>
+<p>You are deciding that the information should have exactly one readable moment.</p>
+<hr>
+<h2 id="why-this-matters">Why this matters</h2>
+<p>Sometimes one view is enough.</p>
+<p>A person needs to read something, use it, and move on.</p>
+<p>After that, keeping it available adds more risk than value.</p>
+<p>That can apply to things like:</p>
+<ul>
+<li>a password</li>
+<li>a private link</li>
+<li>temporary instructions</li>
+<li>sensitive personal details</li>
+<li>anything that should not be revisited later</li>
+</ul>
+<p>In those cases, “open once” is not a gimmick.</p>
+<p>It is the behavior you actually want.</p>
+<hr>
+<h2 id="why-normal-tools-fall-short">Why normal tools fall short</h2>
+<p>Most tools handle delivery.</p>
+<p>They do not handle one-time access very well.</p>
+<p>A chat message stays in the thread.</p>
+<p>An email stays in the inbox.</p>
+<p>A shared note often stays available until someone manually deletes it.</p>
+<p>So even if the information only needed one view, the tool keeps offering more than one.</p>
+<p>That is the mismatch.</p>
+<hr>
+<h2 id="a-better-way-zero-note">A better way: Zero Note</h2>
+<p>Zero Note is built for this kind of sharing.</p>
+<p>You can create a note that is meant to be opened once and then stop being available.</p>
+<p>That changes the shape of the interaction.</p>
+<p>Instead of sending a message that lingers, you send a note with a built-in end point.</p>
+<p>The note is not just shared.</p>
+<p>It is shared with one-time access as part of its behavior.</p>
+<hr>
+<h2 id="one-honest-limitation">One honest limitation</h2>
+<p>No tool can fully stop someone from saving what they can already see.</p>
+<p>If a person opens a note, they can still take a screenshot or copy it.</p>
+<p>But one-time access still matters.</p>
+<p>There is a real difference between a note that is available briefly and one that remains accessible indefinitely.</p>
+<p>For many cases, that shorter window is exactly what makes the note useful.</p>
+<hr>
+<h2 id="final-thought">Final thought</h2>
+<p>Some information does not need a long life.</p>
+<p>It just needs one view.</p>
+<p>If that is what you want, an open-once note makes more sense than a normal message.</p>
+<p>Try Zero Note if you want to share something that should only be opened once.</p>
+<hr>
+<p>Related:</p>
+<ul>
+<li><a href="/posts/self-destructing-note/">How to Send a Self-Destructing Note</a></li>
+<li><a href="/posts/share-note-securely/">How to Share a Note Securely</a></li>
+</ul>
+
+  </div>
+
+</article>
+
+<div id="cta-box">
+  <p><strong>Try Zero Note</strong></p>
+  <p class="cta-sub">Scan to share a self-destructing note.</p>
+  <img src="/qr.png" alt="Download Zero Note" />
+  <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+    <img src="/appstore-badge-dark.svg" class="badge-dark" />
+    <img src="/appstore-badge-light.svg" class="badge-light" />
+  </a>
+</div>
+
+<div id="mobile-cta">
+  <div style="display:flex; justify-content:center; align-items:center;">
+    <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+      <img src="/appstore-badge-dark.svg" class="badge-dark" />
+      <img src="/appstore-badge-light.svg" class="badge-light" />
+    </a>
+  </div>
+</div>
+
+<script>
+  const isMobile = window.innerWidth <= 768;
+  const cta = document.getElementById("cta-box");
+
+  if (cta && !isMobile) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      cta.style.display = scrollPercent > 0.05 ? "block" : "none";
+    });
+  }
+
+  const mobileCTA = document.getElementById("mobile-cta");
+
+  if (mobileCTA) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      if (scrollPercent > 0.1) {
+        mobileCTA.style.display = "block";
+      } else {
+        mobileCTA.style.display = "none";
+      }
+    });
+  }
+</script>
+
+
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Zero Note</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

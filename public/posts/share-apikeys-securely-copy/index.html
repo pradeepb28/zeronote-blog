@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>How to Share API Keys Securely | Zero Note</title>
+<meta name="keywords" content="Security, Developers, API Keys, Use Cases">
+<meta name="description" content="A safer way to share API keys without leaving them in Slack, email, or source code.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/share-apikeys-securely-copy/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.375058bc5c834adbff08c75bf5dce9fb52ff2c6149e5fa6a42fffd15477a14d1.css" integrity="sha256-N1BYvFyDStv/CMdb9dzp&#43;1L/LGFJ5fpqQv/9FUd6FNE=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/share-apikeys-securely-copy/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Zero Note (Alt + H)">Zero Note</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <p>Sharing an API key should feel like a small handoff.</p>
+<p>In practice, it often turns into a long-lived security problem.</p>
+<p>A key gets pasted into Slack. Or dropped into an email. Or left in a document that was only supposed to be temporary.</p>
+<p>The problem is not just getting the key to someone.</p>
+<p>It is everything that happens after.</p>
+<hr>
+<h2 id="why-api-keys-are-risky-to-share">Why API keys are risky to share</h2>
+<p>An API key is not just a string of text.</p>
+<p>It is access.</p>
+<p>If the wrong person gets it, they may be able to read data, send requests, spend money, or interact with production systems depending on the permissions attached to that key. [web:90][web:103][web:109]</p>
+<p>That is why modern guidance focuses on limiting where keys are stored, how they are transmitted, who can access them, and how quickly they can be revoked or rotated. [web:90][web:100][web:103]</p>
+<hr>
+<h2 id="why-slack-and-email-are-a-bad-place-for-api-keys">Why Slack and email are a bad place for API keys</h2>
+<p>Slack and email are convenient, which is exactly why people use them for secrets.</p>
+<p>But they are also built around history.</p>
+<p>Messages are searchable. Threads get revisited. Emails get archived. Documents get duplicated. And once a secret is copied into one of those places, it often lives longer than anyone intended. [web:93][web:102][web:111]</p>
+<p>Security guidance consistently warns against distributing API keys through public or persistent communication channels, especially when better options like secret managers or controlled vaults are available. [web:90][web:93][web:108]</p>
+<hr>
+<h2 id="what-secure-api-key-sharing-should-look-like">What secure API key sharing should look like</h2>
+<p>The best approach is usually not to “share” API keys directly at all.</p>
+<p>Instead, good security practice is to:</p>
+<ul>
+<li>store keys in a secrets manager or vault</li>
+<li>grant access only to the people or systems that need them</li>
+<li>use the minimum permissions required</li>
+<li>rotate keys regularly</li>
+<li>revoke them quickly if they are exposed [web:90][web:100][web:103][web:106]</li>
+</ul>
+<p>For application environments, injecting secrets at runtime through CI/CD or cloud secret managers is widely recommended because the key does not need to sit in source code, docs, or chat history. [web:90][web:100]</p>
+<hr>
+<h2 id="when-you-still-need-to-send-a-key-to-a-person">When you still need to send a key to a person</h2>
+<p>Sometimes the ideal setup is not available.</p>
+<p>You may need to send a test key to a teammate, share a temporary credential with a contractor, or pass a secret to someone who is not inside your infrastructure yet.</p>
+<p>That is where people reach for Slack or email.</p>
+<p>But if the key only needs to be visible briefly, leaving it in a permanent channel creates unnecessary exposure. [web:96][web:108]</p>
+<p>A temporary note can be a better option in those cases because it reduces how long the key remains available after it has been seen. [cite:29]</p>
+<hr>
+<h2 id="a-better-way-zero-note">A better way: Zero Note</h2>
+<p>Zero Note is built for this kind of short-lived sharing.</p>
+<p>Instead of pasting an API key into Slack, email, or a shared document, you create a note and decide how it should behave.</p>
+<p>That can include controls around:</p>
+<ul>
+<li>when the note expires</li>
+<li>how it is accessed</li>
+<li>where it can be opened</li>
+<li>whether it should only be available briefly [cite:29]</li>
+</ul>
+<p>That does not replace a real secrets manager for long-term system access.</p>
+<p>But it can be a better way to handle temporary human-to-human sharing when the goal is to reduce leftover exposure. [web:90][cite:29]</p>
+<hr>
+<h2 id="a-few-habits-that-matter">A few habits that matter</h2>
+<p>Even if you use a temporary note, a few habits still make a big difference:</p>
+<ul>
+<li>Create keys with the smallest possible scope and permissions. [web:90][web:103][web:105]</li>
+<li>Rotate the key after sharing if it was only needed for a short task. [web:101][web:103][web:109]</li>
+<li>Avoid reusing the same key across multiple apps, people, or environments. [web:90][web:103]</li>
+<li>Use IP or network restrictions when the provider supports them, since a stolen key is less useful if it only works from expected locations. [web:90]</li>
+<li>Never commit keys to repositories or leave them in plaintext docs. [web:93][web:106][web:107]</li>
+</ul>
+<hr>
+<h2 id="final-thought">Final thought</h2>
+<p>The safest API key is one that never has to be manually shared at all.</p>
+<p>But when you do need to hand one to a person, it helps to avoid channels designed to keep history forever.</p>
+<p>A temporary, controlled note is often a better fit than a message that lingers.</p>
+<p>If that is the kind of sharing you want, try Zero Note.</p>
+<p>Related:</p>
+<ul>
+<li><a href="/posts/note-open-once/">How to Send a Note That Can Only Be Opened Once</a></li>
+<li><a href="/posts/share-note-securely/">How to Share a Note Securely</a></li>
+</ul>
+
+</article>
+
+<div id="cta-box">
+  <p><strong>Try Zero Note</strong></p>
+  <p class="cta-sub">Scan to share a self-destructing note.</p>
+  <img src="/qr.png" alt="Download Zero Note" />
+  <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank" class="app-btn">
+    Download on App Store
+  </a>
+</div>
+
+<div id="mobile-cta">
+  <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+    Try Zero Note
+  </a>
+</div>
+
+<script>
+  const cta = document.getElementById("cta-box");
+
+  window.addEventListener("scroll", () => {
+    const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+    if (scrollPercent > 0.4) {
+      cta.style.display = "block";
+    } else {
+      cta.style.display = "none";
+    }
+  });
+
+  const mobileCTA = document.getElementById("mobile-cta");
+
+if (mobileCTA) {
+  window.addEventListener("scroll", () => {
+    const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+    if (scrollPercent > 0.4) {
+      mobileCTA.style.display = "block";
+    } else {
+      mobileCTA.style.display = "none";
+    }
+  });
+}
+</script>
+
+
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Zero Note</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

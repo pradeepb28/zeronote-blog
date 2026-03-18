@@ -4,3 +4,18 @@ theme = "PaperMod"
 
 [params]
   defaultTheme = "auto"
+  description = "Send notes without friction."
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  disableSpecial1stPost = true
+  ShowBreadCrumbs = true
+  customCSS = ["css/extended/custom.css"]
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/posts/"
+    weight = 1
