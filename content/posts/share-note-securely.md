@@ -155,4 +155,4 @@ If that is what you are looking for, try Zero Note.
 Related:
 
 - [How to Send a Self-Destructing Note](/posts/self-destructing-note/)
-- [How to Send a Note That Can Only Be Opened Once](/posts/note-open-once/)
+- [How to Send a Message That Can Only Be Opened Once](/posts/note-open-once/)

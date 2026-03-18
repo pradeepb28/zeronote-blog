@@ -130,7 +130,7 @@ If that is the kind of sharing you want, try Zero Note.
 
 Related:
 
-- [How to Send a Note That Can Only Be Opened Once](/posts/note-open-once/)
+- [How to Send a Message That Can Only Be Opened Once](/posts/note-open-once/)
 - [How to Share Private Information Securely](/posts/share-private-info-securely/)
 - [How to Share a Password Securely](/posts/share-password-securely/)
 - [How to Send Temporary Instructions Securely](/posts/send-temporary-instructions/)

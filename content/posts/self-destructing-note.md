@@ -1,8 +1,8 @@
 ---
-title: "How to Send a Self-Destructing Note That Actually Disappears"
+title: "How to Send a Self-Destructing Message That Actually Disappears"
 date: 2026-03-17
 draft: false
-description: "A simple way to share a note that disappears after it has done its job."
+description: "A better way to send message note that disappears after being read without relying on chat apps"
 tags: ["Use Cases", "Privacy", "Control"]
 ---
 
@@ -133,5 +133,5 @@ If that is the kind of sharing you want, try Zero Note.
 
 Related:
 
-- [How to Send a Note That Can Only Be Opened Once](/posts/note-open-once/)
+- [How to Send a Message That Can Only Be Opened Once](/posts/note-open-once/)
 - [How to Share a Note Securely](/posts/share-note-securely/)

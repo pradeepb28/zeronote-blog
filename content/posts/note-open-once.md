@@ -1,8 +1,8 @@
 ---
-title: "How to Send a Note That Can Only Be Opened Once"
+title: "How to Send a Message That Can Only Be Opened Once"
 date: 2026-03-17
 draft: false
-description: "A simple way to share information that should only be opened once."
+description: "Send information that can only be accessed once and disappears after."
 tags: ["Use Cases", "Security", "Privacy"]
 ---
 

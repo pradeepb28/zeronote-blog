@@ -1,5 +1,5 @@
 ---
-title: "How to Share API Keys Securely"
+title: "How to Share API Keys Securely (Without Slack or Email)"
 date: 2026-03-18
 draft: false
 description: "A safer way to share API keys without leaving them in Slack, email, or source code."
@@ -118,7 +118,7 @@ If that is the kind of sharing you want, try Zero Note.
 
 Related:
 
-- [How to Send a Note That Can Only Be Opened Once](/posts/note-open-once/)
+- [How to Send a Message That Can Only Be Opened Once](/posts/note-open-once/)
 - [How to Share a Password Securely](/posts/share-password-securely/)
 - [How to Share Private Information Securely](/posts/share-private-info-securely/)
 - [How to Share Sensitive Information Without Chat](/posts/share-sensitive-info-without-chat/)

@@ -1,8 +1,8 @@
 ---
-title: "How to Share a Password Securely"
+title: "How to Share a Password Securely(Without Sending It in Chat or Email)"
 date: 2026-03-18
 draft: false
-description: "A simple way to share a password without leaving it sitting in chat history or email forever."
+description: "Stop sending passwords in chat or email. Here’s a safer way to share them without leaving them behind."
 tags: ["Security", "Passwords", "Privacy", "Use Cases"]
 ---
 

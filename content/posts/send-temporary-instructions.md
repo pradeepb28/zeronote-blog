@@ -126,7 +126,6 @@ If you need to send temporary instructions with more control over how long they 
 
 Related:
 
-- [How to Send a Note That Can Only Be Opened Once](/posts/note-open-once/)
 - [How to Share Private Information Securely](/posts/share-private-info-securely/)
 - [How to Share Sensitive Information Without Chat](/posts/share-sensitive-info-without-chat/)
-- [How to Send a Note That Can Only Be Opened Once](/posts/note-open-once/)
+- [How to Send a Message That Can Only Be Opened Once](/posts/note-open-once/)
