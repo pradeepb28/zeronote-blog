@@ -1,5 +1,5 @@
 ---
-title: "How to Share a Note Securely(Without Leaving a Trace)"
+title: "How to Share a Note Securely (Without Leaving a Trace)"
 date: 2026-03-17
 draft: false
 description: "A simpler way to share sensitive information without leaving it sitting in chat history or email forever."
