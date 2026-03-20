@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>How to Send Information That Should Only Be Seen Once | Zero Note: Self-destructing shareable notes</title>
+<meta name="keywords" content="Security, Privacy, Use Cases, One-Time Access">
+<meta name="description" content="A simple way to share information that should only be viewed once and not remain available afterward.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/send-info-only-once/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.77f8e0afdca275042ccdee58088de8fc2c431b7b494aae1e46d4f8ce596b499b.css" integrity="sha256-d/jgr9yidQQsze5YCI3o/CxDG3tJSq4eRtT4zllrSZs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/send-info-only-once/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google-site-verification" content="SJouY3j1HVpJBcm5AN5tUPsJOIgDOJJqXDxmYv5Fvj8" />
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Zero Note: Self-destructing shareable notes (Alt + H)">Zero Note: Self-destructing shareable notes</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  
+  <header class="post-header">
+    <h1 class="post-title">How to Send Information That Should Only Be Seen Once</h1>
+
+    
+      <p class="post-description">A simple way to share information that should only be viewed once and not remain available afterward.</p>
+    
+
+    <div class="post-meta">
+      Mar 19, 2026
+    </div>
+  </header>
+
+  <div class="post-entry">
+    <p>Some information only needs one moment.</p>
+<p>You want someone to open it, read it, and move on.</p>
+<p>Not come back to it later. Not find it again in chat history. Not leave it sitting in an inbox or notes app long after it has done its job.</p>
+<p>That sounds simple, but most tools are built for persistence.</p>
+<hr>
+<h2 id="why-one-time-viewing-is-hard">Why one-time viewing is hard</h2>
+<p>Most communication tools are designed to keep information available.</p>
+<p>That is usually helpful.</p>
+<p>But sometimes the right behavior is the opposite.</p>
+<p>Sometimes the information should only be visible once, because a second view adds no value and only creates more exposure.</p>
+<p>That is where normal messages start to feel like the wrong tool.</p>
+<hr>
+<h2 id="what-kinds-of-information-fit-this">What kinds of information fit this</h2>
+<p>This can apply to more things than people expect.</p>
+<p>For example:</p>
+<ul>
+<li>a password</li>
+<li>a private link</li>
+<li>a recovery code</li>
+<li>temporary instructions</li>
+<li>a door code</li>
+<li>personal details meant for one person</li>
+</ul>
+<p>In these cases, the information is not meant to become part of a long-term record.</p>
+<p>It is just meant to be seen once and used.</p>
+<hr>
+<h2 id="why-normal-sharing-tools-fall-short">Why normal sharing tools fall short</h2>
+<p>A chat message stays in the thread.</p>
+<p>An email stays in the inbox.</p>
+<p>A shared note usually stays available until someone removes it manually.</p>
+<p>Even disappearing messages often still live inside a conversation instead of behaving like a standalone one-time note.</p>
+<p>So while the message may be temporary in theory, access is often more persistent than you actually want.</p>
+<hr>
+<h2 id="what-one-time-sharing-should-look-like">What one-time sharing should look like</h2>
+<p>If something should only be seen once, the sharing method should reflect that.</p>
+<p>A better approach means:</p>
+<ul>
+<li>the information is available for a single view</li>
+<li>access stops after that view</li>
+<li>it does not remain easily reachable later</li>
+<li>it does not sit in a normal message history</li>
+</ul>
+<p>That does not make the information impossible to save.</p>
+<p>But it does reduce how long it stays exposed.</p>
+<hr>
+<h2 id="a-better-way-zero-note">A better way: Zero Note</h2>
+<p>Zero Note is built for this kind of sharing.</p>
+<p>Instead of sending information into a thread or inbox, you create a note and decide how it should behave.</p>
+<p>That can include controls around:</p>
+<ul>
+<li>how long it stays available</li>
+<li>how it is accessed</li>
+<li>where it can be opened</li>
+<li>whether it should still work after it has been viewed</li>
+</ul>
+<p>That changes the interaction.</p>
+<p>You are not just sending information.</p>
+<p>You are defining its lifetime.</p>
+<hr>
+<h2 id="one-honest-limitation">One honest limitation</h2>
+<p>No tool can stop someone from saving what they can already see.</p>
+<p>A person can still take a screenshot or copy the contents after opening it.</p>
+<p>But there is still a meaningful difference between something briefly visible and something that remains accessible indefinitely.</p>
+<p>For many cases, that shorter window is exactly the point.</p>
+<hr>
+<h2 id="final-thought">Final thought</h2>
+<p>Some information does not need a long life.</p>
+<p>It just needs one view.</p>
+<p>If you want to share something that should only be seen once, try Zero Note.</p>
+<hr>
+<p>Related:</p>
+<ul>
+<li><a href="/posts/note-open-once/">How to Send a Note That Can Only Be Opened Once</a></li>
+<li><a href="/posts/share-sensitive-info-without-chat/">How to Share Sensitive Information Without Chat</a></li>
+<li><a href="/posts/share-private-info-securely/">How to Share Private Information Securely</a></li>
+</ul>
+
+  </div>
+
+</article>
+
+<div id="cta-box">
+  <p><strong>Try Zero Note</strong></p>
+  <p class="cta-sub">Scan to share a self-destructing note.</p>
+  <img src="/qr.png" alt="Download Zero Note" />
+  <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+    <img src="/appstore-badge-dark.svg" class="badge-dark" />
+    <img src="/appstore-badge-light.svg" class="badge-light" />
+  </a>
+</div>
+
+<div id="mobile-cta">
+  <div style="display:flex; justify-content:center; align-items:center;">
+    <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+      <img src="/appstore-badge-dark.svg" class="badge-dark" />
+      <img src="/appstore-badge-light.svg" class="badge-light" />
+    </a>
+  </div>
+</div>
+
+<script>
+  const isMobile = window.innerWidth <= 768;
+  const cta = document.getElementById("cta-box");
+
+  if (cta && !isMobile) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      cta.style.display = scrollPercent > 0.05 ? "block" : "none";
+    });
+  }
+
+  const mobileCTA = document.getElementById("mobile-cta");
+
+  if (mobileCTA) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      if (scrollPercent > 0.1) {
+        mobileCTA.style.display = "block";
+      } else {
+        mobileCTA.style.display = "none";
+      }
+    });
+  }
+</script>
+
+
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Zero Note: Self-destructing shareable notes</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

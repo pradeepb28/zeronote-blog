@@ -18,4 +18,29 @@
     </article>
   {{ end }}
 </div>
+<div id="cta-box">
+  <p class="cta-title">Try Zero Note</p>
+  <p class="cta-sub">Share something that disappears.</p>
+
+  <img src="/qr.png" alt="Download Zero Note" />
+
+  <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+    <img src="/appstore-badge-dark.svg" class="badge-dark" />
+    <img src="/appstore-badge-light.svg" class="badge-light" />
+  </a>
+</div>
+
+<script>
+  const cta = document.getElementById("cta-box");
+
+  window.addEventListener("scroll", () => {
+    const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+    if (scrollPercent > 0.1) {
+      cta.style.display = "block";
+    } else {
+      cta.style.display = "none";
+    }
+  });
+</script>
 {{ end }}

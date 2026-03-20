@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>What Payment Information Is Safe to Share? | Zero Note: Self-destructing shareable notes</title>
+<meta name="keywords" content="Security, Privacy, Payments, Banking">
+<meta name="description" content="A practical guide to what payment information can sometimes be shared, what should be handled carefully, and what should never be shared.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/payment-info-share/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.77f8e0afdca275042ccdee58088de8fc2c431b7b494aae1e46d4f8ce596b499b.css" integrity="sha256-d/jgr9yidQQsze5YCI3o/CxDG3tJSq4eRtT4zllrSZs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/payment-info-share/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google-site-verification" content="SJouY3j1HVpJBcm5AN5tUPsJOIgDOJJqXDxmYv5Fvj8" />
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Zero Note: Self-destructing shareable notes (Alt + H)">Zero Note: Self-destructing shareable notes</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  
+  <header class="post-header">
+    <h1 class="post-title">What Payment Information Is Safe to Share?</h1>
+
+    
+      <p class="post-description">A practical guide to what payment information can sometimes be shared, what should be handled carefully, and what should never be shared.</p>
+    
+
+    <div class="post-meta">
+      Mar 20, 2026
+    </div>
+  </header>
+
+  <div class="post-entry">
+    <p>People share payment information more often than they realize.</p>
+<p>It might be bank details for a transfer, a card number for a payment, or a message asking for an OTP or CVV.</p>
+<p>The problem is that not all payment information carries the same level of risk.</p>
+<p>Some details are commonly shared in legitimate situations.</p>
+<p>Others should almost never be shared with another person.</p>
+<hr>
+<h2 id="the-short-answer">The short answer</h2>
+<p>Some payment information can be shared in the right context and through the right channel.</p>
+<p>But details like your OTP, PIN, and CVV should generally never be shared with another person, while bank-transfer information and certain account details may sometimes be shared when the request is legitimate and the channel is trusted. [web:288][web:191][web:283]</p>
+<p>So the real question is not just “is it safe to share payment information?”</p>
+<p>It is “which details, with whom, and through what kind of channel?” [web:288][web:187]</p>
+<hr>
+<h2 id="payment-information-that-is-often-okay-to-share-carefully">Payment information that is often okay to share carefully</h2>
+<p>Some information is commonly shared for legitimate payment-related reasons.</p>
+<p>Depending on the situation, that can include things like:</p>
+<ul>
+<li>your bank name</li>
+<li>branch details</li>
+<li>routing or transfer codes</li>
+<li>account details needed to receive a payment</li>
+<li>payment links you intentionally created [web:288][web:187][web:191]</li>
+</ul>
+<p>That does not mean these details are harmless.</p>
+<p>It means they may be shared when there is a real reason, the recipient is trusted, and the method of sharing is appropriate. [web:191][web:190]</p>
+<hr>
+<h2 id="payment-information-that-needs-extra-caution">Payment information that needs extra caution</h2>
+<p>Some details may be requested in real situations, but they deserve more care because they can increase the risk of fraud when combined with other information.</p>
+<p>That can include:</p>
+<ul>
+<li>your full bank account number</li>
+<li>debit or credit card number</li>
+<li>billing information</li>
+<li>personal details linked to the account [web:288][web:190][web:292]</li>
+</ul>
+<p>If these details must be shared, it helps to verify the request independently and avoid leaving them in permanent channels like normal email or chat. [web:190][web:267]</p>
+<hr>
+<h2 id="payment-information-you-should-never-casually-share">Payment information you should never casually share</h2>
+<p>Some information should be treated as highly sensitive and generally should not be shared with another person.</p>
+<p>That includes:</p>
+<ul>
+<li>OTPs</li>
+<li>card CVV numbers</li>
+<li>card PINs</li>
+<li>online banking passwords</li>
+<li>security answers or login credentials [web:283][web:285][web:287][web:291]</li>
+</ul>
+<p>Banks and payment-security guidance repeatedly warn that OTPs, CVVs, and PINs are exactly the kinds of details scammers try to obtain to complete fraudulent transactions. [web:283][web:287][web:290]</p>
+<hr>
+<h2 id="why-the-channel-matters">Why the channel matters</h2>
+<p>Even when the information itself is legitimately shareable, the channel still matters.</p>
+<p>Plain email, text, and chat all tend to create a long-lived record. That means payment information can remain searchable, forwarded, copied, or rediscovered later when it no longer needs to be accessible. [web:267][web:277][web:190]</p>
+<p>That is why “safe to share” and “safe to leave in an inbox or thread forever” are not the same thing.</p>
+<p>A detail may be necessary to send once without needing to remain available indefinitely.</p>
+<hr>
+<h2 id="a-better-way-to-think-about-it">A better way to think about it</h2>
+<p>A useful rule is:</p>
+<ul>
+<li>share only what is necessary</li>
+<li>verify who is asking</li>
+<li>use the most controlled channel you reasonably can</li>
+<li>avoid permanent message history for anything sensitive</li>
+<li>never share OTP, PIN, or CVV with another person [web:191][web:283][web:285]</li>
+</ul>
+<p>This does not make payment sharing risk-free.</p>
+<p>But it reduces unnecessary exposure and helps separate ordinary payment logistics from scam-prone behavior. [web:190][web:287]</p>
+<hr>
+<h2 id="which-zero-note-feature-fits-best">Which Zero Note feature fits best</h2>
+<p>Zero Note can make sense for the kinds of payment information that may need to be shared briefly but should not remain in chat or email history.</p>
+<p>For example:</p>
+<ul>
+<li>
+<p><strong>Time-based destruction</strong><br>
+Useful when someone needs a short window to check bank-transfer details or a payment link.</p>
+</li>
+<li>
+<p><strong>View-based destruction</strong><br>
+Better when the information should only be read once.</p>
+</li>
+<li>
+<p><strong>Location-based access</strong><br>
+Useful when the context is more sensitive and the note should only work in a specific place or country.</p>
+</li>
+</ul>
+<p>It is not a reason to start sharing OTPs, CVVs, or PINs.</p>
+<p>But it can be a better way to handle payment-related details that are legitimate to share and only need to be available briefly. [cite:29]</p>
+<hr>
+<h2 id="final-thought">Final thought</h2>
+<p>Not all payment information should be treated the same.</p>
+<p>Some details can be shared carefully when necessary.</p>
+<p>Others, like OTPs, CVVs, and PINs, should be treated as things you simply do not give to another person.</p>
+<p>And when payment-related information does need to be shared, it is usually better to avoid leaving it in permanent chat or email history.</p>
+<hr>
+<p>Related:</p>
+<ul>
+<li><a href="/posts/share-bank-details-securely/">How to Share Bank Details Securely</a></li>
+<li><a href="/posts/safe-send-bank-details-email/">Is It Safe to Send Bank Details by Email?</a></li>
+<li><a href="/posts/chat-bad-place-share-sensitive-info/">Why Chat Is a Bad Place for Sensitive Information</a></li>
+</ul>
+
+  </div>
+
+</article>
+
+<div id="cta-box">
+  <p><strong>Try Zero Note</strong></p>
+  <p class="cta-sub">Scan to share a self-destructing note.</p>
+  <img src="/qr.png" alt="Download Zero Note" />
+  <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+    <img src="/appstore-badge-dark.svg" class="badge-dark" />
+    <img src="/appstore-badge-light.svg" class="badge-light" />
+  </a>
+</div>
+
+<div id="mobile-cta">
+  <div style="display:flex; justify-content:center; align-items:center;">
+    <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+      <img src="/appstore-badge-dark.svg" class="badge-dark" />
+      <img src="/appstore-badge-light.svg" class="badge-light" />
+    </a>
+  </div>
+</div>
+
+<script>
+  const isMobile = window.innerWidth <= 768;
+  const cta = document.getElementById("cta-box");
+
+  if (cta && !isMobile) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      cta.style.display = scrollPercent > 0.05 ? "block" : "none";
+    });
+  }
+
+  const mobileCTA = document.getElementById("mobile-cta");
+
+  if (mobileCTA) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      if (scrollPercent > 0.1) {
+        mobileCTA.style.display = "block";
+      } else {
+        mobileCTA.style.display = "none";
+      }
+    });
+  }
+</script>
+
+
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Zero Note: Self-destructing shareable notes</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

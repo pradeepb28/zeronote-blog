@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>How to Share a One-Time Secret Securely | Zero Note: Self-destructing shareable notes</title>
+<meta name="keywords" content="Security, Privacy, One-Time Secret, Use Cases">
+<meta name="description" content="A safer way to share a secret that should only be accessed once and not remain available afterward.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/share-onetime-securely/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.77f8e0afdca275042ccdee58088de8fc2c431b7b494aae1e46d4f8ce596b499b.css" integrity="sha256-d/jgr9yidQQsze5YCI3o/CxDG3tJSq4eRtT4zllrSZs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/share-onetime-securely/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google-site-verification" content="SJouY3j1HVpJBcm5AN5tUPsJOIgDOJJqXDxmYv5Fvj8" />
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Zero Note: Self-destructing shareable notes (Alt + H)">Zero Note: Self-destructing shareable notes</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  
+  <header class="post-header">
+    <h1 class="post-title">How to Share a One-Time Secret Securely</h1>
+
+    
+      <p class="post-description">A safer way to share a secret that should only be accessed once and not remain available afterward.</p>
+    
+
+    <div class="post-meta">
+      Mar 19, 2026
+    </div>
+  </header>
+
+  <div class="post-entry">
+    <p>Sometimes you need to share something sensitive, but only once.</p>
+<p>Not in a thread. Not in an inbox. Not in a document that gets copied around later.</p>
+<p>Just one secure handoff, and then it should be gone.</p>
+<p>That is the idea behind a one-time secret.</p>
+<hr>
+<h2 id="what-a-one-time-secret-actually-is">What a one-time secret actually is</h2>
+<p>A one-time secret is a piece of sensitive information shared through a link or note that is meant to be accessed only once.</p>
+<p>After it has been viewed, it should stop being available.</p>
+<p>That is different from a normal message.</p>
+<p>A normal message is built to stay around.</p>
+<p>A one-time secret is built to disappear after doing its job. [web:202][web:206][web:210]</p>
+<hr>
+<h2 id="what-kinds-of-secrets-fit-this">What kinds of secrets fit this</h2>
+<p>A one-time secret can be useful for things like:</p>
+<ul>
+<li>a password</li>
+<li>an API key</li>
+<li>a private link</li>
+<li>a recovery code</li>
+<li>short-lived account details</li>
+<li>instructions that should only be read once</li>
+</ul>
+<p>The common thread is simple.</p>
+<p>The information matters, but it does not need a long life. [web:206][web:214]</p>
+<hr>
+<h2 id="why-normal-channels-are-a-bad-fit">Why normal channels are a bad fit</h2>
+<p>Most people still send secrets through email, chat, or shared docs.</p>
+<p>That is convenient, but it also creates history.</p>
+<p>The message remains searchable. It can be forwarded. It can be copied later. And even if the first handoff was legitimate, the secret may still be sitting somewhere long after it was needed. [web:204][web:206][web:208]</p>
+<p>That is why one-time secret tools exist in the first place.</p>
+<p>They are meant to reduce the persistent footprint that normal communication tools create. [web:202][web:206]</p>
+<hr>
+<h2 id="what-secure-one-time-sharing-should-include">What secure one-time sharing should include</h2>
+<p>A good one-time secret workflow usually includes a few basic ideas:</p>
+<ul>
+<li>the secret should only be accessible once</li>
+<li>it should expire if it is not opened in time</li>
+<li>the access window should be as short as practical</li>
+<li>the link should reveal as little as possible by itself</li>
+<li>highly sensitive secrets may benefit from an extra passphrase or a second channel for confirmation [web:207][web:213][web:215]</li>
+</ul>
+<p>The goal is not perfection.</p>
+<p>It is reducing the amount of time and space in which the secret can be exposed. [web:206][web:213]</p>
+<hr>
+<h2 id="which-zero-note-feature-fits-best">Which Zero Note feature fits best</h2>
+<p>Zero Note can be used for one-time secret sharing in a more intentional way depending on the situation.</p>
+<p>The best fit is usually:</p>
+<ul>
+<li>
+<p><strong>View-based destruction</strong><br>
+Use this when the secret should only be accessible once, then stop working immediately.</p>
+</li>
+<li>
+<p><strong>Time-based destruction</strong><br>
+Use this when the recipient may not open it right away, but you still want a short expiration window.</p>
+</li>
+<li>
+<p><strong>Location-based access</strong><br>
+Use this when the secret should only work from a specific place, country, or network context.</p>
+</li>
+</ul>
+<p>If the secret truly should be seen only once, view-based destruction is usually the most direct fit. [cite:29]</p>
+<hr>
+<h2 id="a-few-habits-that-make-this-safer">A few habits that make this safer</h2>
+<p>Even with a one-time secret, a few habits still matter:</p>
+<ul>
+<li>Share the secret as close as possible to when it will be used. [web:207][web:215]</li>
+<li>Choose the shortest practical expiration time. [web:213]</li>
+<li>Confirm the recipient is the right person before sending it. [web:213]</li>
+<li>Use a separate channel for extra verification when the secret is especially sensitive. [web:209][web:213]</li>
+<li>Rotate or replace the secret afterward if it was only needed temporarily. [web:207][web:215]</li>
+</ul>
+<hr>
+<h2 id="one-honest-limitation">One honest limitation</h2>
+<p>No one-time secret tool can stop someone from saving what they can already see.</p>
+<p>If a person can open the secret, they can still screenshot it, copy it, or store it manually.</p>
+<p>But there is still a real difference between a secret that is briefly accessible once and a secret that remains in an inbox or chat log indefinitely. [web:206][web:210]</p>
+<p>That shorter exposure window is the whole point.</p>
+<hr>
+<h2 id="final-thought">Final thought</h2>
+<p>A one-time secret is useful when the information only needs one secure handoff.</p>
+<p>If that is what you want, use the Zero Note mode that matches the situation.</p>
+<p>For most one-time secrets, view-based destruction is the best fit. If the person may need a short delay before opening it, use time-based destruction with the shortest reasonable window. [cite:29]</p>
+<hr>
+<p>Related:</p>
+<ul>
+<li><a href="/posts/send-information-seen-once/">How to Send Information That Should Only Be Seen Once</a></li>
+<li><a href="/posts/share-apikeys-securely/">How to Share API Keys Securely</a></li>
+<li><a href="/posts/share-password-securely/">How to Share a Password Securely</a></li>
+</ul>
+
+  </div>
+
+</article>
+
+<div id="cta-box">
+  <p><strong>Try Zero Note</strong></p>
+  <p class="cta-sub">Scan to share a self-destructing note.</p>
+  <img src="/qr.png" alt="Download Zero Note" />
+  <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+    <img src="/appstore-badge-dark.svg" class="badge-dark" />
+    <img src="/appstore-badge-light.svg" class="badge-light" />
+  </a>
+</div>
+
+<div id="mobile-cta">
+  <div style="display:flex; justify-content:center; align-items:center;">
+    <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+      <img src="/appstore-badge-dark.svg" class="badge-dark" />
+      <img src="/appstore-badge-light.svg" class="badge-light" />
+    </a>
+  </div>
+</div>
+
+<script>
+  const isMobile = window.innerWidth <= 768;
+  const cta = document.getElementById("cta-box");
+
+  if (cta && !isMobile) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      cta.style.display = scrollPercent > 0.05 ? "block" : "none";
+    });
+  }
+
+  const mobileCTA = document.getElementById("mobile-cta");
+
+  if (mobileCTA) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      if (scrollPercent > 0.1) {
+        mobileCTA.style.display = "block";
+      } else {
+        mobileCTA.style.display = "none";
+      }
+    });
+  }
+</script>
+
+
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Zero Note: Self-destructing shareable notes</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

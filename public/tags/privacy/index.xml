@@ -1,13 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Privacy on Zero Note</title>
+    <title>Privacy on Zero Note: Self-destructing shareable notes</title>
     <link>http://localhost:1313/tags/privacy/</link>
-    <description>Recent content in Privacy on Zero Note</description>
+    <description>Recent content in Privacy on Zero Note: Self-destructing shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Way to Share a Password Securely Without Email or Chat</title>
+      <link>http://localhost:1313/posts/send-password-without-chat-apps/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/send-password-without-chat-apps/</guid>
+      <description>A better way to share a password without leaving it sitting in email inboxes or chat history.</description>
+    </item>
+    <item>
+      <title>How to Send Information That Should Only Be Seen Once</title>
+      <link>http://localhost:1313/posts/send-info-only-once/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/send-info-only-once/</guid>
+      <description>A simple way to share information that should only be viewed once and not remain available afterward.</description>
+    </item>
+    <item>
+      <title>How to Share a One-Time Secret Securely</title>
+      <link>http://localhost:1313/posts/share-onetime-securely/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/share-onetime-securely/</guid>
+      <description>A safer way to share a secret that should only be accessed once and not remain available afterward.</description>
+    </item>
+    <item>
+      <title>How to Share a Wi‑Fi Password Without Saving It Anywhere</title>
+      <link>http://localhost:1313/posts/share-wifi-password/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/share-wifi-password/</guid>
+      <description>A simple way to share a Wi‑Fi password without leaving it sitting in chat history or email.</description>
+    </item>
+    <item>
+      <title>How to Share Bank Details Securely</title>
+      <link>http://localhost:1313/posts/share-bank-details-securely/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/share-bank-details-securely/</guid>
+      <description>A safer way to share bank details without leaving them sitting in chat history or email forever.</description>
+    </item>
+    <item>
+      <title>Is It Safe to Send Bank Details by Email?</title>
+      <link>http://localhost:1313/posts/safe-send-bank-details-email/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/safe-send-bank-details-email/</guid>
+      <description>What to know before sending bank details by email, and safer ways to share them when necessary.</description>
+    </item>
+    <item>
+      <title>Why Chat Is a Bad Place for Sensitive Information</title>
+      <link>http://localhost:1313/posts/chat-bad-place-share-sensitive-info/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/chat-bad-place-share-sensitive-info/</guid>
+      <description>Why chat apps are often the wrong place for passwords, private details, and other sensitive information.</description>
+    </item>
     <item>
       <title>How to Send Temporary Instructions Securely</title>
       <link>http://localhost:1313/posts/send-temporary-instructions/</link>
@@ -16,11 +65,11 @@
       <description>A simple way to share temporary instructions without leaving them sitting in chat history or email forever.</description>
     </item>
     <item>
-      <title>How to Share a Password Securely</title>
+      <title>How to Share a Password Securely(Without Sending It in Chat or Email)</title>
       <link>http://localhost:1313/posts/share-password-securely/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/share-password-securely/</guid>
-      <description>A simple way to share a password without leaving it sitting in chat history or email forever.</description>
+      <description>Stop sending passwords in chat or email. Here’s a safer way to share them without leaving them behind.</description>
     </item>
     <item>
       <title>How to Share Private Information Securely</title>
@@ -37,18 +86,18 @@
       <description>A safer way to share sensitive information without leaving it sitting in chat history.</description>
     </item>
     <item>
-      <title>How to Send a Note That Can Only Be Opened Once</title>
+      <title>How to Send a Message That Can Only Be Opened Once</title>
       <link>http://localhost:1313/posts/note-open-once/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/note-open-once/</guid>
-      <description>A simple way to share information that should only be opened once.</description>
+      <description>Send information that can only be accessed once and disappears after.</description>
     </item>
     <item>
-      <title>How to Send a Self-Destructing Note That Actually Disappears</title>
+      <title>How to Send a Self-Destructing Message That Actually Disappears</title>
       <link>http://localhost:1313/posts/self-destructing-note/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/self-destructing-note/</guid>
-      <description>A simple way to share a note that disappears after it has done its job.</description>
+      <description>A better way to send message note that disappears after being read without relying on chat apps</description>
     </item>
     <item>
       <title>How to Share a Note Securely(Without Leaving a Trace)</title>
