@@ -1,8 +1,8 @@
 baseURL = "https://zeronote.app/blog/"
 title = "Zero Note: Self-destructing shareable notes"
 theme = "PaperMod"
-relativeURLs = true
-canonifyURLs = false
+relativeURLs = false
+canonifyURLs = true
 
 [params]
   defaultTheme = "auto"
