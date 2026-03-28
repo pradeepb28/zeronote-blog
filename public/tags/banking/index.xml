@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Banking on Zero Note: Self-destructing shareable notes</title>
-    <link>https://zeronote.app/blog/tags/banking/</link>
-    <description>Recent content in Banking on Zero Note: Self-destructing shareable notes</description>
+    <title>Banking on Zero Note: Self-destructible shareable notes</title>
+    <link>https://blog.zeronote.app/tags/banking/</link>
+    <description>Recent content in Banking on Zero Note: Self-destructible shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://zeronote.app/blog/tags/banking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.zeronote.app/tags/banking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What Payment Information Is Safe to Share?</title>
-      <link>https://zeronote.app/blog/posts/payment-info-share/</link>
+      <link>https://blog.zeronote.app/posts/payment-info-share/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/posts/payment-info-share/</guid>
+      <guid>https://blog.zeronote.app/posts/payment-info-share/</guid>
       <description>A practical guide to what payment information can sometimes be shared, what should be handled carefully, and what should never be shared.</description>
     </item>
     <item>
       <title>How to Share Bank Details Securely</title>
-      <link>https://zeronote.app/blog/posts/share-bank-details-securely/</link>
+      <link>https://blog.zeronote.app/posts/share-bank-details-securely/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/posts/share-bank-details-securely/</guid>
+      <guid>https://blog.zeronote.app/posts/share-bank-details-securely/</guid>
       <description>A safer way to share bank details without leaving them sitting in chat history or email forever.</description>
     </item>
     <item>
       <title>Is It Safe to Send Bank Details by Email?</title>
-      <link>https://zeronote.app/blog/posts/safe-send-bank-details-email/</link>
+      <link>https://blog.zeronote.app/posts/safe-send-bank-details-email/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/posts/safe-send-bank-details-email/</guid>
+      <guid>https://blog.zeronote.app/posts/safe-send-bank-details-email/</guid>
       <description>What to know before sending bank details by email, and safer ways to share them when necessary.</description>
     </item>
   </channel>

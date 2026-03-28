@@ -1,130 +1,130 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on Zero Note: Self-destructing shareable notes</title>
-    <link>https://zeronote.app/blog/tags/</link>
-    <description>Recent content in Tags on Zero Note: Self-destructing shareable notes</description>
+    <title>Tags on Zero Note: Self-destructible shareable notes</title>
+    <link>https://blog.zeronote.app/tags/</link>
+    <description>Recent content in Tags on Zero Note: Self-destructible shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://zeronote.app/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.zeronote.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Banking</title>
-      <link>https://zeronote.app/blog/tags/banking/</link>
+      <link>https://blog.zeronote.app/tags/banking/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/banking/</guid>
+      <guid>https://blog.zeronote.app/tags/banking/</guid>
       <description></description>
     </item>
     <item>
       <title>Credit Cards</title>
-      <link>https://zeronote.app/blog/tags/credit-cards/</link>
+      <link>https://blog.zeronote.app/tags/credit-cards/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/credit-cards/</guid>
+      <guid>https://blog.zeronote.app/tags/credit-cards/</guid>
       <description></description>
     </item>
     <item>
       <title>Message Destruction</title>
-      <link>https://zeronote.app/blog/tags/message-destruction/</link>
+      <link>https://blog.zeronote.app/tags/message-destruction/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/message-destruction/</guid>
+      <guid>https://blog.zeronote.app/tags/message-destruction/</guid>
       <description></description>
     </item>
     <item>
       <title>Payments</title>
-      <link>https://zeronote.app/blog/tags/payments/</link>
+      <link>https://blog.zeronote.app/tags/payments/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/payments/</guid>
+      <guid>https://blog.zeronote.app/tags/payments/</guid>
       <description></description>
     </item>
     <item>
       <title>Privacy</title>
-      <link>https://zeronote.app/blog/tags/privacy/</link>
+      <link>https://blog.zeronote.app/tags/privacy/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/privacy/</guid>
+      <guid>https://blog.zeronote.app/tags/privacy/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>https://zeronote.app/blog/tags/security/</link>
+      <link>https://blog.zeronote.app/tags/security/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/security/</guid>
+      <guid>https://blog.zeronote.app/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>Use Cases</title>
-      <link>https://zeronote.app/blog/tags/use-cases/</link>
+      <link>https://blog.zeronote.app/tags/use-cases/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/use-cases/</guid>
+      <guid>https://blog.zeronote.app/tags/use-cases/</guid>
       <description></description>
     </item>
     <item>
       <title>Chat</title>
-      <link>https://zeronote.app/blog/tags/chat/</link>
+      <link>https://blog.zeronote.app/tags/chat/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/chat/</guid>
+      <guid>https://blog.zeronote.app/tags/chat/</guid>
       <description></description>
     </item>
     <item>
       <title>Email</title>
-      <link>https://zeronote.app/blog/tags/email/</link>
+      <link>https://blog.zeronote.app/tags/email/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/email/</guid>
+      <guid>https://blog.zeronote.app/tags/email/</guid>
       <description></description>
     </item>
     <item>
       <title>One-Time Access</title>
-      <link>https://zeronote.app/blog/tags/one-time-access/</link>
+      <link>https://blog.zeronote.app/tags/one-time-access/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/one-time-access/</guid>
+      <guid>https://blog.zeronote.app/tags/one-time-access/</guid>
       <description></description>
     </item>
     <item>
       <title>One-Time Secret</title>
-      <link>https://zeronote.app/blog/tags/one-time-secret/</link>
+      <link>https://blog.zeronote.app/tags/one-time-secret/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/one-time-secret/</guid>
+      <guid>https://blog.zeronote.app/tags/one-time-secret/</guid>
       <description></description>
     </item>
     <item>
       <title>Passwords</title>
-      <link>https://zeronote.app/blog/tags/passwords/</link>
+      <link>https://blog.zeronote.app/tags/passwords/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/passwords/</guid>
+      <guid>https://blog.zeronote.app/tags/passwords/</guid>
       <description></description>
     </item>
     <item>
       <title>Wi-Fi</title>
-      <link>https://zeronote.app/blog/tags/wi-fi/</link>
+      <link>https://blog.zeronote.app/tags/wi-fi/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/wi-fi/</guid>
+      <guid>https://blog.zeronote.app/tags/wi-fi/</guid>
       <description></description>
     </item>
     <item>
       <title>API Keys</title>
-      <link>https://zeronote.app/blog/tags/api-keys/</link>
+      <link>https://blog.zeronote.app/tags/api-keys/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/api-keys/</guid>
+      <guid>https://blog.zeronote.app/tags/api-keys/</guid>
       <description></description>
     </item>
     <item>
       <title>Developers</title>
-      <link>https://zeronote.app/blog/tags/developers/</link>
+      <link>https://blog.zeronote.app/tags/developers/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/developers/</guid>
+      <guid>https://blog.zeronote.app/tags/developers/</guid>
       <description></description>
     </item>
     <item>
       <title>Temporary Access</title>
-      <link>https://zeronote.app/blog/tags/temporary-access/</link>
+      <link>https://blog.zeronote.app/tags/temporary-access/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/temporary-access/</guid>
+      <guid>https://blog.zeronote.app/tags/temporary-access/</guid>
       <description></description>
     </item>
     <item>
       <title>Control</title>
-      <link>https://zeronote.app/blog/tags/control/</link>
+      <link>https://blog.zeronote.app/tags/control/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/tags/control/</guid>
+      <guid>https://blog.zeronote.app/tags/control/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Passwords on Zero Note: Self-destructing shareable notes</title>
-    <link>https://zeronote.app/blog/tags/passwords/</link>
-    <description>Recent content in Passwords on Zero Note: Self-destructing shareable notes</description>
+    <title>Passwords on Zero Note: Self-destructible shareable notes</title>
+    <link>https://blog.zeronote.app/tags/passwords/</link>
+    <description>Recent content in Passwords on Zero Note: Self-destructible shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://zeronote.app/blog/tags/passwords/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.zeronote.app/tags/passwords/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Best Way to Share a Password Securely Without Email or Chat</title>
-      <link>https://zeronote.app/blog/posts/send-password-without-chat-apps/</link>
+      <link>https://blog.zeronote.app/posts/send-password-without-chat-apps/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/posts/send-password-without-chat-apps/</guid>
+      <guid>https://blog.zeronote.app/posts/send-password-without-chat-apps/</guid>
       <description>A better way to share a password without leaving it sitting in email inboxes or chat history.</description>
     </item>
     <item>
       <title>How to Share a Password Securely (Without Sending It in Chat or Email)</title>
-      <link>https://zeronote.app/blog/posts/share-password-securely/</link>
+      <link>https://blog.zeronote.app/posts/share-password-securely/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://zeronote.app/blog/posts/share-password-securely/</guid>
+      <guid>https://blog.zeronote.app/posts/share-password-securely/</guid>
       <description>Stop sending passwords in chat or email. Here’s a safer way to share them without leaving them behind.</description>
     </item>
   </channel>
