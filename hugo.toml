@@ -1,6 +1,8 @@
 baseURL = "https://zeronote.app/blog/"
 title = "Zero Note: Self-destructing shareable notes"
 theme = "PaperMod"
+relativeURLs = true
+canonifyURLs = false
 
 [params]
   defaultTheme = "auto"
@@ -10,6 +12,7 @@ theme = "PaperMod"
   disableSpecial1stPost = true
   ShowBreadCrumbs = true
   customCSS = ["css/extended/custom.css"]
+
 
 [taxonomies]
   tag = "tags"
