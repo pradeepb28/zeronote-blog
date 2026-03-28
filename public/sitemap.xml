@@ -2,100 +2,118 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/banking/</loc>
+    <loc>https://zeronote.app/blog/tags/banking/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/tags/credit-cards/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/tags/message-destruction/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/tags/payments/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/posts/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/tags/privacy/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/tags/security/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/tags/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/tags/use-cases/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/posts/payment-info-share/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/posts/view-based-vs-time-based/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/posts/never-share-card-details-together/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://zeronote.app/blog/posts/send-password-without-chat-apps/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/send-password-without-chat-apps/</loc>
+    <loc>https://zeronote.app/blog/tags/chat/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/chat/</loc>
+    <loc>https://zeronote.app/blog/tags/email/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/email/</loc>
+    <loc>https://zeronote.app/blog/posts/send-info-only-once/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/send-info-only-once/</loc>
+    <loc>https://zeronote.app/blog/posts/share-onetime-securely/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/share-onetime-securely/</loc>
+    <loc>https://zeronote.app/blog/posts/share-wifi-password/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/share-wifi-password/</loc>
+    <loc>https://zeronote.app/blog/posts/share-bank-details-securely/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/share-bank-details-securely/</loc>
+    <loc>https://zeronote.app/blog/posts/safe-send-bank-details-email/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/safe-send-bank-details-email/</loc>
+    <loc>https://zeronote.app/blog/tags/one-time-access/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/one-time-access/</loc>
+    <loc>https://zeronote.app/blog/tags/one-time-secret/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/one-time-secret/</loc>
+    <loc>https://zeronote.app/blog/tags/passwords/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/passwords/</loc>
+    <loc>https://zeronote.app/blog/posts/chat-bad-place-share-sensitive-info/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://zeronote.app/blog/tags/wi-fi/</loc>
     <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/privacy/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/security/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/use-cases/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/chat-bad-place-share-sensitive-info/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/wi-fi/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/api-keys/</loc>
+    <loc>https://zeronote.app/blog/tags/api-keys/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/developers/</loc>
+    <loc>https://zeronote.app/blog/tags/developers/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/send-temporary-instructions/</loc>
+    <loc>https://zeronote.app/blog/posts/send-temporary-instructions/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/share-password-securely/</loc>
+    <loc>https://zeronote.app/blog/posts/share-password-securely/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/share-apikeys-securely/</loc>
+    <loc>https://zeronote.app/blog/posts/share-apikeys-securely/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/share-private-info-securely/</loc>
+    <loc>https://zeronote.app/blog/posts/share-private-info-securely/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/share-sensitive-info-without-chat/</loc>
+    <loc>https://zeronote.app/blog/posts/share-sensitive-info-without-chat/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/temporary-access/</loc>
+    <loc>https://zeronote.app/blog/tags/temporary-access/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/control/</loc>
+    <loc>https://zeronote.app/blog/tags/control/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/note-open-once/</loc>
+    <loc>https://zeronote.app/blog/posts/note-open-once/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/self-destructing-note/</loc>
+    <loc>https://zeronote.app/blog/posts/self-destructing-note/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/share-note-securely/</loc>
+    <loc>https://zeronote.app/blog/posts/share-note-securely/</loc>
     <lastmod>2026-03-17T00:00:00+00:00</lastmod>
   </url>
 </urlset>

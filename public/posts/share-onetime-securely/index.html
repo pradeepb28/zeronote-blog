@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>How to Share a One-Time Secret Securely | Zero Note: Self-destructing shareable notes</title>
 <meta name="keywords" content="Security, Privacy, One-Time Secret, Use Cases">
 <meta name="description" content="A safer way to share a secret that should only be accessed once and not remain available afterward.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/share-onetime-securely/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.77f8e0afdca275042ccdee58088de8fc2c431b7b494aae1e46d4f8ce596b499b.css" integrity="sha256-d/jgr9yidQQsze5YCI3o/CxDG3tJSq4eRtT4zllrSZs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="canonical" href="https://zeronote.app/blog/posts/share-onetime-securely/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.77f8e0afdca275042ccdee58088de8fc2c431b7b494aae1e46d4f8ce596b499b.css" integrity="sha256-d/jgr9yidQQsze5YCI3o/CxDG3tJSq4eRtT4zllrSZs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://zeronote.app/blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://zeronote.app/blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://zeronote.app/blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://zeronote.app/blog/apple-touch-icon.png">
+<link rel="mask-icon" href="https://zeronote.app/blog/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/share-onetime-securely/">
+<link rel="alternate" hreflang="en" href="https://zeronote.app/blog/posts/share-onetime-securely/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,13 +70,80 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta name="google-site-verification" content="SJouY3j1HVpJBcm5AN5tUPsJOIgDOJJqXDxmYv5Fvj8" />
+</script><meta name="google-site-verification" content="SJouY3j1HVpJBcm5AN5tUPsJOIgDOJJqXDxmYv5Fvj8" /><meta property="og:url" content="https://zeronote.app/blog/posts/share-onetime-securely/">
+  <meta property="og:site_name" content="Zero Note: Self-destructing shareable notes">
+  <meta property="og:title" content="How to Share a One-Time Secret Securely">
+  <meta property="og:description" content="A safer way to share a secret that should only be accessed once and not remain available afterward.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-19T00:00:00+00:00">
+    <meta property="article:tag" content="Security">
+    <meta property="article:tag" content="Privacy">
+    <meta property="article:tag" content="One-Time Secret">
+    <meta property="article:tag" content="Use Cases">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How to Share a One-Time Secret Securely">
+  <meta name="twitter:description" content="A safer way to share a secret that should only be accessed once and not remain available afterward.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://zeronote.app/blog/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "How to Share a One-Time Secret Securely",
+      "item": "https://zeronote.app/blog/posts/share-onetime-securely/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Share a One-Time Secret Securely",
+  "name": "How to Share a One-Time Secret Securely",
+  "description": "A safer way to share a secret that should only be accessed once and not remain available afterward.",
+  "keywords": [
+    "Security", "Privacy", "One-Time Secret", "Use Cases"
+  ],
+  "articleBody": "Sometimes you need to share something sensitive, but only once.\nNot in a thread. Not in an inbox. Not in a document that gets copied around later.\nJust one secure handoff, and then it should be gone.\nThat is the idea behind a one-time secret.\nWhat a one-time secret actually is A one-time secret is a piece of sensitive information shared through a link or note that is meant to be accessed only once.\nAfter it has been viewed, it should stop being available.\nThat is different from a normal message.\nA normal message is built to stay around.\nA one-time secret is built to disappear after doing its job. [web:202][web:206][web:210]\nWhat kinds of secrets fit this A one-time secret can be useful for things like:\na password an API key a private link a recovery code short-lived account details instructions that should only be read once The common thread is simple.\nThe information matters, but it does not need a long life. [web:206][web:214]\nWhy normal channels are a bad fit Most people still send secrets through email, chat, or shared docs.\nThat is convenient, but it also creates history.\nThe message remains searchable. It can be forwarded. It can be copied later. And even if the first handoff was legitimate, the secret may still be sitting somewhere long after it was needed. [web:204][web:206][web:208]\nThat is why one-time secret tools exist in the first place.\nThey are meant to reduce the persistent footprint that normal communication tools create. [web:202][web:206]\nWhat secure one-time sharing should include A good one-time secret workflow usually includes a few basic ideas:\nthe secret should only be accessible once it should expire if it is not opened in time the access window should be as short as practical the link should reveal as little as possible by itself highly sensitive secrets may benefit from an extra passphrase or a second channel for confirmation [web:207][web:213][web:215] The goal is not perfection.\nIt is reducing the amount of time and space in which the secret can be exposed. [web:206][web:213]\nWhich Zero Note feature fits best Zero Note can be used for one-time secret sharing in a more intentional way depending on the situation.\nThe best fit is usually:\nView-based destruction\nUse this when the secret should only be accessible once, then stop working immediately.\nTime-based destruction\nUse this when the recipient may not open it right away, but you still want a short expiration window.\nLocation-based access\nUse this when the secret should only work from a specific place, country, or network context.\nIf the secret truly should be seen only once, view-based destruction is usually the most direct fit. [cite:29]\nA few habits that make this safer Even with a one-time secret, a few habits still matter:\nShare the secret as close as possible to when it will be used. [web:207][web:215] Choose the shortest practical expiration time. [web:213] Confirm the recipient is the right person before sending it. [web:213] Use a separate channel for extra verification when the secret is especially sensitive. [web:209][web:213] Rotate or replace the secret afterward if it was only needed temporarily. [web:207][web:215] One honest limitation No one-time secret tool can stop someone from saving what they can already see.\nIf a person can open the secret, they can still screenshot it, copy it, or store it manually.\nBut there is still a real difference between a secret that is briefly accessible once and a secret that remains in an inbox or chat log indefinitely. [web:206][web:210]\nThat shorter exposure window is the whole point.\nFinal thought A one-time secret is useful when the information only needs one secure handoff.\nIf that is what you want, use the Zero Note mode that matches the situation.\nFor most one-time secrets, view-based destruction is the best fit. If the person may need a short delay before opening it, use time-based destruction with the shortest reasonable window. [cite:29]\nRelated:\nHow to Send Information That Should Only Be Seen Once How to Share API Keys Securely How to Share a Password Securely ",
+  "wordCount" : "672",
+  "inLanguage": "en",
+  "datePublished": "2026-03-19T00:00:00Z",
+  "dateModified": "2026-03-19T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://zeronote.app/blog/posts/share-onetime-securely/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zero Note: Self-destructing shareable notes",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://zeronote.app/blog/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Zero Note: Self-destructing shareable notes (Alt + H)">Zero Note: Self-destructing shareable notes</a>
+            <a href="https://zeronote.app/blog/" accesskey="h" title="Zero Note: Self-destructing shareable notes (Alt + H)">Zero Note: Self-destructing shareable notes</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -102,7 +169,7 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://zeronote.app/blog/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
@@ -273,7 +340,7 @@ Use this when the secret should only work from a specific place, country, or net
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">Zero Note: Self-destructing shareable notes</a></span> · 
+        <span>&copy; 2026 <a href="https://zeronote.app/blog/">Zero Note: Self-destructing shareable notes</a></span> · 
 
     <span>
         Powered by

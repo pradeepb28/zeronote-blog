@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Chat on Zero Note: Self-destructing shareable notes</title>
-    <link>http://localhost:1313/tags/chat/</link>
+    <link>https://zeronote.app/blog/tags/chat/</link>
     <description>Recent content in Chat on Zero Note: Self-destructing shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/chat/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zeronote.app/blog/tags/chat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Chat Is a Bad Place for Sensitive Information</title>
-      <link>http://localhost:1313/posts/chat-bad-place-share-sensitive-info/</link>
+      <link>https://zeronote.app/blog/posts/chat-bad-place-share-sensitive-info/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/chat-bad-place-share-sensitive-info/</guid>
+      <guid>https://zeronote.app/blog/posts/chat-bad-place-share-sensitive-info/</guid>
       <description>Why chat apps are often the wrong place for passwords, private details, and other sensitive information.</description>
     </item>
     <item>
       <title>How to Share Sensitive Information Without Chat</title>
-      <link>http://localhost:1313/posts/share-sensitive-info-without-chat/</link>
+      <link>https://zeronote.app/blog/posts/share-sensitive-info-without-chat/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-sensitive-info-without-chat/</guid>
+      <guid>https://zeronote.app/blog/posts/share-sensitive-info-without-chat/</guid>
       <description>A safer way to share sensitive information without leaving it sitting in chat history.</description>
     </item>
   </channel>

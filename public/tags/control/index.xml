@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Control on Zero Note: Self-destructing shareable notes</title>
-    <link>http://localhost:1313/tags/control/</link>
+    <link>https://zeronote.app/blog/tags/control/</link>
     <description>Recent content in Control on Zero Note: Self-destructing shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/control/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zeronote.app/blog/tags/control/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Send a Self-Destructing Message That Actually Disappears</title>
-      <link>http://localhost:1313/posts/self-destructing-note/</link>
+      <link>https://zeronote.app/blog/posts/self-destructing-note/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/self-destructing-note/</guid>
+      <guid>https://zeronote.app/blog/posts/self-destructing-note/</guid>
       <description>A better way to send message note that disappears after being read without relying on chat apps</description>
     </item>
     <item>
-      <title>How to Share a Note Securely(Without Leaving a Trace)</title>
-      <link>http://localhost:1313/posts/share-note-securely/</link>
+      <title>How to Share a Note Securely (Without Leaving a Trace)</title>
+      <link>https://zeronote.app/blog/posts/share-note-securely/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-note-securely/</guid>
+      <guid>https://zeronote.app/blog/posts/share-note-securely/</guid>
       <description>A simpler way to share sensitive information without leaving it sitting in chat history or email forever.</description>
     </item>
   </channel>

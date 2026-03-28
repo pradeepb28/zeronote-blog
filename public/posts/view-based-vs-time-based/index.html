@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>When to Use Views-Based vs Time-Based Message Destruction | Zero Note: Self-destructing shareable notes</title>
+<meta name="keywords" content="Security, Privacy, Message Destruction, Use Cases">
+<meta name="description" content="How to decide between view-based and time-based self-destructing messages, depending on what you are sharing.">
+<meta name="author" content="">
+<link rel="canonical" href="https://zeronote.app/blog/posts/view-based-vs-time-based/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.77f8e0afdca275042ccdee58088de8fc2c431b7b494aae1e46d4f8ce596b499b.css" integrity="sha256-d/jgr9yidQQsze5YCI3o/CxDG3tJSq4eRtT4zllrSZs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://zeronote.app/blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://zeronote.app/blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://zeronote.app/blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://zeronote.app/blog/apple-touch-icon.png">
+<link rel="mask-icon" href="https://zeronote.app/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://zeronote.app/blog/posts/view-based-vs-time-based/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google-site-verification" content="SJouY3j1HVpJBcm5AN5tUPsJOIgDOJJqXDxmYv5Fvj8" /><meta property="og:url" content="https://zeronote.app/blog/posts/view-based-vs-time-based/">
+  <meta property="og:site_name" content="Zero Note: Self-destructing shareable notes">
+  <meta property="og:title" content="When to Use Views-Based vs Time-Based Message Destruction">
+  <meta property="og:description" content="How to decide between view-based and time-based self-destructing messages, depending on what you are sharing.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-20T00:00:00+00:00">
+    <meta property="article:tag" content="Security">
+    <meta property="article:tag" content="Privacy">
+    <meta property="article:tag" content="Message Destruction">
+    <meta property="article:tag" content="Use Cases">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="When to Use Views-Based vs Time-Based Message Destruction">
+  <meta name="twitter:description" content="How to decide between view-based and time-based self-destructing messages, depending on what you are sharing.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://zeronote.app/blog/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "When to Use Views-Based vs Time-Based Message Destruction",
+      "item": "https://zeronote.app/blog/posts/view-based-vs-time-based/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "When to Use Views-Based vs Time-Based Message Destruction",
+  "name": "When to Use Views-Based vs Time-Based Message Destruction",
+  "description": "How to decide between view-based and time-based self-destructing messages, depending on what you are sharing.",
+  "keywords": [
+    "Security", "Privacy", "Message Destruction", "Use Cases"
+  ],
+  "articleBody": "Not all self-destructing messages should work the same way.\nSometimes the message should disappear after it is opened.\nOther times, it makes more sense for it to expire after a specific amount of time, whether it has been viewed or not.\nThat is the difference between view-based and time-based message destruction.\nAnd choosing the right one depends on what you are trying to protect.\nWhat views-based destruction means View-based destruction means the message is destroyed after it has been opened or viewed.\nThe message stays available until that first access happens.\nAfter that, it stops working.\nThis is useful when the main goal is one-time access.\nYou care less about the clock and more about the fact that the message should only be seen once. [web:359][web:360]\nWhat time-based destruction means Time-based destruction means the message expires after a set amount of time.\nThat window might be a few minutes, an hour, a day, or longer.\nIn this model, the message has a lifetime based on time, not just on whether it has been opened.\nThis is useful when the information is only relevant for a certain period. [web:357][web:358][web:361]\nWhen view-based destruction makes more sense View-based destruction is usually the better fit when the message should have one clear readable moment.\nFor example:\na password a private link a recovery code a one-time secret a note that should only be checked once In these cases, the main concern is not how many minutes pass.\nIt is whether the message can still be opened again later.\nIf the answer should be no, view-based destruction is usually the cleaner choice. [web:359][web:364]\nWhen time-based destruction makes more sense Time-based destruction is often better when the recipient may need a short access window.\nFor example:\ntemporary instructions bank transfer details event or meeting information directions for a delivery or handoff access details that only matter for the next hour or day Here, the goal is not always “one view only.”\nIt is more often “this should stop being available after a certain point.” [web:357][web:358][web:361]\nThe practical difference A simple way to think about it is this:\nView-based destruction answers: “Should this still exist after someone has already seen it?” Time-based destruction answers: “Should this still exist after a certain amount of time has passed?” That is why they solve different problems.\nOne controls repeat access.\nThe other controls lifespan.\nWhich Zero Note feature fits best Zero Note supports both models, which is useful because different information needs different rules. [web:217][cite:29]\nUse view-based destruction when:\nthe message should only be accessed once the first read is the only read that matters repeat access is the main risk [cite:29] Use time-based destruction when:\nthe recipient may need a short window the information is time-sensitive the risk is the message lingering too long rather than being viewed twice [cite:29] If you are not sure which to choose, ask one question:\nIs the bigger problem a second view, or a message that stays available for too long?\nThat usually gives you the answer.\nOne honest limitation Neither model can stop someone from saving what they can already see.\nA screenshot, copy, or photo is still possible once the message is visible.\nBut both models still reduce exposure in different ways.\nThe point is not perfection.\nIt is better control over how long sensitive information remains accessible. [web:356][web:358]\nFinal thought View-based and time-based destruction are similar on the surface, but they are not interchangeable.\nUse view-based destruction when one-time access is what matters.\nUse time-based destruction when the information only needs to exist for a limited window.\nChoosing the right behavior makes the message more useful and more intentional.\nRelated:\nHow to Send Information That Should Only Be Seen Once How to Send Temporary Instructions Securely How to Share a One-Time Secret Securely ",
+  "wordCount" : "633",
+  "inLanguage": "en",
+  "datePublished": "2026-03-20T00:00:00Z",
+  "dateModified": "2026-03-20T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://zeronote.app/blog/posts/view-based-vs-time-based/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zero Note: Self-destructing shareable notes",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://zeronote.app/blog/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://zeronote.app/blog/" accesskey="h" title="Zero Note: Self-destructing shareable notes (Alt + H)">Zero Note: Self-destructing shareable notes</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://zeronote.app/blog/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  
+  <header class="post-header">
+    <h1 class="post-title">When to Use Views-Based vs Time-Based Message Destruction</h1>
+
+    
+      <p class="post-description">How to decide between view-based and time-based self-destructing messages, depending on what you are sharing.</p>
+    
+
+    <div class="post-meta">
+      Mar 20, 2026
+    </div>
+  </header>
+
+  <div class="post-entry">
+    <p>Not all self-destructing messages should work the same way.</p>
+<p>Sometimes the message should disappear after it is opened.</p>
+<p>Other times, it makes more sense for it to expire after a specific amount of time, whether it has been viewed or not.</p>
+<p>That is the difference between view-based and time-based message destruction.</p>
+<p>And choosing the right one depends on what you are trying to protect.</p>
+<hr>
+<h2 id="what-views-based-destruction-means">What views-based destruction means</h2>
+<p>View-based destruction means the message is destroyed after it has been opened or viewed.</p>
+<p>The message stays available until that first access happens.</p>
+<p>After that, it stops working.</p>
+<p>This is useful when the main goal is one-time access.</p>
+<p>You care less about the clock and more about the fact that the message should only be seen once. [web:359][web:360]</p>
+<hr>
+<h2 id="what-time-based-destruction-means">What time-based destruction means</h2>
+<p>Time-based destruction means the message expires after a set amount of time.</p>
+<p>That window might be a few minutes, an hour, a day, or longer.</p>
+<p>In this model, the message has a lifetime based on time, not just on whether it has been opened.</p>
+<p>This is useful when the information is only relevant for a certain period. [web:357][web:358][web:361]</p>
+<hr>
+<h2 id="when-view-based-destruction-makes-more-sense">When view-based destruction makes more sense</h2>
+<p>View-based destruction is usually the better fit when the message should have one clear readable moment.</p>
+<p>For example:</p>
+<ul>
+<li>a password</li>
+<li>a private link</li>
+<li>a recovery code</li>
+<li>a one-time secret</li>
+<li>a note that should only be checked once</li>
+</ul>
+<p>In these cases, the main concern is not how many minutes pass.</p>
+<p>It is whether the message can still be opened again later.</p>
+<p>If the answer should be no, view-based destruction is usually the cleaner choice. [web:359][web:364]</p>
+<hr>
+<h2 id="when-time-based-destruction-makes-more-sense">When time-based destruction makes more sense</h2>
+<p>Time-based destruction is often better when the recipient may need a short access window.</p>
+<p>For example:</p>
+<ul>
+<li>temporary instructions</li>
+<li>bank transfer details</li>
+<li>event or meeting information</li>
+<li>directions for a delivery or handoff</li>
+<li>access details that only matter for the next hour or day</li>
+</ul>
+<p>Here, the goal is not always “one view only.”</p>
+<p>It is more often “this should stop being available after a certain point.” [web:357][web:358][web:361]</p>
+<hr>
+<h2 id="the-practical-difference">The practical difference</h2>
+<p>A simple way to think about it is this:</p>
+<ul>
+<li><strong>View-based destruction</strong> answers: “Should this still exist after someone has already seen it?”</li>
+<li><strong>Time-based destruction</strong> answers: “Should this still exist after a certain amount of time has passed?”</li>
+</ul>
+<p>That is why they solve different problems.</p>
+<p>One controls repeat access.</p>
+<p>The other controls lifespan.</p>
+<hr>
+<h2 id="which-zero-note-feature-fits-best">Which Zero Note feature fits best</h2>
+<p>Zero Note supports both models, which is useful because different information needs different rules. [web:217][cite:29]</p>
+<p>Use <strong>view-based destruction</strong> when:</p>
+<ul>
+<li>the message should only be accessed once</li>
+<li>the first read is the only read that matters</li>
+<li>repeat access is the main risk [cite:29]</li>
+</ul>
+<p>Use <strong>time-based destruction</strong> when:</p>
+<ul>
+<li>the recipient may need a short window</li>
+<li>the information is time-sensitive</li>
+<li>the risk is the message lingering too long rather than being viewed twice [cite:29]</li>
+</ul>
+<p>If you are not sure which to choose, ask one question:</p>
+<p>Is the bigger problem a second view, or a message that stays available for too long?</p>
+<p>That usually gives you the answer.</p>
+<hr>
+<h2 id="one-honest-limitation">One honest limitation</h2>
+<p>Neither model can stop someone from saving what they can already see.</p>
+<p>A screenshot, copy, or photo is still possible once the message is visible.</p>
+<p>But both models still reduce exposure in different ways.</p>
+<p>The point is not perfection.</p>
+<p>It is better control over how long sensitive information remains accessible. [web:356][web:358]</p>
+<hr>
+<h2 id="final-thought">Final thought</h2>
+<p>View-based and time-based destruction are similar on the surface, but they are not interchangeable.</p>
+<p>Use view-based destruction when one-time access is what matters.</p>
+<p>Use time-based destruction when the information only needs to exist for a limited window.</p>
+<p>Choosing the right behavior makes the message more useful and more intentional.</p>
+<hr>
+<p>Related:</p>
+<ul>
+<li><a href="/posts/send-information-seen-once/">How to Send Information That Should Only Be Seen Once</a></li>
+<li><a href="/posts/send-temporary-instructions/">How to Send Temporary Instructions Securely</a></li>
+<li><a href="/posts/share-one-time-secret-securely/">How to Share a One-Time Secret Securely</a></li>
+</ul>
+
+  </div>
+
+</article>
+
+<div id="cta-box">
+  <p><strong>Try Zero Note</strong></p>
+  <p class="cta-sub">Scan to share a self-destructing note.</p>
+  <img src="/qr.png" alt="Download Zero Note" />
+  <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+    <img src="/appstore-badge-dark.svg" class="badge-dark" />
+    <img src="/appstore-badge-light.svg" class="badge-light" />
+  </a>
+</div>
+
+<div id="mobile-cta">
+  <div style="display:flex; justify-content:center; align-items:center;">
+    <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+      <img src="/appstore-badge-dark.svg" class="badge-dark" />
+      <img src="/appstore-badge-light.svg" class="badge-light" />
+    </a>
+  </div>
+</div>
+
+<script>
+  const isMobile = window.innerWidth <= 768;
+  const cta = document.getElementById("cta-box");
+
+  if (cta && !isMobile) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      cta.style.display = scrollPercent > 0.05 ? "block" : "none";
+    });
+  }
+
+  const mobileCTA = document.getElementById("mobile-cta");
+
+  if (mobileCTA) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      if (scrollPercent > 0.1) {
+        mobileCTA.style.display = "block";
+      } else {
+        mobileCTA.style.display = "none";
+      }
+    });
+  }
+</script>
+
+
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://zeronote.app/blog/">Zero Note: Self-destructing shareable notes</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -2,129 +2,136 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Zero Note: Self-destructing shareable notes</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://zeronote.app/blog/posts/</link>
     <description>Recent content in Posts on Zero Note: Self-destructing shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zeronote.app/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What Payment Information Is Safe to Share?</title>
-      <link>http://localhost:1313/posts/payment-info-share/</link>
+      <link>https://zeronote.app/blog/posts/payment-info-share/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/payment-info-share/</guid>
+      <guid>https://zeronote.app/blog/posts/payment-info-share/</guid>
       <description>A practical guide to what payment information can sometimes be shared, what should be handled carefully, and what should never be shared.</description>
     </item>
     <item>
-      <title>Why You Should Never Share Your Card Number, Expiry Date, and CVV Together</title>
-      <link>http://localhost:1313/posts/never-share-card-details-together/</link>
+      <title>When to Use Views-Based vs Time-Based Message Destruction</title>
+      <link>https://zeronote.app/blog/posts/view-based-vs-time-based/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/never-share-card-details-together/</guid>
+      <guid>https://zeronote.app/blog/posts/view-based-vs-time-based/</guid>
+      <description>How to decide between view-based and time-based self-destructing messages, depending on what you are sharing.</description>
+    </item>
+    <item>
+      <title>Why You Should Never Share Your Card Number, Expiry Date, and CVV Together</title>
+      <link>https://zeronote.app/blog/posts/never-share-card-details-together/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://zeronote.app/blog/posts/never-share-card-details-together/</guid>
       <description>Why sharing your card number, expiry date, and CVV together is risky, and what to do instead.</description>
     </item>
     <item>
       <title>Best Way to Share a Password Securely Without Email or Chat</title>
-      <link>http://localhost:1313/posts/send-password-without-chat-apps/</link>
+      <link>https://zeronote.app/blog/posts/send-password-without-chat-apps/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/send-password-without-chat-apps/</guid>
+      <guid>https://zeronote.app/blog/posts/send-password-without-chat-apps/</guid>
       <description>A better way to share a password without leaving it sitting in email inboxes or chat history.</description>
     </item>
     <item>
       <title>How to Send Information That Should Only Be Seen Once</title>
-      <link>http://localhost:1313/posts/send-info-only-once/</link>
+      <link>https://zeronote.app/blog/posts/send-info-only-once/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/send-info-only-once/</guid>
+      <guid>https://zeronote.app/blog/posts/send-info-only-once/</guid>
       <description>A simple way to share information that should only be viewed once and not remain available afterward.</description>
     </item>
     <item>
       <title>How to Share a One-Time Secret Securely</title>
-      <link>http://localhost:1313/posts/share-onetime-securely/</link>
+      <link>https://zeronote.app/blog/posts/share-onetime-securely/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-onetime-securely/</guid>
+      <guid>https://zeronote.app/blog/posts/share-onetime-securely/</guid>
       <description>A safer way to share a secret that should only be accessed once and not remain available afterward.</description>
     </item>
     <item>
       <title>How to Share a Wi‑Fi Password Without Saving It Anywhere</title>
-      <link>http://localhost:1313/posts/share-wifi-password/</link>
+      <link>https://zeronote.app/blog/posts/share-wifi-password/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-wifi-password/</guid>
+      <guid>https://zeronote.app/blog/posts/share-wifi-password/</guid>
       <description>A simple way to share a Wi‑Fi password without leaving it sitting in chat history or email.</description>
     </item>
     <item>
       <title>How to Share Bank Details Securely</title>
-      <link>http://localhost:1313/posts/share-bank-details-securely/</link>
+      <link>https://zeronote.app/blog/posts/share-bank-details-securely/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-bank-details-securely/</guid>
+      <guid>https://zeronote.app/blog/posts/share-bank-details-securely/</guid>
       <description>A safer way to share bank details without leaving them sitting in chat history or email forever.</description>
     </item>
     <item>
       <title>Is It Safe to Send Bank Details by Email?</title>
-      <link>http://localhost:1313/posts/safe-send-bank-details-email/</link>
+      <link>https://zeronote.app/blog/posts/safe-send-bank-details-email/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/safe-send-bank-details-email/</guid>
+      <guid>https://zeronote.app/blog/posts/safe-send-bank-details-email/</guid>
       <description>What to know before sending bank details by email, and safer ways to share them when necessary.</description>
     </item>
     <item>
       <title>Why Chat Is a Bad Place for Sensitive Information</title>
-      <link>http://localhost:1313/posts/chat-bad-place-share-sensitive-info/</link>
+      <link>https://zeronote.app/blog/posts/chat-bad-place-share-sensitive-info/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/chat-bad-place-share-sensitive-info/</guid>
+      <guid>https://zeronote.app/blog/posts/chat-bad-place-share-sensitive-info/</guid>
       <description>Why chat apps are often the wrong place for passwords, private details, and other sensitive information.</description>
     </item>
     <item>
       <title>How to Send Temporary Instructions Securely</title>
-      <link>http://localhost:1313/posts/send-temporary-instructions/</link>
+      <link>https://zeronote.app/blog/posts/send-temporary-instructions/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/send-temporary-instructions/</guid>
+      <guid>https://zeronote.app/blog/posts/send-temporary-instructions/</guid>
       <description>A simple way to share temporary instructions without leaving them sitting in chat history or email forever.</description>
     </item>
     <item>
-      <title>How to Share a Password Securely(Without Sending It in Chat or Email)</title>
-      <link>http://localhost:1313/posts/share-password-securely/</link>
+      <title>How to Share a Password Securely (Without Sending It in Chat or Email)</title>
+      <link>https://zeronote.app/blog/posts/share-password-securely/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-password-securely/</guid>
+      <guid>https://zeronote.app/blog/posts/share-password-securely/</guid>
       <description>Stop sending passwords in chat or email. Here’s a safer way to share them without leaving them behind.</description>
     </item>
     <item>
       <title>How to Share API Keys Securely (Without Slack or Email)</title>
-      <link>http://localhost:1313/posts/share-apikeys-securely/</link>
+      <link>https://zeronote.app/blog/posts/share-apikeys-securely/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-apikeys-securely/</guid>
+      <guid>https://zeronote.app/blog/posts/share-apikeys-securely/</guid>
       <description>A safer way to share API keys without leaving them in Slack, email, or source code.</description>
     </item>
     <item>
       <title>How to Share Private Information Securely</title>
-      <link>http://localhost:1313/posts/share-private-info-securely/</link>
+      <link>https://zeronote.app/blog/posts/share-private-info-securely/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-private-info-securely/</guid>
+      <guid>https://zeronote.app/blog/posts/share-private-info-securely/</guid>
       <description>A simple way to share private information without leaving it sitting in chat history or email forever.</description>
     </item>
     <item>
       <title>How to Share Sensitive Information Without Chat</title>
-      <link>http://localhost:1313/posts/share-sensitive-info-without-chat/</link>
+      <link>https://zeronote.app/blog/posts/share-sensitive-info-without-chat/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-sensitive-info-without-chat/</guid>
+      <guid>https://zeronote.app/blog/posts/share-sensitive-info-without-chat/</guid>
       <description>A safer way to share sensitive information without leaving it sitting in chat history.</description>
     </item>
     <item>
       <title>How to Send a Message That Can Only Be Opened Once</title>
-      <link>http://localhost:1313/posts/note-open-once/</link>
+      <link>https://zeronote.app/blog/posts/note-open-once/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/note-open-once/</guid>
+      <guid>https://zeronote.app/blog/posts/note-open-once/</guid>
       <description>Send information that can only be accessed once and disappears after.</description>
     </item>
     <item>
       <title>How to Send a Self-Destructing Message That Actually Disappears</title>
-      <link>http://localhost:1313/posts/self-destructing-note/</link>
+      <link>https://zeronote.app/blog/posts/self-destructing-note/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/self-destructing-note/</guid>
+      <guid>https://zeronote.app/blog/posts/self-destructing-note/</guid>
       <description>A better way to send message note that disappears after being read without relying on chat apps</description>
     </item>
     <item>
-      <title>How to Share a Note Securely(Without Leaving a Trace)</title>
-      <link>http://localhost:1313/posts/share-note-securely/</link>
+      <title>How to Share a Note Securely (Without Leaving a Trace)</title>
+      <link>https://zeronote.app/blog/posts/share-note-securely/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-note-securely/</guid>
+      <guid>https://zeronote.app/blog/posts/share-note-securely/</guid>
       <description>A simpler way to share sensitive information without leaving it sitting in chat history or email forever.</description>
     </item>
   </channel>

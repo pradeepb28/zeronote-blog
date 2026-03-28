@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Credit Cards on Zero Note: Self-destructing shareable notes</title>
-    <link>http://localhost:1313/tags/credit-cards/</link>
+    <link>https://zeronote.app/blog/tags/credit-cards/</link>
     <description>Recent content in Credit Cards on Zero Note: Self-destructing shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/credit-cards/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zeronote.app/blog/tags/credit-cards/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why You Should Never Share Your Card Number, Expiry Date, and CVV Together</title>
-      <link>http://localhost:1313/posts/never-share-card-details-together/</link>
+      <link>https://zeronote.app/blog/posts/never-share-card-details-together/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/never-share-card-details-together/</guid>
+      <guid>https://zeronote.app/blog/posts/never-share-card-details-together/</guid>
       <description>Why sharing your card number, expiry date, and CVV together is risky, and what to do instead.</description>
     </item>
   </channel>

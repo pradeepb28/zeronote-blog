@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>API Keys on Zero Note: Self-destructing shareable notes</title>
-    <link>http://localhost:1313/tags/api-keys/</link>
+    <link>https://zeronote.app/blog/tags/api-keys/</link>
     <description>Recent content in API Keys on Zero Note: Self-destructing shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/api-keys/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://zeronote.app/blog/tags/api-keys/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Share API Keys Securely (Without Slack or Email)</title>
-      <link>http://localhost:1313/posts/share-apikeys-securely/</link>
+      <link>https://zeronote.app/blog/posts/share-apikeys-securely/</link>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-apikeys-securely/</guid>
+      <guid>https://zeronote.app/blog/posts/share-apikeys-securely/</guid>
       <description>A safer way to share API keys without leaving them in Slack, email, or source code.</description>
     </item>
   </channel>

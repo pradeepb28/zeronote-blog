@@ -1,4 +1,4 @@
-baseURL = "https://blog.zeronote.app"
+baseURL = "https://zeronote.app/blog/"
 title = "Zero Note: Self-destructing shareable notes"
 theme = "PaperMod"
 
