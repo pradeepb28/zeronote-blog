@@ -16,6 +16,11 @@ theme = "PaperMod"
 
 [menu]
   [[menu.main]]
+    name = "Home"
+    url = "https://zeronote.app"
+    weight = 0
+    
+  [[menu.main]]
     name = "Posts"
     url = "/posts/"
     weight = 1

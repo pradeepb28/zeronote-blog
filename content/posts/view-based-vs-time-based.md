@@ -28,7 +28,7 @@ After that, it stops working.
 
 This is useful when the main goal is one-time access.
 
-You care less about the clock and more about the fact that the message should only be seen once. [web:359][web:360]
+You care less about the clock and more about the fact that the message should only be seen once.
 
 ---
 
@@ -40,7 +40,7 @@ That window might be a few minutes, an hour, a day, or longer.
 
 In this model, the message has a lifetime based on time, not just on whether it has been opened.
 
-This is useful when the information is only relevant for a certain period. [web:357][web:358][web:361]
+This is useful when the information is only relevant for a certain period.
 
 ---
 
@@ -60,7 +60,7 @@ In these cases, the main concern is not how many minutes pass.
 
 It is whether the message can still be opened again later.
 
-If the answer should be no, view-based destruction is usually the cleaner choice. [web:359][web:364]
+If the answer should be no, view-based destruction is usually the cleaner choice.
 
 ---
 
@@ -78,7 +78,7 @@ For example:
 
 Here, the goal is not always “one view only.”
 
-It is more often “this should stop being available after a certain point.” [web:357][web:358][web:361]
+It is more often “this should stop being available after a certain point.”
 
 ---
 
@@ -99,17 +99,17 @@ The other controls lifespan.
 
 ## Which Zero Note feature fits best
 
-Zero Note supports both models, which is useful because different information needs different rules. [web:217][cite:29]
+Zero Note supports both models, which is useful because different information needs different rules.
 
 Use **view-based destruction** when:
 - the message should only be accessed once
 - the first read is the only read that matters
-- repeat access is the main risk [cite:29]
+- repeat access is the main risk
 
 Use **time-based destruction** when:
 - the recipient may need a short window
 - the information is time-sensitive
-- the risk is the message lingering too long rather than being viewed twice [cite:29]
+- the risk is the message lingering too long rather than being viewed twice
 
 If you are not sure which to choose, ask one question:
 
@@ -129,7 +129,7 @@ But both models still reduce exposure in different ways.
 
 The point is not perfection.
 
-It is better control over how long sensitive information remains accessible. [web:356][web:358]
+It is better control over how long sensitive information remains accessible.
 
 ---
 
