@@ -3,7 +3,7 @@ title: "How to Send Information That Should Only Be Seen Once"
 date: 2026-03-19
 draft: false
 description: "A simple way to share information that should only be viewed once and not remain available afterward."
-tags: ["Security", "Privacy", "Use Cases", "One-Time Access"]
+tags: ["Privacy", "One-Time Access"]
 ---
 
 Some information only needs one moment.

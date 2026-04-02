@@ -3,7 +3,7 @@ title: "Why You Should Never Share Your Card Number, Expiry Date, and CVV Togeth
 date: 2026-03-20
 draft: false
 description: "Why sharing your card number, expiry date, and CVV together is risky, and what to do instead."
-tags: ["Security", "Privacy", "Payments", "Credit Cards"]
+tags: ["Privacy", "Payments", "Credit Cards"]
 ---
 
 Most people know they should be careful with card details.

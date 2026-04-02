@@ -3,7 +3,7 @@ title: "Why Slack DMs Are Not a Safe Place for Sensitive Information"
 date: 2026-04-01
 draft: false
 description: "Slack DMs may feel private, but retention settings, compliance controls, and workspace ownership make them a poor place for sensitive information."
-tags: ["Security", "Privacy", "Slack", "Workplace"]
+tags: ["Security", "Privacy", "Slack"]
 ---
 
 Slack DMs feel private because they look like a one-to-one conversation.

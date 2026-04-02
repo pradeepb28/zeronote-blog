@@ -3,7 +3,7 @@ title: "How to Share a Wi‑Fi Password Without Saving It Anywhere"
 date: 2026-03-19
 draft: false
 description: "A simple way to share a Wi‑Fi password without leaving it sitting in chat history or email."
-tags: ["Security", "Wi-Fi", "Privacy", "Use Cases"]
+tags: ["Security", "Wi-Fi", "Privacy"]
 ---
 
 Sharing a Wi‑Fi password feels harmless.

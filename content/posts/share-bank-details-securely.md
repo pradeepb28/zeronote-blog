@@ -3,7 +3,7 @@ title: "How to Share Bank Details Securely"
 date: 2026-03-19
 draft: false
 description: "A safer way to share bank details without leaving them sitting in chat history or email forever."
-tags: ["Security", "Privacy", "Banking", "Use Cases"]
+tags: ["Security", "Privacy", "Banking"]
 ---
 
 Sharing bank details is one of those things people do all the time without feeling great about it.

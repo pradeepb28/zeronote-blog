@@ -3,7 +3,7 @@ title: "How to Share a One-Time Secret Securely"
 date: 2026-03-19
 draft: false
 description: "A safer way to share a secret that should only be accessed once and not remain available afterward."
-tags: ["Security", "Privacy", "One-Time Secret", "Use Cases"]
+tags: ["Security", "Privacy", "One-Time Secret"]
 ---
 
 Sometimes you need to share something sensitive, but only once.

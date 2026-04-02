@@ -3,7 +3,7 @@ title: "Why Chat Is a Bad Place for Sensitive Information"
 date: 2026-03-19
 draft: false
 description: "Why chat apps are often the wrong place for passwords, private details, and other sensitive information."
-tags: ["Security", "Privacy", "Chat", "Use Cases"]
+tags: ["Security", "Privacy", "Chat"]
 ---
 
 Chat is fast, familiar, and always available.

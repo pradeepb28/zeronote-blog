@@ -3,7 +3,7 @@ title: "How to Send a Message That Disappears After Reading"
 date: 2026-04-01
 draft: false
 description: "A simple way to send a message that disappears after the recipient reads it, without leaving it sitting in chat history."
-tags: ["Security", "Privacy", "Disappearing Messages", "Use Cases"]
+tags: ["Security", "Privacy", "Use Cases"]
 ---
 
 Sometimes you want to send a message that should exist for one moment and not much longer.

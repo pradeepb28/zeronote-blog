@@ -3,7 +3,7 @@ title: "When Telegram’s Self-Destruct Timer Is Not Enough"
 date: 2026-04-01
 draft: false
 description: "Telegram’s self-destruct timer is useful, but it is not always the right tool for sensitive information that needs more control."
-tags: ["Security", "Privacy", "Telegram", "Self-Destructing Notes"]
+tags: ["Privacy", "Telegram", "Self-Destructing Notes"]
 ---
 
 Telegram has a self-destruct timer, and for some situations, that is enough.

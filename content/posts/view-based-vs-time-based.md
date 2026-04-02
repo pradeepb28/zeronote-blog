@@ -3,7 +3,7 @@ title: "When to Use Views-Based vs Time-Based Message Destruction"
 date: 2026-03-20
 draft: false
 description: "How to decide between view-based and time-based self-destructing messages, depending on what you are sharing."
-tags: ["Security", "Privacy", "Message Destruction", "Use Cases"]
+tags: ["Security", "Privacy", "Self-destruct messages"]
 ---
 
 Not all self-destructing messages should work the same way.

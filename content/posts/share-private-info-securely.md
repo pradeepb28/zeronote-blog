@@ -3,7 +3,7 @@ title: "How to Share Private Information Securely"
 date: 2026-03-18
 draft: false
 description: "A simple way to share private information without leaving it sitting in chat history or email forever."
-tags: ["Security", "Privacy", "Use Cases"]
+tags: ["Security", "Privacy"]
 ---
 
 Most people do not think of themselves as “sharing sensitive data.”

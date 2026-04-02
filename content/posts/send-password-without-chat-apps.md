@@ -3,7 +3,7 @@ title: "Best Way to Share a Password Securely Without Email or Chat"
 date: 2026-03-19
 draft: false
 description: "A better way to share a password without leaving it sitting in email inboxes or chat history."
-tags: ["Security", "Passwords", "Privacy", "Use Cases"]
+tags: ["Security", "Passwords", "Privacy"]
 ---
 
 If you need to share a password, email and chat are usually the first tools people reach for.

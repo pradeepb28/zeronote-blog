@@ -3,7 +3,7 @@ title: "How to Send Temporary Instructions Securely"
 date: 2026-03-18
 draft: false
 description: "A simple way to share temporary instructions without leaving them sitting in chat history or email forever."
-tags: ["Security", "Use Cases", "Privacy", "Temporary Access"]
+tags: ["Security", "Privacy", "Temporary Access"]
 ---
 
 Some instructions only matter for a short time.

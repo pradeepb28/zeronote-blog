@@ -3,7 +3,7 @@ title: "Is It Safe to Send Bank Details by Email?"
 date: 2026-03-19
 draft: false
 description: "What to know before sending bank details by email, and safer ways to share them when necessary."
-tags: ["Security", "Privacy", "Banking", "Email"]
+tags: ["Privacy", "Banking", "Email"]
 ---
 
 Sometimes sending bank details by email feels like the easiest option.

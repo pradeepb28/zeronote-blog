@@ -3,7 +3,7 @@ title: "What Payment Information Is Safe to Share?"
 date: 2026-03-20
 draft: false
 description: "A practical guide to what payment information can sometimes be shared, what should be handled carefully, and what should never be shared."
-tags: ["Security", "Privacy", "Payments", "Banking"]
+tags: ["Privacy", "Payments", "Banking"]
 ---
 
 People share payment information more often than they realize.

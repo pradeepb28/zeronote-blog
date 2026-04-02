@@ -3,7 +3,7 @@ title: "How to Share Sensitive Information Without Chat"
 date: 2026-03-18
 draft: false
 description: "A safer way to share sensitive information without leaving it sitting in chat history."
-tags: ["Security", "Privacy", "Use Cases", "Chat"]
+tags: ["Security", "Privacy", "Chat"]
 ---
 
 Chat is one of the easiest places to send sensitive information.
