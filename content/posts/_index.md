@@ -1,7 +1,6 @@
 ---
 title: "Zero Note Blog"
 description: "Learn how to securely share sensitive information like passwords, sensitive information, and private notes that can self-destruct after its read."
-ShowBreadCrumbs: true
 ---
 
 ## Learn How to Share Sensitive Information Securely
