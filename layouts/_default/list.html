@@ -1,4 +1,4 @@
-{{ define "main" }}
+<!-- {{ define "main" }}
 <div class="post-grid">
   {{ range .Pages }}
     <article class="post-card">
@@ -43,4 +43,66 @@
     }
   });
 </script>
+{{ end }} -->
+
+
+{{ define "main" }}
+
+<!-- Intro content from _index.md -->
+{{ if .Content }}
+<div class="post-content" style="max-width: 720px; margin: 0 auto 2rem;">
+  {{ .Content }}
+</div>
+{{ end }}
+
+<!-- Posts Grid -->
+<div class="post-grid">
+  {{ range .Pages }}
+    <article class="post-card">
+      <a href="{{ .RelPermalink }}">
+        <h2>{{ .Title }}</h2>
+
+        <!-- Limit tags to reduce noise -->
+        <div class="tags">
+          {{ range first 2 .Params.tags }}
+            <span class="tag">{{ . }}</span>
+          {{ end }}
+        </div>
+
+        <span class="meta">
+          {{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min
+        </span>
+      </a>
+    </article>
+  {{ end }}
+</div>
+
+<!-- CTA -->
+<div id="cta-box">
+  <p class="cta-title">Try Zero Note</p>
+  <p class="cta-sub">Share something that disappears.</p>
+
+  <img src="/qr.png" alt="Download Zero Note" />
+
+  <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+    <img src="/appstore-badge-dark.svg" class="badge-dark" />
+    <img src="/appstore-badge-light.svg" class="badge-light" />
+  </a>
+</div>
+
+<!-- CTA Scroll Behavior -->
+<script>
+  const cta = document.getElementById("cta-box");
+
+  window.addEventListener("scroll", () => {
+    const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+    if (scrollPercent > 0.1) {
+      cta.style.display = "block";
+    } else {
+      cta.style.display = "none";
+    }
+  });
+</script>
+
 {{ end }}
