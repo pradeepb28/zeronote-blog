@@ -1,7 +1,6 @@
 ---
 title: "Best Privnote Alternatives (2026): Safer, More Controlled Options"
 date: 2026-04-08
-lastmod: 2026-04-08
 draft: false
 
 description: "Looking for a better alternative to Privnote? Discover the best Privnote alternatives with more control, privacy, and modern features like view limits and location-based access."

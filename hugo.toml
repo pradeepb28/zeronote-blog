@@ -11,6 +11,7 @@ disableKinds = ["taxonomy", "term"]
   disableSpecial1stPost = true
   ShowBreadCrumbs = true
   customCSS = ["css/extended/custom.css"]
+  mainSections = ["posts", "alternatives"]
 
 [taxonomies]
   tag = "tags"
@@ -19,9 +20,14 @@ disableKinds = ["taxonomy", "term"]
   [[menu.main]]
     name = "Home"
     url = "https://zeronote.app"
-    weight = 1
+    weight = 0
 
   [[menu.main]]
     name = "Posts"
     url = "/posts/"
-    weight = 0
+    weight = 1
+
+  [[menu.main]]
+    name = "Alternatives"
+    url = "/alternatives/"
+    weight = 2

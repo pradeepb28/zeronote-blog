@@ -1,7 +1,6 @@
 ---
 title: "Best OneTimeSecret Alternatives (2026): Mobile-Native with View Limits & Notifications"
 date: 2026-04-08
-lastmod: 2026-04-08
 draft: false
 
 description: "Looking for a better OneTimeSecret alternative? Discover the best OneTimeSecret alternatives with view-based destruction, read notifications, location controls, and mobile-native experience."
