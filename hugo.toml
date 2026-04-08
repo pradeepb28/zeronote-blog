@@ -20,7 +20,7 @@ disableKinds = ["taxonomy", "term"]
   [[menu.main]]
     name = "Home"
     url = "https://zeronote.app"
-    weight = 0
+    weight = 2
 
   [[menu.main]]
     name = "Posts"
@@ -30,4 +30,4 @@ disableKinds = ["taxonomy", "term"]
   [[menu.main]]
     name = "Alternatives"
     url = "/alternatives/"
-    weight = 2
+    weight = 0
