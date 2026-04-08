@@ -125,6 +125,6 @@ If you want to share something that should only be seen once, try Zero Note.
 
 Related:
 
-- [How to Send a Note That Can Only Be Opened Once](/posts/note-open-once/)
-- [How to Share Sensitive Information Without Chat](/posts/share-sensitive-info-without-chat/)
-- [How to Share Private Information Securely](/posts/share-private-info-securely/)
+- [How to Send a Note That Can Only Be Opened Once →](/posts/note-open-once/)
+- [How to Share Sensitive Information Without Chat →](/posts/share-sensitive-info-without-chat/)
+- [How to Share Private Information Securely →](/posts/share-private-info-securely/)
