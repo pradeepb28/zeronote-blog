@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/is-zero-knowledge-encryption-safe/</loc>
+    <lastmod>2026-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/zero-knowledge-vs-end-to-end-encryption/</loc>
+    <lastmod>2026-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-04-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/alternatives/burnernote-alternatives/</loc>
     <lastmod>2026-04-08T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,9 +26,6 @@
     <loc>http://localhost:1313/alternatives/</loc>
     <lastmod>2026-04-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/send-message-disappears-after-read/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -24,9 +33,6 @@
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/slack-dms-note-safe-place/</loc>
-    <lastmod>2026-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/payment-info-share/</loc>

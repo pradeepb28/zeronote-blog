@@ -122,3 +122,4 @@ Related:
 - [How to Share a Password Securely](/posts/share-password-securely/)
 - [How to Share Private Information Securely](/posts/share-private-info-securely/)
 - [How to Share Sensitive Information Without Chat](/posts/share-sensitive-info-without-chat/)
+- [Zero Note uses AES zero-knowledge →](/posts/is-zero-knowledge-encryption-safe)

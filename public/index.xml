@@ -6,8 +6,22 @@
     <description>Recent content on Zero Note: Self-destructible shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Is Zero Knowledge Encryption Safe? Server-Side vs Client-Side Explained (2026)</title>
+      <link>http://localhost:1313/posts/is-zero-knowledge-encryption-safe/</link>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/is-zero-knowledge-encryption-safe/</guid>
+      <description>Is zero knowledge encryption safe? Learn how zero knowledge, client-side, and server-side encryption differ—and why it matters for secure note sharing.</description>
+    </item>
+    <item>
+      <title>Zero Knowledge vs End-to-End Encryption: What’s the Real Difference? (2026)</title>
+      <link>http://localhost:1313/posts/zero-knowledge-vs-end-to-end-encryption/</link>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/zero-knowledge-vs-end-to-end-encryption/</guid>
+      <description>Zero knowledge vs end-to-end encryption explained simply. Learn the key differences, which is safer, and when to use each for secure data sharing.</description>
+    </item>
     <item>
       <title>Best Burner Note Alternatives (2026): More Flexible, Mobile-Native Options</title>
       <link>http://localhost:1313/alternatives/burnernote-alternatives/</link>

@@ -130,3 +130,9 @@ If you want to send a message that disappears after reading, the important part 
 It is using a method built around one-time access instead of ordinary message history.
 
 That is where view-based self-destructing notes make more sense than a normal chat thread with a timer.
+
+Related:
+
+- [How to Share a One-Time Secret Securely](/posts/share-one-time-securely/)
+- [One-Time Access vs Time-Based Expiry: What’s the Difference?](/posts/view-based-vs-time-based/)
+- [Zero Note uses AES zero-knowledge →](/posts/is-zero-knowledge-encryption-safe)
