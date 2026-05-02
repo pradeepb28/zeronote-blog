@@ -249,6 +249,6 @@ Related:
 
 - [Zero Knowledge vs End-to-End Encryption](/posts/zero-knowledge-vs-end-to-end-encryption/)
 - [Why You Shouldn’t Send Passwords in Chat Apps](/posts/send-password-without-chat-apps/)
-- [Why You Shouldn’t Send Passwords in Chat Apps](/posts/send-password-without-chat-apps/)
+- [How to Share Sensitive Information Without Chat Apps](/posts/share-sensitive-info-without-chat/)
 - [View-Based vs Time-Based Self-Destructing Notes](/posts/view-based-vs-time-based/)
 - [What Is a Self-Destructing Note?](/posts/self-destructing-note/)

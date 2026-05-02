@@ -221,3 +221,12 @@ can provide an additional layer of control and visibility.
 If you want to try a more controlled approach to secure note sharing:
 
 👉 **[Download Zero Note Free](https://zeronote.app/#download)**
+
+---
+
+Related:
+
+- [Telegram Self-Destruct Timer Explained](/posts/telegram-self-destruct-timer/)
+- [Zero Knowledge vs End-to-End Encryption](/posts/zero-knowledge-vs-end-to-end-encryption/)
+- [How to Share Private Information Securely](/posts/share-private-info-securely/)
+- [View-Based vs Time-Based Self-Destructing Notes](/posts/view-based-vs-time-based/)

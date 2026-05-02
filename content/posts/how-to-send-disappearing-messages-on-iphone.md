@@ -57,3 +57,11 @@ Native disappearing messages are a great start, but they aren't enough for true 
 **Send passwords, private notes, and sensitive links without leaving your current app.**
 
 👉 **[Download Zero Note Free](https://zeronote.app/#download)**
+
+---
+
+Related:
+
+- [What Is a Self-Destructing Note?](/posts/self-destructing-note/)
+- [How to Share Notes Securely](/posts/share-note-securely/)
+- [Is Zero Knowledge Encryption Safe?](/posts/is-zero-knowledge-encryption-safe/)

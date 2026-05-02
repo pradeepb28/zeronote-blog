@@ -59,3 +59,11 @@ Vanish Mode is great for casual, low-stakes privacy. But when you are sharing so
 **Take control of your Instagram privacy.**
 
 👉 **[Download Zero Note Free](https://zeronote.app/#download)**
+
+---
+
+Related:
+
+- [How to Send a Message That Disappears After Read](/posts/send-message-disappears-after-read/)
+- [How to Share Sensitive Information Without Chat Apps](/posts/share-sensitive-info-without-chat/)
+- [Is Zero Knowledge Encryption Safe?](/posts/is-zero-knowledge-encryption-safe/)
