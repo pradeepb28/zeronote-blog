@@ -244,3 +244,11 @@ Using secure encrypted note links inside messaging apps creates a more controlle
 If you want to try a more secure and controlled approach to sensitive sharing:
 
 👉 **[Download Zero Note Free](https://zeronote.app/#download)**
+
+Related:
+
+- [Zero Knowledge vs End-to-End Encryption](/posts/zero-knowledge-vs-end-to-end-encryption/)
+- [Why You Shouldn’t Send Passwords in Chat Apps](/posts/send-password-without-chat-apps/)
+- [Why You Shouldn’t Send Passwords in Chat Apps](/posts/send-password-without-chat-apps/)
+- [View-Based vs Time-Based Self-Destructing Notes](/posts/view-based-vs-time-based/)
+- [What Is a Self-Destructing Note?](/posts/self-destructing-note/)
