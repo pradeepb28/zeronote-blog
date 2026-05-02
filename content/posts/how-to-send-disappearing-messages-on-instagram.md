@@ -21,14 +21,14 @@ Vanish mode is perfect for general private conversations.
 
 ---
 
-## 2. The Pro Way: Zero Note Keyboard Extension
+## 2. A privacy-first approach: Zero Note Keyboard Extension
 What if you want to share a password or a private document without turning your whole Instagram chat into a "Vanish Mode" thread?
 
 Use the **Zero Note Keyboard**. It lets you generate a self-destructing, Zero Knowledge encrypted link that you can paste directly into your Instagram DMs.
 
 ### Why this is better:
 *   **Selective Privacy:** Only the specific message you choose disappears. Your chat history stays intact.
-*   **Zero Knowledge Security:** Your sensitive info is encrypted on your iPhone. Even Instagram doesn't get to see what's inside the link.
+*   **Zero Knowledge Security:** Your sensitive info is encrypted on your iPhone. Instagram only sees the secure link, not the note contents.
 *   **Granular Expiry:** Choose to destroy a note after **1 view** or **1 hour**, giving you precise control over your data.
 
 ---

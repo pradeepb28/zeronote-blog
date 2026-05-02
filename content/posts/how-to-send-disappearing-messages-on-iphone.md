@@ -34,7 +34,7 @@ It allows you to generate a self-destructing note directly from your keyboard, m
 ---
 
 ## 3. Why the Keyboard Extension changes the game
-*   **Zero Knowledge Security:** Your data is encrypted on your iPhone. The server never sees the plaintext.
+*   **Zero Knowledge Security:** Your data is encrypted on your iPhone. Notes are encrypted on-device before upload.
 *   **No App Switching:** Stay in your flow. Whether you're in a work email or a personal text, you don't have to leave the window.
 *   **Granular Control:** Unlike native "disappearing" timers that delete *everything* in a chat, Zero Note lets you choose which specific piece of info is sensitive.
 
@@ -52,8 +52,8 @@ It allows you to generate a self-destructing note directly from your keyboard, m
 ---
 
 ## Final Thoughts
-Native disappearing messages are a great start, but they aren't enough for true privacy when sharing sensitive information across multiple platforms. Using the Zero Note keyboard extension normalizes privacy-first behavior without slowing you down.
+Native disappearing messages are a great start, but they aren't enough for true privacy when sharing sensitive information across multiple platforms. Zero Note makes secure sharing feel as fast as sending a normal text.
 
-**Ready to send disappearing messages from any app?**
+**Send passwords, private notes, and sensitive links without leaving your current app.**
 
 👉 **[Download Zero Note Free](https://zeronote.app/#download)**
