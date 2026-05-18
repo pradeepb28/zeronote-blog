@@ -1,6 +1,6 @@
 ---
 title: "How to Share a One-Time Secret Securely"
-date: 2026-03-19
+date: 2026-05-10
 draft: false
 description: "A safer way to share a secret that should only be accessed once and not remain available afterward."
 tags: ["Security", "Privacy", "One-Time Secret"]
@@ -132,6 +132,6 @@ For most one-time secrets, view-based destruction is the best fit. If the person
 
 Related:
 
-- [How to Send Information That Should Only Be Seen Once](/posts/send-information-seen-once/)
+- [How to Send Information That Should Only Be Seen Once](/posts/send-info-only-once/)
 - [How to Share API Keys Securely](/posts/share-apikeys-securely/)
 - [How to Share a Password Securely](/posts/share-password-securely/)

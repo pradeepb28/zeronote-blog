@@ -142,6 +142,6 @@ If the information needs to be separated from the conversation and controlled mo
 
 Related:
 
-- [How to Share a One-Time Secret Securely](/posts/share-one-time-securely/)
+- [How to Share a One-Time Secret Securely](/posts/share-onetime-securely/)
 - [One-Time Access vs Time-Based Expiry: What’s the Difference?](/posts/view-based-vs-time-based/)
 - [Zero Note uses AES zero-knowledge →](/posts/is-zero-knowledge-encryption-safe)

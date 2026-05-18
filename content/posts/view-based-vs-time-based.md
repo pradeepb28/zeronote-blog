@@ -147,6 +147,6 @@ Choosing the right behavior makes the message more useful and more intentional.
 
 Related:
 
-- [How to Send Information That Should Only Be Seen Once](/posts/send-information-seen-once/)
+- [How to Send Information That Should Only Be Seen Once](/posts/send-info-only-once/)
 - [How to Send Temporary Instructions Securely](/posts/send-temporary-instructions/)
-- [How to Share a One-Time Secret Securely](/posts/share-one-time-secret-securely/)
+- [How to Share a One-Time Secret Securely](/posts/share-onetime-securely/)
