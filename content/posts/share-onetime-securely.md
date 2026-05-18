@@ -132,6 +132,6 @@ For most one-time secrets, view-based destruction is the best fit. If the person
 
 Related:
 
-- [How to Send Information That Should Only Be Seen Once](/posts/send-info-only-once/)
+- [How to Send Information That Should Only Be Seen Once](/posts/how-to-send-sensitive-information-once/)
 - [How to Share API Keys Securely](/posts/share-apikeys-securely/)
 - [How to Share a Password Securely](/posts/share-password-securely/)

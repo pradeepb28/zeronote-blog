@@ -140,4 +140,4 @@ Related:
 
 - [How to Share Sensitive Information Without Chat](/posts/share-sensitive-info-without-chat/)
 - [How to Share Private Information Securely](/posts/share-private-info-securely/)
-- [How to Share a One-Time Secret Securely](/posts/share-onetime-securely/)
+- [How to Share a One-Time Secret Securely](/posts/how-to-share-a-one-time-secret-securely/)

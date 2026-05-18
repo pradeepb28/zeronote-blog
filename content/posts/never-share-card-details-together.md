@@ -131,4 +131,4 @@ If payment-related information does need to be shared, keep it limited, intentio
 Related:
 
 - [Is It Safe to Send Bank Details by Email?](/posts/safe-send-bank-details-email/)
-- [Why Chat Is a Bad Place for Sensitive Information](/posts/chat-bad-place-share-sensitive-info/)
+- [Why Chat Is a Bad Place for Sensitive Information](/posts/why-chat-apps-are-not-safe-for-passwords/)

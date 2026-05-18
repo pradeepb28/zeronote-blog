@@ -133,6 +133,6 @@ That is where view-based self-destructing notes make more sense than a normal ch
 
 Related:
 
-- [How to Share a One-Time Secret Securely](/posts/share-onetime-securely/)
+- [How to Share a One-Time Secret Securely](/posts/how-to-share-a-one-time-secret-securely/)
 - [One-Time Access vs Time-Based Expiry: What’s the Difference?](/posts/view-based-vs-time-based/)
 - [Zero Note uses AES zero-knowledge →](/posts/is-zero-knowledge-encryption-safe)
