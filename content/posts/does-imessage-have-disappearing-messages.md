@@ -165,6 +165,7 @@ Create a secure note, choose when it expires, and send it without leaving iMessa
 
 Related:
 
+* [How to Send Disappearing Messages in iMessage](/posts/how-to-send-disappearing-messages-in-imessage/)
 * [How to Send Disappearing Messages on iPhone](/posts/how-to-send-disappearing-messages-on-iphone/)
 * [What Is a Self-Destructing Note?](/posts/self-destructing-note/)
 * [How to Share Notes Securely](/posts/share-note-securely/)
