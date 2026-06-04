@@ -7,6 +7,7 @@ description: "iMessage doesn't support disappearing messages, view-once text, or
 
 # Does iMessage Have Disappearing Messages?
 
+
 No.
 
 As of 2026, Apple's Messages app does not support disappearing messages.
@@ -167,5 +168,3 @@ Related:
 
 * [How to Send Disappearing Messages in iMessage](/posts/how-to-send-disappearing-messages-in-imessage/)
 * [How to Send Disappearing Messages on iPhone](/posts/how-to-send-disappearing-messages-on-iphone/)
-* [What Is a Self-Destructing Note?](/posts/self-destructing-note/)
-* [How to Share Notes Securely](/posts/share-note-securely/)
