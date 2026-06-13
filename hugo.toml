@@ -35,4 +35,4 @@ disableKinds = ["taxonomy", "term"]
   [[menu.main]]
     name = "Comparisons"
     url = "/comparisons/"
-    weight = 0
+    weight = 4
