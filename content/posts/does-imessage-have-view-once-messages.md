@@ -177,5 +177,3 @@ Related:
 
 * [How to Send Disappearing Messages in iMessage](/posts/how-to-send-disappearing-messages-in-imessage/)
 * [Does iMessage Have Disappearing Messages?](/posts/does-imessage-have-disappearing-messages/)
-* [What Is a Self-Destructing Note?](/posts/self-destructing-note/)
-* [How to Share Notes Securely](/posts/share-note-securely/)
