@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>How to Share API Keys Securely (Without Slack or Email) | Zero Note: Self-destruct shareable notes</title>
-<meta name="keywords" content="Security, Developers, API Keys, Use Cases">
-<meta name="description" content="A safer way to share API keys without leaving them in Slack, email, or source code.">
+<title>Why Chat Is a Bad Place for Sensitive Information | Zero Note: Self-destruct shareable notes</title>
+<meta name="keywords" content="Security, Privacy, Chat">
+<meta name="description" content="Why chat apps are often the wrong place for passwords, private details, and other sensitive information.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/share-apikeys-securely/">
+<link rel="canonical" href="http://localhost:1313/posts/why-chat-apps-are-not-safe-for-passwords/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.77f8e0afdca275042ccdee58088de8fc2c431b7b494aae1e46d4f8ce596b499b.css" integrity="sha256-d/jgr9yidQQsze5YCI3o/CxDG3tJSq4eRtT4zllrSZs=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/share-apikeys-securely/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/why-chat-apps-are-not-safe-for-passwords/">
 <noscript>
     <style>
         #theme-toggle,
@@ -135,90 +135,106 @@
 <article class="post-single">
   
   <header class="post-header">
-    <h1 class="post-title">How to Share API Keys Securely (Without Slack or Email)</h1>
+    <h1 class="post-title">Why Chat Is a Bad Place for Sensitive Information</h1>
 
     
-      <p class="post-description">A safer way to share API keys without leaving them in Slack, email, or source code.</p>
+      <p class="post-description">Why chat apps are often the wrong place for passwords, private details, and other sensitive information.</p>
     
 
     <div class="post-meta">
-      Mar 18, 2026
+      Mar 19, 2026
     </div>
   </header>
 
   <div class="post-entry">
-    <p>Sharing an API key should feel like a small handoff.</p>
-<p>In practice, it often turns into a long-lived security problem.</p>
-<p>A key gets pasted into Slack. Or dropped into an email. Or left in a document that was only supposed to be temporary.</p>
-<p>The problem is not just getting the key to someone.</p>
-<p>It is everything that happens after.</p>
+    <p>Chat is fast, familiar, and always available.</p>
+<p>That is exactly why people use it for things they probably should not.</p>
+<p>A password gets dropped into a thread. A private link gets sent in a message. Personal details get shared quickly because it feels easier than opening another tool.</p>
+<p>The problem is that chat is designed to keep conversations going, not to make sensitive information disappear.</p>
 <hr>
-<h2 id="why-api-keys-are-risky-to-share">Why API keys are risky to share</h2>
-<p>An API key is not just a string of text.</p>
-<p>It is access.</p>
-<p>If the wrong person gets it, they may be able to read data, send requests, spend money, or interact with production systems depending on the permissions attached to that key.</p>
-<p>That is why modern guidance focuses on limiting where keys are stored, how they are transmitted, who can access them, and how quickly they can be revoked or rotated.</p>
+<h2 id="why-chat-feels-convenient">Why chat feels convenient</h2>
+<p>Most people already have chat open.</p>
+<p>It feels casual, immediate, and private enough.</p>
+<p>If you need to send something quickly, a message feels easier than setting up a more controlled way to share it.</p>
+<p>That convenience is real.</p>
+<p>But it also makes it easy to send something sensitive without thinking about where it will still be later.</p>
 <hr>
-<h2 id="why-slack-and-email-are-a-bad-place-for-api-keys">Why Slack and email are a bad place for API keys</h2>
-<p>Slack and email are convenient, which is exactly why people use them for secrets.</p>
-<p>But they are also built around history.</p>
-<p>Messages are searchable. Threads get revisited. Emails get archived. Documents get duplicated. And once a secret is copied into one of those places, it often lives longer than anyone intended.</p>
-<p>Security guidance consistently warns against distributing API keys through public or persistent communication channels, especially when better options like secret managers or controlled vaults are available.</p>
+<h2 id="why-chat-is-a-poor-fit-for-sensitive-information">Why chat is a poor fit for sensitive information</h2>
+<p>Chat apps are built around history.</p>
+<p>Messages are searchable. They sync across devices. They sit in threads. They may be backed up, forwarded, screenshotted, or revisited later when the information no longer needs to exist. [web:231][web:234][web:242]</p>
+<p>Even if the original recipient is trusted, persistent history creates a larger footprint than necessary.</p>
+<p>That is often the real problem with sensitive information in chat.</p>
+<p>Not the first read, but everything after it. [web:231][web:235]</p>
 <hr>
-<h2 id="what-secure-api-key-sharing-should-look-like">What secure API key sharing should look like</h2>
-<p>The best approach is usually not to “share” API keys directly at all.</p>
-<p>Instead, good security practice is to:</p>
+<h2 id="what-kinds-of-information-people-send-in-chat">What kinds of information people send in chat</h2>
+<p>This comes up in very normal situations.</p>
+<p>People send things like:</p>
 <ul>
-<li>store keys in a secrets manager or vault</li>
-<li>grant access only to the people or systems that need them</li>
-<li>use the minimum permissions required</li>
-<li>rotate keys regularly</li>
-<li>revoke them quickly if they are exposed</li>
+<li>passwords</li>
+<li>private links</li>
+<li>Wi‑Fi credentials</li>
+<li>bank details</li>
+<li>temporary instructions</li>
+<li>personal information</li>
+<li>API keys and recovery codes</li>
 </ul>
-<p>For application environments, injecting secrets at runtime through CI/CD or cloud secret managers is widely recommended because the key does not need to sit in source code, docs, or chat history.</p>
+<p>The common pattern is simple.</p>
+<p>The information is only needed briefly, but the message often remains long after the moment has passed.</p>
 <hr>
-<h2 id="when-you-still-need-to-send-a-key-to-a-person">When you still need to send a key to a person</h2>
-<p>Sometimes the ideal setup is not available.</p>
-<p>You may need to send a test key to a teammate, share a temporary credential with a contractor, or pass a secret to someone who is not inside your infrastructure yet.</p>
-<p>That is where people reach for Slack or email.</p>
-<p>But if the key only needs to be visible briefly, leaving it in a permanent channel creates unnecessary exposure.</p>
-<p>A temporary note can be a better option in those cases because it reduces how long the key remains available after it has been seen.</p>
+<h2 id="why-disappearing-messages-are-not-the-same-thing">Why disappearing messages are not the same thing</h2>
+<p>Some chat apps offer disappearing messages.</p>
+<p>That can be better than leaving everything in a permanent thread.</p>
+<p>But it is still not always the same as sharing a standalone note with tighter control over how long it should exist.</p>
+<p>The message is still part of a conversation.</p>
+<p>And once something has been seen, it can still be copied, screenshotted, or saved elsewhere.</p>
 <hr>
-<h2 id="a-better-way-zero-note">A better way: Zero Note</h2>
-<p>Zero Note is built for this kind of short-lived sharing.</p>
-<p>Instead of pasting an API key into Slack, email, or a shared document, you create a note and decide how it should behave.</p>
-<p>That can include controls around:</p>
+<h2 id="what-to-use-instead">What to use instead</h2>
+<p>If the information is sensitive, the better question is not “which chat app is safest?”</p>
+<p>It is “should this be in chat at all?”</p>
+<p>A better approach is often to use a method that:</p>
 <ul>
-<li>when the note expires</li>
-<li>how it is accessed</li>
-<li>where it can be opened</li>
-<li>whether it should only be available briefly</li>
+<li>keeps the information out of the conversation thread</li>
+<li>limits how long it stays available</li>
+<li>makes it harder to revisit later</li>
+<li>matches the sensitivity of what you are sharing</li>
 </ul>
-<p>That does not replace a real secrets manager for long-term system access.</p>
-<p>But it can be a better way to handle temporary human-to-human sharing when the goal is to reduce leftover exposure.</p>
+<p>That is especially useful for things like passwords, private links, temporary instructions, or one-time secrets.</p>
 <hr>
-<h2 id="a-few-habits-that-matter">A few habits that matter</h2>
-<p>Even if you use a temporary note, a few habits still make a big difference:</p>
+<h2 id="which-zero-note-feature-fits-best">Which Zero Note feature fits best</h2>
+<p>Zero Note is useful here because it lets you move the sensitive part out of chat and into a note with rules.</p>
+<p>The best feature depends on what you are sending:</p>
 <ul>
-<li>Create keys with the smallest possible scope and permissions.</li>
-<li>Rotate the key after sharing if it was only needed for a short task.</li>
-<li>Avoid reusing the same key across multiple apps, people, or environments.</li>
-<li>Use IP or network restrictions when the provider supports them, since a stolen key is less useful if it only works from expected locations.</li>
-<li>Never commit keys to repositories or leave them in plaintext docs.</li>
+<li>
+<p><strong>View-based destruction</strong><br>
+Best when the information should only be seen once.</p>
+</li>
+<li>
+<p><strong>Time-based destruction</strong><br>
+Better when the recipient may need a short window to access it.</p>
+</li>
+<li>
+<p><strong>Location-based access</strong><br>
+Useful when the information should only work from a certain place or country.</p>
+</li>
 </ul>
+<p>That way, chat can still be used for the conversation, while the sensitive part is handled separately.</p>
+<hr>
+<h2 id="one-honest-limitation">One honest limitation</h2>
+<p>No tool can stop someone from saving what they can already see.</p>
+<p>If a person opens a note, they can still copy or screenshot it.</p>
+<p>But there is still a big difference between a secret that is briefly available and one that remains in a searchable thread across multiple devices.</p>
+<p>That reduced exposure is often the point.</p>
 <hr>
 <h2 id="final-thought">Final thought</h2>
-<p>The safest API key is one that never has to be manually shared at all.</p>
-<p>But when you do need to hand one to a person, it helps to avoid channels designed to keep history forever.</p>
-<p>A temporary, controlled note is often a better fit than a message that lingers.</p>
-<p>If that is the kind of sharing you want, try Zero Note.</p>
+<p>Chat is great for conversation.</p>
+<p>It is usually not the best place for sensitive information.</p>
+<p>If something only needs to be seen briefly, it is often better to keep it out of the thread and use a note with the right kind of controls.</p>
+<hr>
 <p>Related:</p>
 <ul>
-<li><a href="/posts/note-open-once/">How to Send a Message That Can Only Be Opened Once</a></li>
-<li><a href="/posts/share-password-securely/">How to Share a Password Securely</a></li>
-<li><a href="/posts/share-private-info-securely/">How to Share Private Information Securely</a></li>
 <li><a href="/posts/share-sensitive-info-without-chat/">How to Share Sensitive Information Without Chat</a></li>
-<li><a href="/posts/is-zero-knowledge-encryption-safe">Zero Note uses AES zero-knowledge →</a></li>
+<li><a href="/posts/share-private-info-securely/">How to Share Private Information Securely</a></li>
+<li><a href="/posts/how-to-share-a-one-time-secret-securely/">How to Share a One-Time Secret Securely</a></li>
 </ul>
 
   </div>

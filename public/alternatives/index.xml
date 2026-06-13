@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Zero Note Alternatives on Zero Note: Self-destructible shareable notes</title>
+    <title>Zero Note Alternatives on Zero Note: Self-destruct shareable notes</title>
     <link>http://localhost:1313/alternatives/</link>
-    <description>Recent content in Zero Note Alternatives on Zero Note: Self-destructible shareable notes</description>
+    <description>Recent content in Zero Note Alternatives on Zero Note: Self-destruct shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
@@ -23,11 +23,18 @@
       <description>Looking for a better OneTimeSecret alternative? Discover the best OneTimeSecret alternatives with view-based destruction, read notifications, location controls, and mobile-native experience.</description>
     </item>
     <item>
-      <title>Best Privnote Alternatives (2026): Safer, More Controlled Options</title>
+      <title>Best Privnote Alternatives (2026): Safer, More Controlled Options &amp; No Ads</title>
       <link>http://localhost:1313/alternatives/privnote-alternatives/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/alternatives/privnote-alternatives/</guid>
       <description>Looking for a better alternative to Privnote? Discover the best Privnote alternatives with more control, privacy, and modern features like view limits and location-based access.</description>
+    </item>
+    <item>
+      <title>Best Yopass Alternatives (2026): More Control, Notifications &amp; Mobile app</title>
+      <link>http://localhost:1313/alternatives/yopass-alternatives/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/alternatives/yopass-alternatives/</guid>
+      <description>Looking for a better Yopass alternative? Discover the best Yopass alternatives with view limits, notifications, location-based access, and mobile-native experience.</description>
     </item>
   </channel>
 </rss>

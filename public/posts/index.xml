@@ -1,13 +1,83 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Zero Note Blog on Zero Note: Self-destructible shareable notes</title>
+    <title>Zero Note Blog on Zero Note: Self-destruct shareable notes</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Zero Note Blog on Zero Note: Self-destructible shareable notes</description>
+    <description>Recent content in Zero Note Blog on Zero Note: Self-destruct shareable notes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Does iMessage Have Disappearing Messages? (And the Best Alternative for iPhone Users)</title>
+      <link>http://localhost:1313/posts/does-imessage-have-disappearing-messages/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/does-imessage-have-disappearing-messages/</guid>
+      <description>iMessage doesn&amp;#39;t support disappearing messages, view-once text, or self-destructing notes. Learn how iPhone users can send temporary messages directly from iMessage using Zero Note.</description>
+    </item>
+    <item>
+      <title>Does iMessage Have View Once Messages? (2026 Answer)</title>
+      <link>http://localhost:1313/posts/does-imessage-have-view-once-messages/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/does-imessage-have-view-once-messages/</guid>
+      <description>Does iMessage support view once messages? Learn the current limitations of Apple Messages and how to send messages that can only be viewed once using Zero Note.</description>
+    </item>
+    <item>
+      <title>How to Send Disappearing Messages in iMessage (2026 Guide)</title>
+      <link>http://localhost:1313/posts/how-to-send-disappearing-messages-in-imessage/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/how-to-send-disappearing-messages-in-imessage/</guid>
+      <description>Learn how to send disappearing messages in iMessage using Zero Note&amp;#39;s keyboard extension. Share passwords, Wi-Fi credentials, door codes, bank details, and other sensitive information that self-destructs after viewing or a set time.</description>
+    </item>
+    <item>
+      <title>Is OneTimeSecret Safe? Security Review &amp; Why Users Are Switching to Zero Note (2026)</title>
+      <link>http://localhost:1313/posts/is-onetimesecret-safe/</link>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/is-onetimesecret-safe/</guid>
+      <description>Wondering if OneTimeSecret is secure for passwords, API keys, and credentials? Learn its strengths, limitations, and how Zero Note provides additional control through notifications, location restrictions, and secure vault storage.</description>
+    </item>
+    <item>
+      <title>Is Privnote Safe? Security Review &amp; Why Users Are Switching to Zero Note (2026)</title>
+      <link>http://localhost:1313/posts/is-privnote-safe/</link>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/is-privnote-safe/</guid>
+      <description>A practical review of Privnote&amp;#39;s security model, common limitations, and how modern alternatives like Zero Note offer location restrictions, access notifications, and advanced secret sharing controls.</description>
+    </item>
+    <item>
+      <title>How to Share a One-Time Secret Securely</title>
+      <link>http://localhost:1313/posts/share-onetime-securely/</link>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/share-onetime-securely/</guid>
+      <description>A safer way to share a secret that should only be accessed once and not remain available afterward.</description>
+    </item>
+    <item>
+      <title>How to Send Disappearing Messages on Instagram (Pro Privacy Guide)</title>
+      <link>http://localhost:1313/posts/how-to-send-disappearing-messages-on-instagram/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/how-to-send-disappearing-messages-on-instagram/</guid>
+      <description>Want to send disappearing messages on Instagram? Learn how to use Vanish Mode, and why the Zero Note keyboard is the pro way to share sensitive data securely.</description>
+    </item>
+    <item>
+      <title>How to Send Disappearing Messages on iPhone (Complete 2026 Guide)</title>
+      <link>http://localhost:1313/posts/how-to-send-disappearing-messages-on-iphone/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/how-to-send-disappearing-messages-on-iphone/</guid>
+      <description>Looking for ways to send disappearing messages on iPhone? Learn how to use native settings and the Zero Note keyboard extension for secure, self-destructing notes.</description>
+    </item>
+    <item>
+      <title>How to Send Disappearing Messages on Telegram (2026 Guide)</title>
+      <link>http://localhost:1313/posts/how-to-send-disappearing-messages-on-telegram/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/how-to-send-disappearing-messages-on-telegram/</guid>
+      <description>Learn how to send disappearing messages on Telegram using Secret Chats and discover advanced privacy controls like audit trails, view limits, and location-based access.</description>
+    </item>
+    <item>
+      <title>How to Send Disappearing Messages on WhatsApp (2026 Guide)</title>
+      <link>http://localhost:1313/posts/how-to-send-disappearing-messages-on-whatsapp/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/how-to-send-disappearing-messages-on-whatsapp/</guid>
+      <description>Learn how to send disappearing messages on WhatsApp and discover advanced privacy controls like view limits, audit trails, and secure encrypted note sharing with Zero Note.</description>
+    </item>
     <item>
       <title>Is Zero Knowledge Encryption Safe? Server-Side vs Client-Side Explained (2026)</title>
       <link>http://localhost:1313/posts/is-zero-knowledge-encryption-safe/</link>
@@ -45,9 +115,9 @@
     </item>
     <item>
       <title>What Payment Information Is Safe to Share?</title>
-      <link>http://localhost:1313/posts/payment-info-share/</link>
+      <link>http://localhost:1313/posts/how-to-share-payment-information-safely/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/payment-info-share/</guid>
+      <guid>http://localhost:1313/posts/how-to-share-payment-information-safely/</guid>
       <description>A practical guide to what payment information can sometimes be shared, what should be handled carefully, and what should never be shared.</description>
     </item>
     <item>
@@ -73,17 +143,10 @@
     </item>
     <item>
       <title>How to Send Information That Should Only Be Seen Once</title>
-      <link>http://localhost:1313/posts/send-info-only-once/</link>
+      <link>http://localhost:1313/posts/how-to-send-sensitive-information-once/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/send-info-only-once/</guid>
+      <guid>http://localhost:1313/posts/how-to-send-sensitive-information-once/</guid>
       <description>A simple way to share information that should only be viewed once and not remain available afterward.</description>
-    </item>
-    <item>
-      <title>How to Share a One-Time Secret Securely</title>
-      <link>http://localhost:1313/posts/share-onetime-securely/</link>
-      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/share-onetime-securely/</guid>
-      <description>A safer way to share a secret that should only be accessed once and not remain available afterward.</description>
     </item>
     <item>
       <title>How to Share a Wi‑Fi Password Without Saving It Anywhere</title>
@@ -108,9 +171,9 @@
     </item>
     <item>
       <title>Why Chat Is a Bad Place for Sensitive Information</title>
-      <link>http://localhost:1313/posts/chat-bad-place-share-sensitive-info/</link>
+      <link>http://localhost:1313/posts/why-chat-apps-are-not-safe-for-passwords/</link>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/chat-bad-place-share-sensitive-info/</guid>
+      <guid>http://localhost:1313/posts/why-chat-apps-are-not-safe-for-passwords/</guid>
       <description>Why chat apps are often the wrong place for passwords, private details, and other sensitive information.</description>
     </item>
     <item>

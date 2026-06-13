@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Is OneTimeSecret Safe? Security Review &amp; Why Users Are Switching to Zero Note (2026) | Zero Note: Self-destruct shareable notes</title>
+<meta name="keywords" content="is onetimesecret safe, is onetimesecret secure, onetimesecret review, onetimesecret alternatives, secure credential sharing, secure password sharing, api key sharing, self destructing notes, zero note, onetimesecret vs zero note">
+<meta name="description" content="Wondering if OneTimeSecret is secure for passwords, API keys, and credentials? Learn its strengths, limitations, and how Zero Note provides additional control through notifications, location restrictions, and secure vault storage.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/is-onetimesecret-safe/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.77f8e0afdca275042ccdee58088de8fc2c431b7b494aae1e46d4f8ce596b499b.css" integrity="sha256-d/jgr9yidQQsze5YCI3o/CxDG3tJSq4eRtT4zllrSZs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/is-onetimesecret-safe/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta name="google-site-verification" content="SJouY3j1HVpJBcm5AN5tUPsJOIgDOJJqXDxmYv5Fvj8" />
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Zero Note: Self-destruct shareable notes (Alt + H)">Zero Note: Self-destruct shareable notes</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://zeronote.app" title="Home">
+                    <span>Home</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/alternatives/" title="Alternatives">
+                    <span>Alternatives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/comparisons/" title="Comparisons">
+                    <span>Comparisons</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  
+  <header class="post-header">
+    <h1 class="post-title">Is OneTimeSecret Safe? Security Review &amp; Why Users Are Switching to Zero Note (2026)</h1>
+
+    
+      <p class="post-description">Wondering if OneTimeSecret is secure for passwords, API keys, and credentials? Learn its strengths, limitations, and how Zero Note provides additional control through notifications, location restrictions, and secure vault storage.</p>
+    
+
+    <div class="post-meta">
+      Jun 3, 2026
+    </div>
+  </header>
+
+  <div class="post-entry">
+    <h1 id="is-onetimesecret-safe-security-review--what-developers-should-know">Is OneTimeSecret Safe? Security Review &amp; What Developers Should Know</h1>
+<p>If you&rsquo;ve ever needed to share a password, API key, SSH credential, database connection string, or recovery code, you&rsquo;ve probably come across OneTimeSecret.</p>
+<p>For years, OneTimeSecret has been one of the most popular tools for sharing sensitive information through self-destructing links.</p>
+<p>Instead of sending secrets directly through Slack, Microsoft Teams, email, or chat applications, users create a temporary link that can only be viewed once.</p>
+<p>But in 2026, many developers and security-conscious teams are asking:</p>
+<blockquote>
+<p>Is OneTimeSecret actually safe?</p>
+</blockquote>
+<p>The short answer is:</p>
+<p><strong>Yes, OneTimeSecret is generally considered a secure way to share temporary secrets. However, modern security workflows often require additional controls that go beyond one-time viewing.</strong></p>
+<p>Let&rsquo;s examine how OneTimeSecret works, where it performs well, and why many users are moving toward more advanced secret-sharing solutions.</p>
+<hr>
+<h2 id="what-makes-onetimesecret-secure">What Makes OneTimeSecret Secure?</h2>
+<p>OneTimeSecret addresses a common security problem.</p>
+<p>Many people still share sensitive information using:</p>
+<ul>
+<li>Email</li>
+<li>Slack messages</li>
+<li>Microsoft Teams</li>
+<li>WhatsApp</li>
+<li>Project management tools</li>
+<li>Support tickets</li>
+</ul>
+<p>The problem is that these platforms create permanent records.</p>
+<p>A password shared today may still be searchable years later.</p>
+<p>OneTimeSecret solves this by creating a temporary secret link.</p>
+<p>The recipient opens the link once, reads the information, and the secret is no longer accessible through that URL.</p>
+<p>For many organizations, this is already a major improvement over traditional communication channels.</p>
+<hr>
+<h2 id="common-use-cases-for-onetimesecret">Common Use Cases for OneTimeSecret</h2>
+<p>Developers and IT teams frequently use OneTimeSecret for sharing:</p>
+<ul>
+<li>API keys</li>
+<li>Database credentials</li>
+<li>SSH access details</li>
+<li>Temporary passwords</li>
+<li>Recovery codes</li>
+<li>Internal system credentials</li>
+<li>Cloud infrastructure access</li>
+</ul>
+<p>In these situations, reducing the lifespan of exposed credentials is a meaningful security benefit.</p>
+<hr>
+<h2 id="the-limitation-of-one-time-viewing">The Limitation of One-Time Viewing</h2>
+<p>One-time viewing sounds secure.</p>
+<p>And in many situations it is.</p>
+<p>However, one-time viewing only answers one question:</p>
+<blockquote>
+<p>What happens after somebody reads the secret?</p>
+</blockquote>
+<p>It does not answer:</p>
+<ul>
+<li>Who opened the secret?</li>
+<li>Where was it opened?</li>
+<li>Was it the intended recipient?</li>
+<li>Was the link forwarded?</li>
+<li>Was the secret opened from another country?</li>
+<li>Was the secret ever accessed?</li>
+</ul>
+<p>For individual users these questions may not matter.</p>
+<p>For businesses and technical teams they often do.</p>
+<hr>
+<h2 id="the-real-risk-isnt-the-secret--its-the-link">The Real Risk Isn&rsquo;t the Secret — It&rsquo;s the Link</h2>
+<p>Most security discussions focus on protecting the secret.</p>
+<p>The bigger issue is often protecting the URL itself.</p>
+<p>Imagine sending a production database password to a contractor.</p>
+<p>If somebody intercepts the link before the contractor opens it:</p>
+<ul>
+<li>The secret can be viewed</li>
+<li>The secret may disappear</li>
+<li>The intended recipient may never know what happened</li>
+</ul>
+<p>This isn&rsquo;t a flaw unique to OneTimeSecret.</p>
+<p>It&rsquo;s a challenge shared by nearly every one-time secret-sharing platform.</p>
+<p>The security of the secret depends heavily on how the link is distributed and who gains access to it.</p>
+<hr>
+<h2 id="modern-security-teams-need-more-visibility">Modern Security Teams Need More Visibility</h2>
+<p>Many organizations now require more than simple self-destruction.</p>
+<p>For example:</p>
+<h3 id="access-notifications">Access Notifications</h3>
+<p>Teams often want confirmation that a secret has been viewed.</p>
+<p>Questions such as:</p>
+<ul>
+<li>Did the contractor access the credential?</li>
+<li>Has the recipient opened the note yet?</li>
+<li>Was the information received successfully?</li>
+</ul>
+<p>are increasingly common.</p>
+<p>Traditional one-time secret platforms provide limited visibility into these events.</p>
+<hr>
+<h3 id="geographic-restrictions">Geographic Restrictions</h3>
+<p>Many security-conscious teams prefer to limit where sensitive information can be accessed.</p>
+<p>Examples include:</p>
+<ul>
+<li>Only allow access from the United States</li>
+<li>Restrict access to a specific country</li>
+<li>Prevent access from unexpected regions</li>
+</ul>
+<p>This can significantly reduce exposure if a secret link is accidentally forwarded or intercepted.</p>
+<hr>
+<h3 id="location-based-access-controls">Location-Based Access Controls</h3>
+<p>In some cases, organizations want even more granular control.</p>
+<p>Examples include:</p>
+<ul>
+<li>Sharing credentials with an employee at a specific office</li>
+<li>Granting access only at a designated location</li>
+<li>Limiting access to a secure environment</li>
+</ul>
+<p>Traditional one-time secret-sharing services typically don&rsquo;t address these workflows.</p>
+<hr>
+<h2 id="why-developers-are-looking-beyond-onetimesecret">Why Developers Are Looking Beyond OneTimeSecret</h2>
+<p>OneTimeSecret remains useful for simple credential sharing.</p>
+<p>However, modern teams increasingly want:</p>
+<ul>
+<li>More visibility</li>
+<li>Better access controls</li>
+<li>Better auditability</li>
+<li>Additional security layers</li>
+</ul>
+<p>That&rsquo;s where solutions like Zero Note are gaining attention.</p>
+<hr>
+<h2 id="how-zero-note-takes-secret-sharing-further">How Zero Note Takes Secret Sharing Further</h2>
+<p>Zero Note expands on the traditional self-destructing note model.</p>
+<p>Instead of only focusing on destroying information after viewing, Zero Note helps control access before viewing.</p>
+<p>With Zero Note you can:</p>
+<ul>
+<li>Create self-destructing notes</li>
+<li>Set expiration times</li>
+<li>Limit note views</li>
+<li>Restrict access by country</li>
+<li>Restrict access by location</li>
+<li>Receive push notifications when notes are opened</li>
+<li>Receive email notifications when notes are accessed</li>
+<li>Store sensitive information securely in an on-device vault</li>
+</ul>
+<p>This creates a more complete security workflow for modern teams.</p>
+<hr>
+<h2 id="example-sharing-an-api-key-with-a-contractor">Example: Sharing an API Key With a Contractor</h2>
+<p>Suppose you&rsquo;re sending an API key to an external contractor.</p>
+<p>With a traditional one-time secret service:</p>
+<ol>
+<li>Create secret</li>
+<li>Send link</li>
+<li>Hope the correct person opens it</li>
+</ol>
+<p>With Zero Note:</p>
+<ol>
+<li>Create self-destructing note</li>
+<li>Limit access to the contractor&rsquo;s country</li>
+<li>Set an expiration date</li>
+<li>Limit views</li>
+<li>Receive notification when accessed</li>
+</ol>
+<p>The result is greater confidence and visibility throughout the sharing process.</p>
+<hr>
+<h2 id="example-sharing-production-credentials">Example: Sharing Production Credentials</h2>
+<p>Production credentials often require additional safeguards.</p>
+<p>Using Zero Note, teams can:</p>
+<ul>
+<li>Limit access windows</li>
+<li>Restrict access locations</li>
+<li>Track access events</li>
+<li>Automatically expire sensitive information</li>
+</ul>
+<p>These controls help reduce operational risk while keeping the workflow simple.</p>
+<hr>
+<h2 id="onetimesecret-vs-zero-note">OneTimeSecret vs Zero Note</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>OneTimeSecret</th>
+          <th>Zero Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Self-destructing notes</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Time-based expiration</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>View limits</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Country restrictions</td>
+          <td>❌</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Location restrictions</td>
+          <td>❌</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Access notifications</td>
+          <td>Limited</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Email notifications</td>
+          <td>❌</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Push notifications</td>
+          <td>❌</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Secure on-device vault</td>
+          <td>❌</td>
+          <td>✅</td>
+      </tr>
+  </tbody>
+</table>
+<p>For users who simply need a one-time secret, both solutions can work.</p>
+<p>For users who need additional control, visibility, and access restrictions, Zero Note provides capabilities beyond traditional secret-sharing tools.</p>
+<hr>
+<h2 id="final-verdict-is-onetimesecret-safe">Final Verdict: Is OneTimeSecret Safe?</h2>
+<p>Yes.</p>
+<p>OneTimeSecret remains a significantly safer option than sending passwords or API keys through traditional messaging platforms.</p>
+<p>For many individuals and teams, it provides a simple and effective way to share temporary secrets.</p>
+<p>However, self-destruction alone is no longer enough for many modern workflows.</p>
+<p>If you need:</p>
+<ul>
+<li>Access notifications</li>
+<li>Geographic restrictions</li>
+<li>Location-based controls</li>
+<li>View limits</li>
+<li>Secure vault storage</li>
+<li>Greater visibility into secret access</li>
+</ul>
+<p>then Zero Note offers a more advanced approach to secure information sharing.</p>
+<p>Think of OneTimeSecret as solving the problem of temporary access.</p>
+<p>Think of Zero Note as solving the problem of controlled access.</p>
+<hr>
+<h2 id="try-zero-note">Try Zero Note</h2>
+<p>Whether you&rsquo;re sharing passwords, API keys, SSH credentials, recovery codes, or confidential information, Zero Note gives you more control over who can access your secrets and when.</p>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li>Self-destruct by views</li>
+<li>Self-destruct by time</li>
+<li>Country-based restrictions</li>
+<li>Location-based access controls</li>
+<li>Push notifications</li>
+<li>Email notifications</li>
+<li>Secure vault storage</li>
+<li>Advanced secret-sharing workflows</li>
+</ul>
+<p>👉 <strong><a href="https://zeronote.app/#download">Download Zero Note</a></strong> and take control of how sensitive information is shared.</p>
+<hr>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="is-onetimesecret-secure">Is OneTimeSecret secure?</h3>
+<p>Yes. OneTimeSecret is generally considered secure for sharing temporary passwords, credentials, and other sensitive information using one-time links.</p>
+<h3 id="is-onetimesecret-safer-than-email">Is OneTimeSecret safer than email?</h3>
+<p>For sharing secrets, OneTimeSecret is generally safer than email because credentials are not permanently stored inside message threads.</p>
+<h3 id="can-someone-screenshot-a-onetimesecret">Can someone screenshot a OneTimeSecret?</h3>
+<p>Yes. Any recipient can save, copy, screenshot, or record the contents before the secret disappears.</p>
+<h3 id="what-is-the-best-alternative-to-onetimesecret">What is the best alternative to OneTimeSecret?</h3>
+<p>If you need location restrictions, access notifications, secure vault storage, and advanced secret-sharing controls, Zero Note offers capabilities beyond traditional one-time secret-sharing services.</p>
+<p>👉 <strong><a href="https://zeronote.app/#download">Download Zero Note Free</a></strong></p>
+<p>Related:</p>
+<ul>
+<li><a href="/alternatives/onetimesecret-alternatives/">OneTimeSecret Alternatives</a></li>
+<li><a href="/posts/send-password-without-chat-apps/">Why You Shouldn’t Send Passwords in Chat Apps</a></li>
+<li><a href="/posts/share-sensitive-info-without-chat/">How to Share Sensitive Information Without Chat Apps</a></li>
+<li><a href="/posts/view-based-vs-time-based/">View-Based vs Time-Based Self-Destructing Notes</a></li>
+<li><a href="/posts/self-destructing-note/">What Is a Self-Destructing Note?</a></li>
+</ul>
+
+  </div>
+
+</article>
+
+<div id="cta-box">
+  <p><strong>Try Zero Note</strong></p>
+  <p class="cta-sub">Scan to share a self-destructing note.</p>
+  <img src="/qr.png" alt="Download Zero Note" />
+  <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+    <img src="/appstore-badge-dark.svg" class="badge-dark" />
+    <img src="/appstore-badge-light.svg" class="badge-light" />
+  </a>
+</div>
+
+<div id="mobile-cta">
+  <div style="display:flex; justify-content:center; align-items:center;">
+    <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+      <img src="/appstore-badge-dark.svg" class="badge-dark" />
+      <img src="/appstore-badge-light.svg" class="badge-light" />
+    </a>
+  </div>
+</div>
+
+<script>
+  const isMobile = window.innerWidth <= 768;
+  const cta = document.getElementById("cta-box");
+
+  if (cta && !isMobile) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      cta.style.display = scrollPercent > 0.05 ? "block" : "none";
+    });
+  }
+
+  const mobileCTA = document.getElementById("mobile-cta");
+
+  if (mobileCTA) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      if (scrollPercent > 0.1) {
+        mobileCTA.style.display = "block";
+      } else {
+        mobileCTA.style.display = "none";
+      }
+    });
+  }
+</script>
+
+
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Zero Note: Self-destruct shareable notes</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

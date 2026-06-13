@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>How to Share API Keys Securely (Without Slack or Email) | Zero Note: Self-destruct shareable notes</title>
-<meta name="keywords" content="Security, Developers, API Keys, Use Cases">
-<meta name="description" content="A safer way to share API keys without leaving them in Slack, email, or source code.">
+<title>What Payment Information Is Safe to Share? | Zero Note: Self-destruct shareable notes</title>
+<meta name="keywords" content="Privacy, Payments, Banking">
+<meta name="description" content="A practical guide to what payment information can sometimes be shared, what should be handled carefully, and what should never be shared.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/share-apikeys-securely/">
+<link rel="canonical" href="http://localhost:1313/posts/how-to-share-payment-information-safely/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.77f8e0afdca275042ccdee58088de8fc2c431b7b494aae1e46d4f8ce596b499b.css" integrity="sha256-d/jgr9yidQQsze5YCI3o/CxDG3tJSq4eRtT4zllrSZs=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/share-apikeys-securely/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/how-to-share-payment-information-safely/">
 <noscript>
     <style>
         #theme-toggle,
@@ -135,90 +135,115 @@
 <article class="post-single">
   
   <header class="post-header">
-    <h1 class="post-title">How to Share API Keys Securely (Without Slack or Email)</h1>
+    <h1 class="post-title">What Payment Information Is Safe to Share?</h1>
 
     
-      <p class="post-description">A safer way to share API keys without leaving them in Slack, email, or source code.</p>
+      <p class="post-description">A practical guide to what payment information can sometimes be shared, what should be handled carefully, and what should never be shared.</p>
     
 
     <div class="post-meta">
-      Mar 18, 2026
+      Mar 20, 2026
     </div>
   </header>
 
   <div class="post-entry">
-    <p>Sharing an API key should feel like a small handoff.</p>
-<p>In practice, it often turns into a long-lived security problem.</p>
-<p>A key gets pasted into Slack. Or dropped into an email. Or left in a document that was only supposed to be temporary.</p>
-<p>The problem is not just getting the key to someone.</p>
-<p>It is everything that happens after.</p>
+    <p>People share payment information more often than they realize.</p>
+<p>It might be bank details for a transfer, a card number for a payment, or a message asking for an OTP or CVV.</p>
+<p>The problem is that not all payment information carries the same level of risk.</p>
+<p>Some details are commonly shared in legitimate situations.</p>
+<p>Others should almost never be shared with another person.</p>
 <hr>
-<h2 id="why-api-keys-are-risky-to-share">Why API keys are risky to share</h2>
-<p>An API key is not just a string of text.</p>
-<p>It is access.</p>
-<p>If the wrong person gets it, they may be able to read data, send requests, spend money, or interact with production systems depending on the permissions attached to that key.</p>
-<p>That is why modern guidance focuses on limiting where keys are stored, how they are transmitted, who can access them, and how quickly they can be revoked or rotated.</p>
+<h2 id="the-short-answer">The short answer</h2>
+<p>Some payment information can be shared in the right context and through the right channel.</p>
+<p>But details like your OTP, PIN, and CVV should generally never be shared with another person, while bank-transfer information and certain account details may sometimes be shared when the request is legitimate and the channel is trusted. [web:288][web:191][web:283]</p>
+<p>So the real question is not just “is it safe to share payment information?”</p>
+<p>It is “which details, with whom, and through what kind of channel?” [web:288][web:187]</p>
 <hr>
-<h2 id="why-slack-and-email-are-a-bad-place-for-api-keys">Why Slack and email are a bad place for API keys</h2>
-<p>Slack and email are convenient, which is exactly why people use them for secrets.</p>
-<p>But they are also built around history.</p>
-<p>Messages are searchable. Threads get revisited. Emails get archived. Documents get duplicated. And once a secret is copied into one of those places, it often lives longer than anyone intended.</p>
-<p>Security guidance consistently warns against distributing API keys through public or persistent communication channels, especially when better options like secret managers or controlled vaults are available.</p>
-<hr>
-<h2 id="what-secure-api-key-sharing-should-look-like">What secure API key sharing should look like</h2>
-<p>The best approach is usually not to “share” API keys directly at all.</p>
-<p>Instead, good security practice is to:</p>
+<h2 id="payment-information-that-is-often-okay-to-share-carefully">Payment information that is often okay to share carefully</h2>
+<p>Some information is commonly shared for legitimate payment-related reasons.</p>
+<p>Depending on the situation, that can include things like:</p>
 <ul>
-<li>store keys in a secrets manager or vault</li>
-<li>grant access only to the people or systems that need them</li>
-<li>use the minimum permissions required</li>
-<li>rotate keys regularly</li>
-<li>revoke them quickly if they are exposed</li>
+<li>your bank name</li>
+<li>branch details</li>
+<li>routing or transfer codes</li>
+<li>account details needed to receive a payment</li>
+<li>payment links you intentionally created [web:288][web:187][web:191]</li>
 </ul>
-<p>For application environments, injecting secrets at runtime through CI/CD or cloud secret managers is widely recommended because the key does not need to sit in source code, docs, or chat history.</p>
+<p>That does not mean these details are harmless.</p>
+<p>It means they may be shared when there is a real reason, the recipient is trusted, and the method of sharing is appropriate. [web:191][web:190]</p>
 <hr>
-<h2 id="when-you-still-need-to-send-a-key-to-a-person">When you still need to send a key to a person</h2>
-<p>Sometimes the ideal setup is not available.</p>
-<p>You may need to send a test key to a teammate, share a temporary credential with a contractor, or pass a secret to someone who is not inside your infrastructure yet.</p>
-<p>That is where people reach for Slack or email.</p>
-<p>But if the key only needs to be visible briefly, leaving it in a permanent channel creates unnecessary exposure.</p>
-<p>A temporary note can be a better option in those cases because it reduces how long the key remains available after it has been seen.</p>
-<hr>
-<h2 id="a-better-way-zero-note">A better way: Zero Note</h2>
-<p>Zero Note is built for this kind of short-lived sharing.</p>
-<p>Instead of pasting an API key into Slack, email, or a shared document, you create a note and decide how it should behave.</p>
-<p>That can include controls around:</p>
+<h2 id="payment-information-that-needs-extra-caution">Payment information that needs extra caution</h2>
+<p>Some details may be requested in real situations, but they deserve more care because they can increase the risk of fraud when combined with other information.</p>
+<p>That can include:</p>
 <ul>
-<li>when the note expires</li>
-<li>how it is accessed</li>
-<li>where it can be opened</li>
-<li>whether it should only be available briefly</li>
+<li>your full bank account number</li>
+<li>debit or credit card number</li>
+<li>billing information</li>
+<li>personal details linked to the account [web:288][web:190][web:292]</li>
 </ul>
-<p>That does not replace a real secrets manager for long-term system access.</p>
-<p>But it can be a better way to handle temporary human-to-human sharing when the goal is to reduce leftover exposure.</p>
+<p>If these details must be shared, it helps to verify the request independently and avoid leaving them in permanent channels like normal email or chat. [web:190][web:267]</p>
 <hr>
-<h2 id="a-few-habits-that-matter">A few habits that matter</h2>
-<p>Even if you use a temporary note, a few habits still make a big difference:</p>
+<h2 id="payment-information-you-should-never-casually-share">Payment information you should never casually share</h2>
+<p>Some information should be treated as highly sensitive and generally should not be shared with another person.</p>
+<p>That includes:</p>
 <ul>
-<li>Create keys with the smallest possible scope and permissions.</li>
-<li>Rotate the key after sharing if it was only needed for a short task.</li>
-<li>Avoid reusing the same key across multiple apps, people, or environments.</li>
-<li>Use IP or network restrictions when the provider supports them, since a stolen key is less useful if it only works from expected locations.</li>
-<li>Never commit keys to repositories or leave them in plaintext docs.</li>
+<li>OTPs</li>
+<li>card CVV numbers</li>
+<li>card PINs</li>
+<li>online banking passwords</li>
+<li>security answers or login credentials [web:283][web:285][web:287][web:291]</li>
 </ul>
+<p>Banks and payment-security guidance repeatedly warn that OTPs, CVVs, and PINs are exactly the kinds of details scammers try to obtain to complete fraudulent transactions. [web:283][web:287][web:290]</p>
+<hr>
+<h2 id="why-the-channel-matters">Why the channel matters</h2>
+<p>Even when the information itself is legitimately shareable, the channel still matters.</p>
+<p>Plain email, text, and chat all tend to create a long-lived record. That means payment information can remain searchable, forwarded, copied, or rediscovered later when it no longer needs to be accessible. [web:267][web:277][web:190]</p>
+<p>That is why “safe to share” and “safe to leave in an inbox or thread forever” are not the same thing.</p>
+<p>A detail may be necessary to send once without needing to remain available indefinitely.</p>
+<hr>
+<h2 id="a-better-way-to-think-about-it">A better way to think about it</h2>
+<p>A useful rule is:</p>
+<ul>
+<li>share only what is necessary</li>
+<li>verify who is asking</li>
+<li>use the most controlled channel you reasonably can</li>
+<li>avoid permanent message history for anything sensitive</li>
+<li>never share OTP, PIN, or CVV with another person [web:191][web:283][web:285]</li>
+</ul>
+<p>This does not make payment sharing risk-free.</p>
+<p>But it reduces unnecessary exposure and helps separate ordinary payment logistics from scam-prone behavior. [web:190][web:287]</p>
+<hr>
+<h2 id="which-zero-note-feature-fits-best">Which Zero Note feature fits best</h2>
+<p>Zero Note can make sense for the kinds of payment information that may need to be shared briefly but should not remain in chat or email history.</p>
+<p>For example:</p>
+<ul>
+<li>
+<p><strong>Time-based destruction</strong><br>
+Useful when someone needs a short window to check bank-transfer details or a payment link.</p>
+</li>
+<li>
+<p><strong>View-based destruction</strong><br>
+Better when the information should only be read once.</p>
+</li>
+<li>
+<p><strong>Location-based access</strong><br>
+Useful when the context is more sensitive and the note should only work in a specific place or country.</p>
+</li>
+</ul>
+<p>It is not a reason to start sharing OTPs, CVVs, or PINs.</p>
+<p>But it can be a better way to handle payment-related details that are legitimate to share and only need to be available briefly. [cite:29]</p>
 <hr>
 <h2 id="final-thought">Final thought</h2>
-<p>The safest API key is one that never has to be manually shared at all.</p>
-<p>But when you do need to hand one to a person, it helps to avoid channels designed to keep history forever.</p>
-<p>A temporary, controlled note is often a better fit than a message that lingers.</p>
-<p>If that is the kind of sharing you want, try Zero Note.</p>
+<p>Not all payment information should be treated the same.</p>
+<p>Some details can be shared carefully when necessary.</p>
+<p>Others, like OTPs, CVVs, and PINs, should be treated as things you simply do not give to another person.</p>
+<p>And when payment-related information does need to be shared, it is usually better to avoid leaving it in permanent chat or email history.</p>
+<hr>
 <p>Related:</p>
 <ul>
-<li><a href="/posts/note-open-once/">How to Send a Message That Can Only Be Opened Once</a></li>
-<li><a href="/posts/share-password-securely/">How to Share a Password Securely</a></li>
-<li><a href="/posts/share-private-info-securely/">How to Share Private Information Securely</a></li>
-<li><a href="/posts/share-sensitive-info-without-chat/">How to Share Sensitive Information Without Chat</a></li>
-<li><a href="/posts/is-zero-knowledge-encryption-safe">Zero Note uses AES zero-knowledge →</a></li>
+<li><a href="/posts/share-bank-details-securely/">How to Share Bank Details Securely →</a></li>
+<li><a href="/posts/safe-send-bank-details-email/">Is It Safe to Send Bank Details by Email? →</a></li>
+<li><a href="/posts/why-chat-apps-are-not-safe-for-passwords/">Why Chat Is a Bad Place for Sensitive Information →</a></li>
 </ul>
 
   </div>
