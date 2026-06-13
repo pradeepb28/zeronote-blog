@@ -5,13 +5,13 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   defaultTheme = "auto"
-  description = "Send notes without friction."
+  description = "Share notes or messages without friction."
   ShowReadingTime = true
   ShowPostNavLinks = true
   disableSpecial1stPost = true
   ShowBreadCrumbs = true
   customCSS = ["css/extended/custom.css"]
-  mainSections = ["posts", "alternatives"]
+  mainSections = ["posts", "alternatives", "comparisons]
 
 [taxonomies]
   tag = "tags"
@@ -30,4 +30,9 @@ disableKinds = ["taxonomy", "term"]
   [[menu.main]]
     name = "Alternatives"
     url = "/alternatives/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Comparisons"
+    url = "/comparisons/"
     weight = 0

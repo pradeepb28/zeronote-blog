@@ -53,7 +53,7 @@ As your needs grow, some limitations become noticeable:
 - **No location or access restrictions** — links can be opened from any region or IP once shared  
 - **No history or audit trail** — cannot manage or revoke active links after creation  
 - **No mobile-native experience** — operates entirely inside a mobile web browser  
-- **Ad-supported interface** — relies on third-party ads to remain free  
+- **Ad-supported interface** — relies on 3rd-party ads to remain free  
 
 These aren’t issues for basic use — but they matter when you need more control.
 
