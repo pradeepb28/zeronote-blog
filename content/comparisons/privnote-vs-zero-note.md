@@ -174,3 +174,23 @@ Zero Note takes that foundational idea into the modern era — adding robust **c
 If your data security and tracking needs go beyond basic web sharing, Zero Note is built for that next step.
 
 👉 **[Download Zero Note Free](https://zeronote.app/#download)**
+
+## Related guides
+
+### Learn more about Privnote and alternatives
+- [Best Privnote Alternatives →](/alternatives/privnote-alternatives/)
+- [Is Privnote Safe to Use? →](/posts/is-privnote-safe/)
+
+### Compare other secure note tools
+- [Best OneTimeSecret Alternatives →](/alternatives/onetimesecret-alternatives/)
+- [Best Burner Note Alternatives →](/alternatives/burnernote-alternatives/)
+- [Best Yopass Alternatives →](/alternatives/yopass-alternatives/)
+
+### Understand secure note sharing
+- [How to Share Sensitive Information Securely →](/posts/share-sensitive-info-without-chat/)
+- [Send Password Without Chat Apps →](/posts/send-password-without-chat-apps/)
+- [Why Chat Apps Are Not Safe for Passwords →](/posts/why-chat-apps-are-not-safe-for-passwords/)
+
+### Deep dive into security concepts
+- [Is Zero-Knowledge Encryption Safe? →](/posts/is-zero-knowledge-encryption-safe/)
+- [Zero-Knowledge vs End-to-End Encryption →](/posts/zero-knowledge-vs-end-to-end-encryption/)
