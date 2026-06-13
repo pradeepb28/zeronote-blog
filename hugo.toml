@@ -11,7 +11,7 @@ disableKinds = ["taxonomy", "term"]
   disableSpecial1stPost = true
   ShowBreadCrumbs = true
   customCSS = ["css/extended/custom.css"]
-  mainSections = ["posts", "alternatives", "comparisons]
+  mainSections = ["posts", "alternatives", "comparisons"]
 
 [taxonomies]
   tag = "tags"
