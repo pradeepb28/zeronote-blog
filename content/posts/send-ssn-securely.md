@@ -9,6 +9,8 @@ description: "Need to send your Social Security Number by email or online? Learn
 
 tags: ["send ssn securely", "safely send ssn", "send social security number securely", "how to send ssn via email", "secure ssn sharing"]
 
+---
+
 # How to Send Your Social Security Number (SSN) Securely
 
 Need to send your Social Security Number (SSN) to an employer, family member, accountant, lender, government agency, or another organization?
@@ -33,7 +35,6 @@ And if you're sharing sensitive information for a legitimate personal reason wit
 
 Here's what to consider before sharing your Social Security Number digitally.
 
----
 
 ## Should You Send Your Social Security Number Online?
 
