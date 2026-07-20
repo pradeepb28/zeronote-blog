@@ -1,5 +1,5 @@
 baseURL = "https://blog.zeronote.app"
-title = "Zero Note: Self-destruct shareable notes"
+title = "Zero Note: Self-destruct messages"
 theme = "PaperMod"
 disableKinds = ["taxonomy", "term"]
 
