@@ -118,4 +118,4 @@ Related:
 
 - [How to Share Bank Details Securely](/posts/share-bank-details-securely/)
 - [How to Share Private Information Securely](/posts/share-private-info-securely/)
-- [Why Chat Is a Bad Place for Sensitive Information](/posts/why-chat-is-bad-for-sensitive-information/)
+- [Why Chat Is a Bad Place for Sensitive Information](/posts/why-chat-apps-are-not-safe-for-passwords/)

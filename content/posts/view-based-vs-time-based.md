@@ -149,4 +149,4 @@ Related:
 
 - [How to Send Information That Should Only Be Seen Once](/posts/how-to-send-sensitive-information-once/)
 - [How to Send Temporary Instructions Securely](/posts/send-temporary-instructions/)
-- [How to Share a One-Time Secret Securely](/posts/how-to-share-a-one-time-secret-securely/)
+- [How to Share a One-Time Secret Securely](/posts/share-onetimesecret-securely/)
