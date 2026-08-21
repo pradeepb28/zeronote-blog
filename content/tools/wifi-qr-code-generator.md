@@ -2,6 +2,7 @@
 title: "Free WiFi QR Code Generator"
 date: 2026-08-21
 draft: false
+weight: 5
 description: "Create a WiFi QR code in your browser from a network name and password. Copy or download the PNG. Nothing is sent to a server."
 tags: ["Security"]
 faq:

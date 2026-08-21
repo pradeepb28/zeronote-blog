@@ -2,6 +2,7 @@
 title: "Free Password Generator"
 date: 2026-08-20
 draft: false
+weight: 1
 description: "Generate a strong random password in your browser. Choose length, capital letters, numbers, and symbols. Nothing is sent to a server."
 tags: ["Passwords", "Security"]
 faq:

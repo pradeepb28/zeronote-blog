@@ -2,6 +2,7 @@
 title: "Free Link Tracker Remover"
 date: 2026-08-21
 draft: false
+weight: 3
 description: "Remove UTM tags, click IDs, affiliate tags, and app trackers from a link in your browser. Nothing is sent to a server."
 tags: ["Privacy", "Security"]
 faq:

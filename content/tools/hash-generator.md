@@ -2,6 +2,7 @@
 title: "Free Hash Generator"
 date: 2026-08-21
 draft: false
+weight: 6
 description: "Hash text to MD5, SHA-1, and SHA-256 in your browser. Nothing is sent to a server."
 tags: ["Security"]
 faq:

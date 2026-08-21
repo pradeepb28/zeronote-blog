@@ -2,6 +2,7 @@
 title: "Free Passphrase Generator"
 date: 2026-08-20
 draft: false
+weight: 2
 description: "Generate a memorable passphrase from random words. Choose word count, capital letters, numbers, and a hyphen or underscore separator. Nothing is sent to a server."
 tags: ["Passwords", "Security"]
 faq:

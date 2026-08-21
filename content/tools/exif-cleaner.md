@@ -2,6 +2,7 @@
 title: "Free EXIF Cleaner"
 date: 2026-08-20
 draft: false
+weight: 4
 description: "Remove location, date, and device metadata from a JPEG, PNG, or WebP in your browser. Pixels are not recompressed. Nothing is sent to a server."
 tags: ["Privacy", "Security"]
 faq:
