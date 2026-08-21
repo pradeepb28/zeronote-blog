@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Free tools on Zero Note: Self-destruct messages</title>
+    <link>https://blog.zeronote.app/tools/</link>
+    <description>Recent content in Free tools on Zero Note: Self-destruct messages</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 21 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.zeronote.app/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Free Hash Generator</title>
+      <link>https://blog.zeronote.app/tools/hash-generator/</link>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.zeronote.app/tools/hash-generator/</guid>
+      <description>Hash text to MD5, SHA-1, and SHA-256 in your browser. Nothing is sent to a server.</description>
+    </item>
+    <item>
+      <title>Free Link Tracker Remover</title>
+      <link>https://blog.zeronote.app/tools/link-tracker-remover/</link>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.zeronote.app/tools/link-tracker-remover/</guid>
+      <description>Remove UTM tags, click IDs, affiliate tags, and app trackers from a link in your browser. Nothing is sent to a server.</description>
+    </item>
+    <item>
+      <title>Free WiFi QR Code Generator</title>
+      <link>https://blog.zeronote.app/tools/wifi-qr-code-generator/</link>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.zeronote.app/tools/wifi-qr-code-generator/</guid>
+      <description>Create a WiFi QR code in your browser from a network name and password. Copy or download the PNG. Nothing is sent to a server.</description>
+    </item>
+    <item>
+      <title>Free EXIF Cleaner</title>
+      <link>https://blog.zeronote.app/tools/exif-cleaner/</link>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.zeronote.app/tools/exif-cleaner/</guid>
+      <description>Remove location, date, and device metadata from a JPEG, PNG, or WebP in your browser. Pixels are not recompressed. Nothing is sent to a server.</description>
+    </item>
+    <item>
+      <title>Free Passphrase Generator</title>
+      <link>https://blog.zeronote.app/tools/passphrase-generator/</link>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.zeronote.app/tools/passphrase-generator/</guid>
+      <description>Generate a memorable passphrase from random words. Choose word count, capital letters, numbers, and a hyphen or underscore separator. Nothing is sent to a server.</description>
+    </item>
+    <item>
+      <title>Free Password Generator</title>
+      <link>https://blog.zeronote.app/tools/password-generator/</link>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.zeronote.app/tools/password-generator/</guid>
+      <description>Generate a strong random password in your browser. Choose length, capital letters, numbers, and symbols. Nothing is sent to a server.</description>
+    </item>
+  </channel>
+</rss>

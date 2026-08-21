@@ -168,3 +168,4 @@ Related:
 
 * [How to Send Disappearing Messages in iMessage](/posts/how-to-send-disappearing-messages-in-imessage/)
 * [How to Send Disappearing Messages on iPhone](/posts/how-to-send-disappearing-messages-on-iphone/)
+* [Does iMessage Have View Once Messages?](/posts/does-imessage-have-view-once-messages/)

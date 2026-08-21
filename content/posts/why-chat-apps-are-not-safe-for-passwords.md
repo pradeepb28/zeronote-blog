@@ -141,3 +141,4 @@ Related:
 - [How to Share Sensitive Information Without Chat](/posts/share-sensitive-info-without-chat/)
 - [How to Share Private Information Securely](/posts/share-private-info-securely/)
 - [How to Share a One-Time Secret Securely](/posts/share-onetimesecret-securely/)
+- [Why Slack DMs Are Not a Safe Place for Sensitive Information](/posts/slack-dms-note-safe-place/)

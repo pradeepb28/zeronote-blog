@@ -143,6 +143,8 @@ If you want a simpler way to share private information with more control over ho
 
 Related:
 
+- [Free Link Tracker Remover](/tools/link-tracker-remover/)
 - [How to Share a Password Securely](/posts/share-password-securely/)
 - [How to Share Sensitive Information Without Chat](/posts/share-sensitive-info-without-chat/)
 - [How to Send Temporary Instructions Securely](/posts/send-temporary-instructions/)
+- [How to Send Your Social Security Number (SSN) Securely](/posts/send-ssn-securely/)

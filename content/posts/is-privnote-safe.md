@@ -313,7 +313,8 @@ The best alternative depends on your needs. If you're looking for features such 
 Related:
 
 - [Privnote Alternatives](/alternatives/privnote-alternatives/)
-- [Why You Shouldn’t Send Passwords in Chat Apps](/posts/send-password-without-chat-apps/)
+- [Privnote vs Zero Note](/comparisons/privnote-vs-zero-note/)
+- [Why Chat Is a Bad Place for Sensitive Information](/posts/why-chat-apps-are-not-safe-for-passwords/)
 - [How to Share Sensitive Information Without Chat Apps](/posts/share-sensitive-info-without-chat/)
 - [View-Based vs Time-Based Self-Destructing Notes](/posts/view-based-vs-time-based/)
-- [What Is a Self-Destructing Note?](/posts/self-destructing-note/)
+- [How to Send a Self-Destructing Message](/posts/self-destructing-note/)

@@ -243,7 +243,8 @@ Zero Note is built for that next step.
 
 Related:
 
+- [OneTimeSecret vs Zero Note](/comparisons/onetimesecret-vs-zero-note/)
 - [How to Send Information That Should Only Be Seen Once →](/posts/how-to-send-sensitive-information-once/)
 - [How to Share API Keys Securely →](/posts/share-apikeys-securely/)
 - [How to Share a Password Securely →](/posts/share-password-securely/)
-- [Zero Note uses AES zero-knowledge →](/posts/is-zero-knowledge-encryption-safe)
+- [Is Zero Knowledge Encryption Safe?](/posts/is-zero-knowledge-encryption-safe/)

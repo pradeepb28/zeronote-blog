@@ -4,14 +4,14 @@ theme = "PaperMod"
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  defaultTheme = "auto"
+  defaultTheme = "light"
   description = "Share notes or messages without friction."
   ShowReadingTime = true
   ShowPostNavLinks = true
   disableSpecial1stPost = true
   ShowBreadCrumbs = true
   customCSS = ["css/extended/custom.css"]
-  mainSections = ["posts", "alternatives", "comparisons"]
+  mainSections = ["posts", "tools", "alternatives", "comparisons"]
 
 [taxonomies]
   tag = "tags"
@@ -28,11 +28,16 @@ disableKinds = ["taxonomy", "term"]
     weight = 2
 
   [[menu.main]]
+    name = "Free tools"
+    url = "/tools/"
+    weight = 3
+
+  [[menu.main]]
     name = "Alternatives"
     url = "/alternatives/"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     name = "Comparisons"
     url = "/comparisons/"
-    weight = 4
+    weight = 5

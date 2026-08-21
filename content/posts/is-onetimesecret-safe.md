@@ -344,7 +344,8 @@ If you need location restrictions, access notifications, secure vault storage, a
 Related:
 
 - [OneTimeSecret Alternatives](/alternatives/onetimesecret-alternatives/)
-- [Why You Shouldn’t Send Passwords in Chat Apps](/posts/send-password-without-chat-apps/)
+- [OneTimeSecret vs Zero Note](/comparisons/onetimesecret-vs-zero-note/)
+- [Why Chat Is a Bad Place for Sensitive Information](/posts/why-chat-apps-are-not-safe-for-passwords/)
 - [How to Share Sensitive Information Without Chat Apps](/posts/share-sensitive-info-without-chat/)
 - [View-Based vs Time-Based Self-Destructing Notes](/posts/view-based-vs-time-based/)
-- [What Is a Self-Destructing Note?](/posts/self-destructing-note/)
+- [How to Send a Self-Destructing Message](/posts/self-destructing-note/)

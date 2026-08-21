@@ -119,10 +119,13 @@ A temporary, controlled note is often better than a permanent message.
 
 If that is the kind of sharing you want, try Zero Note.
 
-
+To create a new password first, use the [password generator](/tools/password-generator/) or the [passphrase generator](/tools/passphrase-generator/), then share it in a temporary note instead of chat or email.
 
 Related:
 
+- [Password Generator](/tools/password-generator/)
+- [Passphrase Generator](/tools/passphrase-generator/)
 - [How to Share Private Information Securely](/posts/share-private-info-securely/)
 - [How to Share API Keys Securely](/posts/share-apikeys-securely/)
 - [How to Share Sensitive Information Without Chat](/posts/share-sensitive-info-without-chat/)
+- [How to Share a Wi-Fi Password Without Saving It Anywhere](/posts/share-wifi-password/)

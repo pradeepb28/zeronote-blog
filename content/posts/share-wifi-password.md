@@ -101,6 +101,7 @@ If you want a simpler way to share it with more control, try Zero Note.
 
 Related:
 
+- [Free WiFi QR Code Generator](/tools/wifi-qr-code-generator/)
 - [How to Share a Password Securely](/posts/share-password-securely/)
 - [How to Share Private Information Securely](/posts/share-private-info-securely/)
 - [How to Share Sensitive Information Without Chat](/posts/share-sensitive-info-without-chat/)

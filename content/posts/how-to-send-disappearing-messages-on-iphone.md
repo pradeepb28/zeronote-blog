@@ -62,6 +62,9 @@ Native disappearing messages are a great start, but they aren't enough for true 
 
 Related:
 
-- [What Is a Self-Destructing Note?](/posts/self-destructing-note/)
+- [How to Send a Self-Destructing Message](/posts/self-destructing-note/)
 - [How to Share Notes Securely](/posts/share-note-securely/)
 - [Is Zero Knowledge Encryption Safe?](/posts/is-zero-knowledge-encryption-safe/)
+- [How to Send Disappearing Messages on WhatsApp](/posts/how-to-send-disappearing-messages-on-whatsapp/)
+- [How to Send Disappearing Messages on Telegram](/posts/how-to-send-disappearing-messages-on-telegram/)
+- [How to Send Disappearing Messages on Instagram](/posts/how-to-send-disappearing-messages-on-instagram/)

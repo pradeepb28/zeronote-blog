@@ -140,4 +140,6 @@ Related:
 
 - [How to Share Private Information Securely](/posts/share-private-info-securely/)
 - [How to Share Sensitive Information Without Chat](/posts/share-sensitive-info-without-chat/)
-- [Best Way to Share a Password Securely Without Email or Chat](/posts/share-password-securely/)
+- [Best Way to Share a Password Securely Without Email or Chat](/posts/send-password-without-chat-apps/)
+- [What Payment Information Is Safe to Share?](/posts/how-to-share-payment-information-safely/)
+- [Why You Should Never Share Your Card Number, Expiry Date, and CVV Together](/posts/never-share-card-details-together/)

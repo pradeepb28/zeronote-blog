@@ -227,4 +227,4 @@ If you’re sharing sensitive information regularly, using tools built on zero k
 Related:
 
 - [One-Time Access vs Time-Based Expiry: What’s the Difference?](/posts/view-based-vs-time-based/)
-- [Zero knowledge vs End to End encryption →](/posts/zero-knowledge-vs-end-to-end-encryption)
+- [Zero Knowledge vs End-to-End Encryption](/posts/zero-knowledge-vs-end-to-end-encryption/)

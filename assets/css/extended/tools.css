@@ -1,0 +1,390 @@
+.tool-root {
+  max-width: 640px;
+  margin: 0 auto 40px;
+}
+
+.tool-panel {
+  background: var(--entry);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+[data-theme="dark"] .tool-panel {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.tool-output {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  word-break: break-all;
+  min-height: 3.2em;
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  background: var(--theme);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.tool-output-wrap {
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+[data-theme="dark"] .tool-output {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.tool-options {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tool-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tool-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tool-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  overflow-wrap: break-word;
+}
+
+.tool-check input,
+.tool-select,
+.tool-range {
+  accent-color: currentColor;
+}
+
+.tool-select,
+.tool-range {
+  max-width: 180px;
+}
+
+.tool-range {
+  width: 140px;
+}
+
+.tool-range-value {
+  font-size: 13px;
+  color: var(--secondary);
+  min-width: 2ch;
+  text-align: right;
+}
+
+.tool-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tool-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05);
+  color: inherit;
+}
+
+.tool-btn:hover {
+  opacity: 0.85;
+}
+
+.tool-btn-primary {
+  background: black;
+  color: white;
+}
+
+[data-theme="dark"] .tool-btn {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .tool-btn-primary {
+  background: #fff;
+  color: #111;
+}
+
+.tool-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.tool-btn:disabled:hover {
+  opacity: 0.45;
+}
+
+.tool-drop {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  justify-items: start;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px dashed rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  background: var(--theme);
+  cursor: pointer;
+}
+
+[data-theme="dark"] .tool-drop {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.tool-drop.is-drop {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.tool-drop-hint {
+  margin: 0;
+  font-size: 13px;
+  color: var(--secondary);
+}
+
+.tool-file {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.tool-check input:focus-visible,
+.tool-select:focus-visible,
+.tool-range:focus-visible,
+.tool-file:focus-visible,
+.tool-textarea:focus-visible,
+.tool-input:focus-visible,
+.tool-btn:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.tool-textarea {
+  width: 100%;
+  min-height: 8em;
+  resize: vertical;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  color: inherit;
+  background: var(--theme);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+[data-theme="dark"] .tool-textarea {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.tool-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  color: inherit;
+  background: var(--theme);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+[data-theme="dark"] .tool-input {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.tool-input:disabled {
+  opacity: 0.45;
+}
+
+.tool-qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+  margin: 0 0 16px;
+  padding: 16px;
+  background: var(--theme);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+[data-theme="dark"] .tool-qr {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.tool-qr-empty {
+  margin: 0;
+  font-size: 14px;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.tool-qr canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.tool-qr canvas[hidden],
+.tool-qr-empty[hidden] {
+  display: none !important;
+}
+
+.tool-hash-list {
+  display: grid;
+  gap: 16px;
+}
+
+.tool-hash-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.tool-hash-row .tool-output {
+  min-height: 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+.tool-field-group {
+  display: grid;
+  gap: 8px;
+}
+
+.tool-field-group .tool-label {
+  margin: 0;
+}
+
+.tool-result {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0 0 16px;
+  padding: 12px;
+  background: var(--theme);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.tool-result[hidden],
+.tool-result-thumb[hidden],
+.tool-summary[hidden],
+.tool-result-note[hidden],
+.tool-options[hidden],
+.tool-actions[hidden],
+.tool-btn[hidden] {
+  display: none !important;
+}
+
+.tool-summary {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.tool-summary li {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.tool-summary-emoji {
+  flex-shrink: 0;
+  width: 1.5em;
+  text-align: center;
+}
+
+.tool-summary-label {
+  font-weight: 500;
+}
+
+.tool-summary-value {
+  color: var(--secondary);
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+[data-theme="dark"] .tool-result {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.tool-result-thumb {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--entry);
+}
+
+.tool-result-body {
+  min-width: 0;
+  flex: 1;
+}
+
+.tool-result-name,
+.tool-result-status,
+.tool-result-note {
+  margin: 0;
+}
+
+.tool-result-name {
+  font-size: 13px;
+  color: var(--secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tool-result-status {
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tool-result-note {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--secondary);
+}
+
+.tool-note {
+  margin: -8px 0 16px;
+  font-size: 13px;
+  color: var(--secondary);
+}
+
+.tool-note[hidden] {
+  display: none !important;
+}

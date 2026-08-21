@@ -291,7 +291,7 @@ You can keep using the communication platforms where your friends, family, and c
 
 [Create a private Zero Note →](https://apps.apple.com/in/app/zero-note-self-destruct-notes/id6760115126)
 
-You can also read our guides on **[Why Chat Apps Are Not Safe for Passwords](posts/why-chat-apps-are-not-safe-for-passwords/)** and **[How to Share Private Information Securely](posts/share-private-info-securely/)**.
+You can also read our guides on **[Why Chat Is a Bad Place for Sensitive Information](/posts/why-chat-apps-are-not-safe-for-passwords/)** and **[How to Share Private Information Securely](/posts/share-private-info-securely/)**.
 
 ## Other Privacy Tools Worth Considering
 

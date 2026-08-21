@@ -248,7 +248,9 @@ If you want to try a more secure and controlled approach to sensitive sharing:
 Related:
 
 - [Zero Knowledge vs End-to-End Encryption](/posts/zero-knowledge-vs-end-to-end-encryption/)
-- [Why You Shouldn’t Send Passwords in Chat Apps](/posts/send-password-without-chat-apps/)
+- [Why Chat Is a Bad Place for Sensitive Information](/posts/why-chat-apps-are-not-safe-for-passwords/)
 - [How to Share Sensitive Information Without Chat Apps](/posts/share-sensitive-info-without-chat/)
 - [View-Based vs Time-Based Self-Destructing Notes](/posts/view-based-vs-time-based/)
-- [What Is a Self-Destructing Note?](/posts/self-destructing-note/)
+- [How to Send a Self-Destructing Message](/posts/self-destructing-note/)
+- [How to Send Disappearing Messages on Telegram](/posts/how-to-send-disappearing-messages-on-telegram/)
+- [How to Send Disappearing Messages on Instagram](/posts/how-to-send-disappearing-messages-on-instagram/)

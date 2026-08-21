@@ -11,9 +11,9 @@ This blog covers real-world ways to securely share sensitive information using s
 
 ### What you'll learn
 
-- How to share passwords without chat apps  
-- How to send bank and payment details safely  
-- How to protect API keys and developer secrets  
-- When to use self-destructing notes  
+- [How to share passwords without chat apps](/posts/send-password-without-chat-apps/)
+- [How to send bank and payment details safely](/posts/share-bank-details-securely/)
+- [How to protect API keys and developer secrets](/posts/share-apikeys-securely/)
+- [When to use self-destructing notes](/posts/self-destructing-note/) 
 
 ---

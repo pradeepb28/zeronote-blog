@@ -1,0 +1,34 @@
+<div class="tool-panel">
+  <p id="passphrase-output" class="tool-output" aria-live="polite">Your passphrase will appear here</p>
+
+  <div class="tool-options">
+    <div class="tool-row">
+      <label class="tool-label" for="passphrase-words">Words</label>
+      <input id="passphrase-words" class="tool-range" type="range" min="3" max="8" value="4" />
+      <span id="passphrase-words-value" class="tool-range-value">4</span>
+    </div>
+
+    <div class="tool-row">
+      <label class="tool-label" for="passphrase-separator">Separator</label>
+      <select id="passphrase-separator" class="tool-select">
+        <option value="-" selected>Hyphen</option>
+        <option value="_">Underscore</option>
+      </select>
+    </div>
+
+    <label class="tool-check">
+      <input id="passphrase-capitals" type="checkbox" checked />
+      Capital letters
+    </label>
+
+    <label class="tool-check">
+      <input id="passphrase-numbers" type="checkbox" checked />
+      Numbers
+    </label>
+  </div>
+
+  <div class="tool-actions">
+    <button type="button" id="passphrase-copy" class="tool-btn">Copy</button>
+    <button type="button" id="passphrase-generate" class="tool-btn tool-btn-primary">Generate</button>
+  </div>
+</div>

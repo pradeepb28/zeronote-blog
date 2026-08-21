@@ -134,4 +134,4 @@ Related:
 - [Why Chat Is a Bad Place for Sensitive Information](/posts/why-chat-apps-are-not-safe-for-passwords/)
 - [How to Share a One-Time Secret Securely](/posts/share-onetimesecret-securely/)
 - [One-Time Access vs Time-Based Expiry: What’s the Difference?](/posts/view-based-vs-time-based/)
-- [Zero Note uses AES zero-knowledge →](/posts/is-zero-knowledge-encryption-safe)
+- [Is Zero Knowledge Encryption Safe?](/posts/is-zero-knowledge-encryption-safe/)

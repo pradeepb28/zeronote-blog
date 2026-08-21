@@ -196,8 +196,9 @@ If that’s what you’re looking for, **Zero Note** is a strong upgrade.
 
 Related:
 
+- [Privnote vs Zero Note](/comparisons/privnote-vs-zero-note/)
 - [OneTimeSecret Alternatives](/alternatives/onetimesecret-alternatives/)
 - [Burner Note Alternatives](/alternatives/burnernote-alternatives/)
 - [How to Share Sensitive Information Without Chat Apps](/posts/share-sensitive-info-without-chat/)
 - [View-Based vs Time-Based Self-Destructing Notes](/posts/view-based-vs-time-based/)
-- [What Is a Self-Destructing Note?](/posts/self-destructing-note/)
+- [How to Send a Self-Destructing Message](/posts/self-destructing-note/)

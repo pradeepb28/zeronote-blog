@@ -1,0 +1,42 @@
+<div class="tool-panel">
+  <div class="tool-options">
+    <div class="tool-field-group">
+      <label class="tool-label" for="wifi-qr-ssid">Network name</label>
+      <input id="wifi-qr-ssid" class="tool-input" type="text" placeholder="Name of the Wi-Fi network" autocomplete="off" spellcheck="false" />
+    </div>
+
+    <div class="tool-field-group">
+      <label class="tool-label" for="wifi-qr-password">Password</label>
+      <input id="wifi-qr-password" class="tool-input" type="password" placeholder="Wi-Fi password" autocomplete="off" spellcheck="false" />
+    </div>
+
+    <div class="tool-row">
+      <label class="tool-label" for="wifi-qr-security">Security</label>
+      <select id="wifi-qr-security" class="tool-select">
+        <option value="WPA" selected>WPA/WPA2</option>
+        <option value="WEP">WEP</option>
+        <option value="nopass">Open</option>
+      </select>
+    </div>
+
+    <label class="tool-check">
+      <input id="wifi-qr-show" type="checkbox" />
+      Show password
+    </label>
+
+    <label class="tool-check">
+      <input id="wifi-qr-hidden" type="checkbox" />
+      Hidden network
+    </label>
+  </div>
+
+  <div class="tool-qr">
+    <p id="wifi-qr-empty" class="tool-qr-empty" aria-live="polite">QR code will appear here</p>
+    <canvas id="wifi-qr-canvas" hidden aria-label="WiFi QR code"></canvas>
+  </div>
+
+  <div class="tool-actions">
+    <button type="button" id="wifi-qr-copy" class="tool-btn" disabled>Copy</button>
+    <button type="button" id="wifi-qr-download" class="tool-btn tool-btn-primary" disabled>Download</button>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="tool-panel">
+  <div id="exif-result" class="tool-result" hidden>
+    <img id="exif-thumb" class="tool-result-thumb" alt="" hidden />
+    <div class="tool-result-body">
+      <p id="exif-name" class="tool-result-name"></p>
+      <p id="exif-status" class="tool-result-status" aria-live="polite"></p>
+      <ul id="exif-summary" class="tool-summary" hidden></ul>
+      <p id="exif-note" class="tool-result-note" hidden></p>
+    </div>
+  </div>
+
+  <div id="exif-drop" class="tool-drop">
+    <label class="tool-label" for="exif-file">Photo</label>
+    <p class="tool-drop-hint">Drop a JPEG, PNG, or WebP here, or choose a file. Nothing is sent to a server.</p>
+    <input id="exif-file" class="tool-file" type="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" />
+  </div>
+
+  <div id="exif-fields" class="tool-options" hidden></div>
+
+  <div id="exif-actions" class="tool-actions" hidden>
+    <button type="button" id="exif-remove" class="tool-btn" hidden>Remove selected</button>
+    <button type="button" id="exif-download" class="tool-btn tool-btn-primary" hidden>Download</button>
+  </div>
+</div>

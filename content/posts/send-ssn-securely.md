@@ -400,8 +400,8 @@ If you're looking for more ways to protect sensitive information, these guides m
 
 * [How to Share Bank Details Securely](/posts/share-bank-details-securely/)
 * [How to Share Private Information Securely](/posts/share-private-info-securely/)
-* [How to Send Sensitive Information Without Chat Apps](/posts/share-sensitive-info-without-chat/)
-* [How to Send Passwords Without Chat Apps](/posts/send-password-without-chat-apps/)
+* [How to Share Sensitive Information Without Chat](/posts/share-sensitive-info-without-chat/)
+* [How to Share a Password Without Email or Chat](/posts/send-password-without-chat-apps/)
 * [How to Share Passwords Securely](/posts/share-password-securely/)
 * [Is Zero-Knowledge Encryption Safe?](/posts/is-zero-knowledge-encryption-safe/)
 * [Zero-Knowledge vs. End-to-End Encryption](/posts/zero-knowledge-vs-end-to-end-encryption/)

@@ -224,3 +224,9 @@ If your goal is complete privacy and control, zero knowledge is the stronger mod
 If you want to try a zero knowledge approach for sharing sensitive notes:
 
 👉 **[Download Zero Note Free →](https://zeronote.app)**
+
+Related:
+
+- [Is Zero Knowledge Encryption Safe?](/posts/is-zero-knowledge-encryption-safe/)
+- [When to Use Views-Based vs Time-Based Message Destruction](/posts/view-based-vs-time-based/)
+- [EU Chat Control: What It Means](/posts/eu-chat-control/)

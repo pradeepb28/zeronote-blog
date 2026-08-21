@@ -1,0 +1,78 @@
+{{ define "main" }}
+
+{{ $slug := .File.ContentBaseName }}
+
+<div class="page-with-cta">
+  <div class="page-with-cta__main">
+    <article class="post-single">
+
+      <header class="post-header">
+        <h1 class="post-title">{{ .Title }}</h1>
+
+        {{ with .Params.description }}
+          <p class="post-description">{{ . }}</p>
+        {{ end }}
+
+        <div class="post-meta">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </div>
+      </header>
+
+      {{ if templates.Exists (printf "partials/tools/%s.html" $slug) }}
+      <div id="tool-root" class="tool-root">
+        {{ partial (printf "tools/%s.html" $slug) . }}
+      </div>
+      {{ end }}
+
+      <div class="post-content">
+        {{ .Content }}
+      </div>
+
+      {{ if .Params.faq }}
+        {{ partial "tools/faq-schema.html" . }}
+      {{ end }}
+
+    </article>
+  </div>
+
+  {{ partial "cta-box.html" (dict "subtitle" "Scan to share a self-destructing note.") }}
+</div>
+
+<div id="mobile-cta">
+  <div style="display:flex; justify-content:center; align-items:center;">
+    <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
+      <img src="/appstore-badge-dark.svg" class="badge-dark" />
+      <img src="/appstore-badge-light.svg" class="badge-light" />
+    </a>
+  </div>
+</div>
+
+{{ $jsPath := printf "js/tools/%s.js" $slug }}
+{{ with resources.Get $jsPath }}
+  {{ $opts := dict "targetPath" (printf "js/tools/%s.js" $slug) }}
+  {{ $built := . | js.Build $opts | resources.Minify }}
+  {{ if not site.Params.assets.disableFingerprinting }}
+    {{ $built = $built | fingerprint }}
+    <script defer crossorigin="anonymous" src="{{ $built.RelPermalink }}" integrity="{{ $built.Data.Integrity }}"></script>
+  {{ else }}
+    <script defer crossorigin="anonymous" src="{{ $built.RelPermalink }}"></script>
+  {{ end }}
+{{ end }}
+
+<script>
+  const mobileCTA = document.getElementById("mobile-cta");
+
+  if (mobileCTA) {
+    window.addEventListener("scroll", () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+
+      if (scrollPercent > 0.1) {
+        mobileCTA.style.display = "block";
+      } else {
+        mobileCTA.style.display = "none";
+      }
+    });
+  }
+</script>
+
+{{ end }}

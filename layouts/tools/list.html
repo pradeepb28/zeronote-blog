@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<div class="page-with-cta">
+  <div class="page-with-cta__main">
+    {{ if .Content }}
+    <div class="post-content" style="max-width: 720px; margin: 0 auto 2rem;">
+      {{ .Content }}
+    </div>
+    {{ end }}
+
+    <div class="post-grid">
+      {{ range .Pages }}
+        <article class="post-card">
+          <a href="{{ .RelPermalink }}">
+            <h2>{{ .Title }}</h2>
+
+            <div class="tags">
+      {{ with .Params.tags }}
+        {{ range first 2 . }}
+          <span class="tag">{{ . }}</span>
+        {{ end }}
+      {{ end }}
+    </div>
+
+            <span class="meta">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </span>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+
+  {{ partial "cta-box.html" (dict "useTitleClass" true "subtitle" "Share something that disappears.") }}
+</div>
+
+{{ end }}
