@@ -5,8 +5,6 @@ date: 2026-06-04
 description: "Learn how to send disappearing messages in iMessage using Zero Note's keyboard extension. Share passwords, Wi-Fi credentials, door codes, bank details, and other sensitive information that self-destructs after viewing or a set time."
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# How to Send Disappearing Messages in iMessage (2026 Guide)
-
 Need to share a Wi-Fi password, door code, bank details, or temporary credentials through iMessage?
 
 Unfortunately, Apple Messages doesn't support disappearing messages, view-once messages, or self-destructing texts. Once a message is sent, it typically remains in the conversation until manually deleted.

@@ -4,8 +4,6 @@ date: 2026-05-02
 description: "Looking for ways to send disappearing messages on iPhone? Learn how to use native settings and the Zero Note keyboard extension for secure, self-destructing notes."
 ---
 
-# How to Send Disappearing Messages on iPhone (2026 Guide)
-
 Sending sensitive information like passwords, API keys, or private thoughts requires more than just standard text. Here is how to keep your messages temporary and secure on your iPhone.
 
 ---

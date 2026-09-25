@@ -22,8 +22,6 @@ categories:
   - Alternatives
 ---
 
-# Is Privnote Safe? What You Should Know Before Sharing Passwords and Secrets
-
 If you've searched for a secure way to share passwords, API keys, recovery codes, or confidential information online, you've probably come across Privnote.
 
 It's one of the most well-known self-destructing note services and has been used by millions of people over the years.

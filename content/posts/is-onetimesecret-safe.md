@@ -22,8 +22,6 @@ categories:
   - Alternatives
 ---
 
-# Is OneTimeSecret Safe? Security Review & What Developers Should Know
-
 If you've ever needed to share a password, API key, SSH credential, database connection string, or recovery code, you've probably come across OneTimeSecret.
 
 For years, OneTimeSecret has been one of the most popular tools for sharing sensitive information through self-destructing links.

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Zero Note Comparisons on Zero Note: Self-destruct messages</title>
-    <link>https://blog.zeronote.app/comparisons/</link>
+    <link>http://localhost:1313/comparisons/</link>
     <description>Recent content in Zero Note Comparisons on Zero Note: Self-destruct messages</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.zeronote.app/comparisons/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/comparisons/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OneTimeSecret vs Zero Note (2026): Which Ephemeral Secret Share Tool Is Better?</title>
-      <link>https://blog.zeronote.app/comparisons/onetimesecret-vs-zero-note/</link>
+      <link>http://localhost:1313/comparisons/onetimesecret-vs-zero-note/</link>
       <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.zeronote.app/comparisons/onetimesecret-vs-zero-note/</guid>
+      <guid>http://localhost:1313/comparisons/onetimesecret-vs-zero-note/</guid>
       <description>Compare OneTimeSecret vs Zero Note. Discover how open-source web-based secret sharing stacks up against a modern, mobile-first control vault.</description>
     </item>
     <item>
       <title>Privnote vs Zero Note (2026): Which Secure Note Tool Should You Use?</title>
-      <link>https://blog.zeronote.app/comparisons/privnote-vs-zero-note/</link>
+      <link>http://localhost:1313/comparisons/privnote-vs-zero-note/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.zeronote.app/comparisons/privnote-vs-zero-note/</guid>
+      <guid>http://localhost:1313/comparisons/privnote-vs-zero-note/</guid>
       <description>Compare Privnote vs Zero Note. Learn the differences in control, privacy, notifications, and mobile experience to choose the right secure note sharing tool.</description>
     </item>
   </channel>

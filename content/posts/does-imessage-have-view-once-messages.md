@@ -5,8 +5,6 @@ date: 2026-06-04
 description: "Does iMessage support view once messages? Learn the current limitations of Apple Messages and how to send messages that can only be viewed once using Zero Note."
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Does iMessage Have View Once Messages? (2026 Answer)
-
 If you've used apps like WhatsApp, Instagram, or Snapchat, you may be wondering whether iMessage supports **view once messages** too.
 
 The short answer is:

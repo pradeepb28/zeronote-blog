@@ -11,8 +11,6 @@ tags: ["send ssn securely", "safely send ssn", "send social security number secu
 
 ---
 
-# How to Send Your Social Security Number (SSN) Securely
-
 Need to send your Social Security Number (SSN) to an employer, family member, accountant, lender, government agency, or another organization?
 
 There are legitimate situations where you may need to provide your SSN. You might be completing employment paperwork, applying for a mortgage, filing taxes, opening certain financial accounts, or verifying your identity.
