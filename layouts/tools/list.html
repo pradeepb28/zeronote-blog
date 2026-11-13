@@ -3,6 +3,7 @@
 <div class="page-with-cta">
   <div class="page-with-cta__main">
     <header class="post-header">
+      {{ partial "breadcrumbs.html" . }}
       <h1 class="post-title">{{ .Title }}</h1>
     </header>
 
@@ -35,7 +36,7 @@
     </div>
   </div>
 
-  {{ partial "cta-box.html" (dict "useTitleClass" true "subtitle" "Share something that disappears forever.") }}
+  {{ partial "cta-box.html" . }}
 </div>
 
 {{ end }}

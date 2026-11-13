@@ -5,6 +5,7 @@
     <article class="post-single">
 
       <header class="post-header">
+        {{ partial "breadcrumbs.html" . }}
         <h1 class="post-title">{{ .Title }}</h1>
 
         {{ with .Params.description }}
@@ -23,14 +24,14 @@
     </article>
   </div>
 
-  {{ partial "cta-box.html" (dict "subtitle" "Scan to share a self-destructing note.") }}
+  {{ partial "cta-box.html" . }}
 </div>
 
 <div id="mobile-cta">
   <div style="display:flex; justify-content:center; align-items:center;">
     <a href="https://apps.apple.com/us/app/zero-note-self-destruct-notes/id6760115126" target="_blank">
-      <img src="/appstore-badge-dark.svg" class="badge-dark" />
-      <img src="/appstore-badge-light.svg" class="badge-light" />
+      <img src="/appstore-badge-dark.svg" class="badge-dark" alt="Download Zero Note on the App Store" width="120" height="40" />
+      <img src="/appstore-badge-light.svg" class="badge-light" alt="Download Zero Note on the App Store" width="120" height="40" />
     </a>
   </div>
 </div>

@@ -180,7 +180,21 @@
   align-self: start;
 }
 
+.cta-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#cta-box img.cta-logo {
+  width: 32px;
+  height: 32px;
+  margin-top: 0;
+  flex: none;
+}
+
 .cta-title {
+  margin: 0;
   font-weight: 600;
   font-size: 14px;
 }
