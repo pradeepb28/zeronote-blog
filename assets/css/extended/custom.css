@@ -1,3 +1,11 @@
+:root {
+  --nav-width: calc(var(--main-width) + 200px + var(--gap));
+}
+
+.footer {
+  max-width: calc(var(--main-width) + var(--gap) * 2 + 200px + var(--gap));
+}
+
 .post-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -65,9 +73,9 @@
 }
 
 .post-single {
-  max-width: 640px;
-  margin: 0 auto;
-    font-size: 17px;
+  max-width: none;
+  margin: 0;
+  font-size: 17px;
   line-height: 1.75;
   letter-spacing: 0.2px;
 }
@@ -77,9 +85,9 @@
 }
 
 .post-header {
-  max-width: 640px;
-  margin: 0 auto 30px auto;
-    padding-bottom: 20px;
+  max-width: none;
+  margin: 0 0 30px;
+  padding-bottom: 20px;
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -202,6 +210,7 @@
 .cta-sub {
   font-size: 12px;
   color: var(--secondary);
+  margin-top: 16px;
   margin-bottom: 10px;
 }
 

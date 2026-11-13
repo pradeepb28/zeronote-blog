@@ -3,7 +3,7 @@
 title: "How to Send Disappearing Messages in iMessage (2026 Guide)"
 date: 2026-06-04
 description: "Learn how to send disappearing messages in iMessage using Zero Note's keyboard extension. Share passwords, Wi-Fi credentials, door codes, bank details, and other sensitive information that self-destructs after viewing or a set time."
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 Need to share a Wi-Fi password, door code, bank details, or temporary credentials through iMessage?
 

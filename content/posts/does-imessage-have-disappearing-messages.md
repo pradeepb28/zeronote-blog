@@ -3,7 +3,7 @@
 title: "Does iMessage Have Disappearing Messages? (And the Best Alternative for iPhone Users)"
 date: 2026-06-04
 description: "iMessage doesn't support disappearing messages, view-once text, or self-destructing notes. Learn how iPhone users can send temporary messages directly from iMessage using Zero Note."
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 No.
 

@@ -5,7 +5,7 @@ description: "EU Chat Control changed again in July 2026. Learn what the latest 
 date: "2026-07-19"
 slug: "eu-chat-control"
 tags: ["Chat Control", "EU Law", "Data Privacy", "Secure Sharing"]
-------------------------------------------------------------------
+---
 
 *(Note: The chat control topic is still evolving, we will update the article accordingly)*
 
